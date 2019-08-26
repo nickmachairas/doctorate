@@ -1,0 +1,14 @@
+/* Remove bullets from sidebar TOC and main TOC */
+.sphinxsidebarwrapper ul, .toctree-wrapper ul {
+  list-style-type: none !important;
+}
+
+/* Reduce left margin of sidebar TOC items */
+.sphinxsidebarwrapper ul ul {
+  margin-left: 15px !important;
+}
+
+/* Reduce left margin of sidebar TOC items */
+.toctree-wrapper ul {
+  margin-left: 15px !important;
+}
