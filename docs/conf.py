@@ -47,15 +47,15 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 html_theme = 'alabaster'
 
 html_theme_options = {
-    'logo' : 'nyu_short_color.png',
-    'description' : '<em>"Prediction of the Ultimate Capacity of Driven Piles and'
-                    ' Optimization of Design Parameters"</em>, PhD Dissertation'
-                    ' by Nikolaos Machairas</br>',
-    'show_relbar_bottom' : True,
-    'page_width' : '1000px',
-    'sidebar_width' : '240px',
-    'logo_text_align' : 'justify',
-    'fixed_sidebar' : True,
+    'logo': 'nyu_short_color.png',
+    'description': '<em>"Prediction of the Ultimate Capacity of Driven Piles and'
+                   ' Optimization of Design Parameters"</em>, PhD Dissertation'
+                   ' by Nikolaos Machairas</br>',
+    'show_relbar_bottom': True,
+    'page_width': '1000px',
+    'sidebar_width': '240px',
+    'logo_text_align': 'justify',
+    'fixed_sidebar': True,
 }
 
 # html_sidebars = {
