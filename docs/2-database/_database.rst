@@ -18,3 +18,5 @@ In a 2013 memorandum, Abu-Hejleh describes the DFLTD as being "outdated" to the 
 
 FHWA rekindled the effort to gather and distribute load test information on piles, as part of its effort to develop a method for predicting the axial capacity of large diameter open ended pipe piles. This effort resulted in the release of the Deep Foundation Load Test Database v.2 (DFLTD v.2) in February 2017 (:ref:`Petek et al., 2016 <Petek2016>`).
 
+
+.. include:: olson_db.inc.rst
