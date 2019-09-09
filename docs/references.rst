@@ -16,17 +16,37 @@ Abu-Hejleh, N. M., Abu-Farsakh, M., Suleiman, M. T., and Tsai, C. (2015a). "Deve
 
 Abu-Hejleh, N., Abu-Farsakh, M., Suleiman, M. T., and Tsai, C. (2015a). "State of Practices in Databases for Deep Foundation Load Tests." *Proc., IFCEE 2015*, American Society of Civil Engineers, 237–246. `<http://dx.doi.org/10.1061/9780784479087.024>`_
 
+.. _Al-Shafei1987:
+
+Al-Shafei, K. A. R. (1987), "Axial Load Capacities of Steel Pipe Piles in Sand," M.S. Thesis, University of Texas (May).
+
+.. _Alyahyai1987:
+
+Alyahyai, K. S. (1987), "Use of Case Histories in Prediction of Load-Settlement Behavior of Steel Piles in Sand," M.S. Thesis, University of Texas (May).
+
 .. _API1989:
 
 American Petroleum Institute. (1989). *Recommended Practice for Planning, Designing and Constructing Fixed Offshore Platforms (RP 2A) - 18th Edition*. American Petroleum Institute.
+
+.. _Aschenbrenner1984:
+
+Aschenbrener, T. B. (1984), "The Settlement Behavior of Single Piles in Clay," M.S. Thesis, University of Texas.
 
 .. _Canadian1975:
 
 Associate Committee on the National Building Code (1975), *Canadian Manual on Foundation Engineering*, National Research Council of Canada
 
+.. _Chiu1993:
+
+Chiu, Kuan (1993), "A Study of Axial Load Capacity of Piles from Case Histories", M.S. Thesis, Univ. of Texas (May)
+
 .. _Briaud1987:
 
 Briaud, J.-L., Anderson, J., Perdomo, D., and Tucker, L. M. (1987). "Evaluation of API Method Using 98 Vertical Pile Load Tests." *Proc., Offshore Technology Conference*, 19th Annual Offshore Technology Conference, Houston, Texas. 447-451. `<http://dx.doi.org/10.4043/5411-MS>`_
+
+.. _Dennis1982:
+
+Dennis, N. D. (1982), "Development of Correlations to Improve the Prediction of Axial Pile Capacity" Ph.D. Dissertation, University of Texas, 315 pp., December.
 
 .. _Dennis1983a:
 
@@ -35,6 +55,10 @@ Dennis, N. D., and Olson, R. E. (1983a). "Axial Capacity of Steel Pipe Piles in 
 .. _Dennis1983b:
 
 Dennis, N. D., and Olson, R. E. (1983b). "Axial Capacity of Steel Pipe Piles in Clay." *Soil Behavior Fundamentals to Innovations in Geotechnical Engineering Honoring Roy E. Olson*, ASCE, 176–194.
+
+.. _Go1990:
+
+Go, Van (1990), "Axial Static Load Capacity of Untapered Piles in Sand", M.S. Thesis, University of Texas (Aug)
 
 .. _Hannigan2016a:
 
@@ -104,6 +128,10 @@ Peck, R. B. (1958), "A Study of the Comparative Behavior of Friction Piles." Hig
 .. _Petek2016:
 
 Petek, K., Mitchell, R., and Ellis, H. (2016). *FHWA Deep Foundation Load Test Database Version 2.0 User Manual*. U.S. Department of Transportation Federal Highway Administration, McLean, VA United States. `<https://trid.trb.org/view.aspx?id=1442726>`_ and `<https://www.fhwa.dot.gov/publications/research/infrastructure/structures/bridge/dfltd/index.cfm>`_
+
+.. _WebPlotDigitizer:
+
+Rohatgi, A. (n.d.). "WebPlotDigitizer" - Web based tool to extract data from plots, images, and maps, `<https://automeris.io/WebPlotDigitizer/>`_.
 
 .. _Roling2010:
 

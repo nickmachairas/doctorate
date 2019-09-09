@@ -1,0 +1,76 @@
+# ...
+
+LTN Blank*
+! The top 8' is cased off.  N values are guessed from data elsewhere              
+! on the site.  This is a 7 gage Monotube FN18 section.                           
+* estimated N's
+   11 CIPC CIRC COMP  93.4   2.5 1.00 T  1195    3.4 None    Morganza             
+   18.00   0.00   4.71
+   18.00  25.00   4.71
+    8.00  93.40   2.11
+   -1.00   0.00   0.00
+ SACL     8   -5.   5   1   F T F F F T F F F     
+ CLAY   8.0  0.67 0.113  39  78  52  0.01  0.00  0.00  0.00   0   0    0 0.00
+ CLAY  13.0  1.04 0.108  48  95  70  0.75  0.00  0.00  0.00   0   0    0 0.00
+ CLAY   6.5  1.51 0.122  29  38  15  0.76  0.00  0.00  0.00   0   0    0 0.00
+ SASI   4.0  1.83 0.127  22   0   0  0.00  0.00  0.00  0.00   5   6    0 0.00
+ CLAY   7.0  2.14 0.113  41  82  55  0.70  0.00  0.00  0.00   0   0    0 0.00
+ CLAY  42.5  3.28 0.108  48  95  70  0.66  0.00  0.00  0.00   0   0    0 0.00
+ SAND   9.9  4.60 0.133  19   0   0  0.00  0.00  0.00  0.00  60  72    0 0.00
+ SAND  10.0  4.95 0.133  19   0   0  0.00  0.00  0.00  0.00  70  84    0 0.00
+    0   340   340     0    0.83      0.30     4    37  3
+
+# ...
+
+LTN Blank*
+! The top 8' is cased off.  N values are guessed from data elsewhere              
+! on the site.                                                                    
+* estimated N's
+   13 STLP CIRC COMP  86.6   2.6 1.00 F  1700   10.6 None    Morganza             
+   18.00   4.71                                   
+ SACL     6   -5.   5   1   F T F F F T F F F     
+ CLAY   8.0  0.28 0.000  39  78  52  0.01  0.00  0.00  0.00  -1  -1    0 0.00
+ CLAY  19.5  1.24 0.000  39  78  52  0.75  0.00  0.00  0.00   0   0    0 0.00
+ SASI   4.0  1.84 0.000  22   0   0  0.00  0.00  0.00  0.00   5   6    0 0.00
+ CLAY  49.5  3.10 0.000  47  92  62  0.66  0.00  0.00  0.00   0   0    0 0.00
+ SAND   3.0  4.33 0.000  19   0   0  0.00  0.00  0.00  0.00  57  68    0 0.00
+ SAND  10.0  4.44 0.000  19   0   0  0.00  0.00  0.00  0.00  75  90    0 0.00
+    0   510   540     0    0.64      0.60     4    46  3
+
+# ...
+
+
+# LTN EXPLAINED:
+
+LTN Blank*
+(Comment)
+! The top 8' is cased off.  N values are guessed from data elsewhere
+! on the site.  This is a 7 gage Monotube FN18 section.
+
+(Warning)
+* estimated N's
+
+(LTN) (Type) (Shape) (Load) (Len) (ExpL) (DR) (Tapr) (AEOL) (Wgt) (Site) (Loc)
+  11   CIPC    CIRC   COMP   93.4   2.5  1.00    T    1195   3.4   None Morganza
+
+ (PD)   (LD)  (CIR)
+18.00   0.00   4.71
+18.00  25.00   4.71
+ 8.00  93.40   2.11
+-1.00   0.00   0.00
+
+(PROF) (NL) (EWT) (SQF) (IC) (Vib) (REO) (TS) (UTB) (UTS) (Case) (PDr) (RDr) (Jet)
+ SACL    8   -5.    5     1    F     T     F    F     F      T     F     F     F
+
+(Soil) (HL) (EVSO) (TUW) (WC) (LL) (PI) (UU)  (FV)  (MS)  (QT) (N) (Nc) (QC) (FSL)
+ CLAY   8.0  0.67  0.113  39   78   52  0.01  0.00  0.00  0.00   0   0    0  0.00
+ CLAY  13.0  1.04  0.108  48   95   70  0.75  0.00  0.00  0.00   0   0    0  0.00
+ CLAY   6.5  1.51  0.122  29   38   15  0.76  0.00  0.00  0.00   0   0    0  0.00
+ SASI   4.0  1.83  0.127  22    0    0  0.00  0.00  0.00  0.00   5   6    0  0.00
+ CLAY   7.0  2.14  0.113  41   82   55  0.70  0.00  0.00  0.00   0   0    0  0.00
+ CLAY  42.5  3.28  0.108  48   95   70  0.66  0.00  0.00  0.00   0   0    0  0.00
+ SAND   9.9  4.60  0.133  19    0    0  0.00  0.00  0.00  0.00  60  72    0  0.00
+ SAND  10.0  4.95  0.133  19    0    0  0.00  0.00  0.00  0.00  70  84    0  0.00
+
+(QCT) (QMTD) (QMP) (QBF) (SFD) (SFP) (DQF) (SetUpTm) (Ref)
+  0     340   340    0   0.83  0.30    4      37       3

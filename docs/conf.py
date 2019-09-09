@@ -40,6 +40,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '**.inc.rst']
 
 numfig = True
 # numfig_format = {'figure': 'My fig %s', 'table': 'My tab %s', 'code-block': 'My code %s'}
+math_eqref_format = 'Eq. {number}'
 
 # -- Options for HTML output -------------------------------------------------
 
