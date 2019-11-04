@@ -202,3 +202,16 @@ Calculation of AE/L
 LTN 11 from the *APC Database* that was referenced before, involves a cast-in-place concrete tapered pile. Criterion-based capacity interpretations (REF EQUATION)
 
 
+
+Database Design
+===============
+
+:numref:`OlsonVarsTable` summarizes the variables available in the *Olson Database* raw data files. The reduction of these variables to a relational schema is presented in :numref:`olson_db_schema`. It is important to note that in this iteration, normalization rules are not strictly enforced. For instance, attributes ``ssuu``, ``ssfv``, ``ssms``, ``ssqt`` are all storing information on shear strength obtained from different tests and it could be argued that they are violating the "non-repeating attribute" rule of the 1st Normal Form (1NF). However, in the context of geotechnical engineering, it is unlikely that a value for shear stregth obtained from a new lab test will needs to be stored. It is also unlikely that multiple values of shear strength from the same lab test will need to be stored for a single layer. As such, it is far more practical to keep these four attributes in the ``layers`` relation than move them in separate relations in order to be strictly compliant with the normalization process.
+
+
+
+
+.. figure:: figures/olson_db_schema.png
+   :name: olson_db_schema
+
+   Entity-Relationship Diagram of the database reduced from the *Olson Database* raw files

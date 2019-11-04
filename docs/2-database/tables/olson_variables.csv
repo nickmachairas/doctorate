@@ -1,56 +1,56 @@
 Variable Name,Description,New DB Attribute Name
-**Comment**,Normally a description of the project,``comments``
-**Warning**,A field of up to 30 columns warning the user of problems,concat w/ ``comments``
-**LTN**,Load test number,``proj_id``
-**Type**,"Pile type. Allowed values are TIMB (timber), CIPC (cast-in-place concrete), CONC (precast concrete), STLP (steel pipe), HPIL (H piles) and RAYC (Raymond)",``pile_type``
-**Shape**,"Pile shape. Allowed values are SQRE (square, used for H piles as well as other square piles), CIRC (circular), OCTA (octagonal), and HEXA (hexagonal)",``pile_shape``
-**Load**,"Load direction. Available options: COMP, TENS",``load_dir``
-**Len**,The entire length of the pile used in the calculation of AE/L (feet),``pile_length``
-**ExpL**,Distance from the top of the pile to the exposed soil surface (feet),``pile_exp_length``
-**DR**,"The ratio of the area of pile material at the tip to the area of the enclosing geometric shape.  For open-ended pipe piles it is (D-D)/D.  If the pile was driven open ended and then drilled out and filled with concrete, this value was set at 1.0.  If the pile has an oversized cover plate, the displacement ratio was set at 1.0 or larger",``dratio``
-**Tapr**,"Boolean (T/F), TRUE for a tapered pile",``tapered``
-**AEOL**,AE/L in kips/inch,``aeol``
-**Wgt**,"Pile weight (kips), not submerged",``pile_weight``
-**Site**,Site name,``site_name``
-**Loc**,The geographic location of the load test,``location``
-**PD**,"Diameter of a circular pile and distance across the flats for a square, octagonal, or hexagonal section (inches)",``pile_diameter``
-**LD(i)**,For tapered piles only: Distance from pile butt to point i (feet),``taper_length``
-**CIR**,Pile circumference (feet) (steel/soil for HPIL),``pile_circ``
-**PROF**,"Predominant soil. Available options: SAND, CLAY, or SACL",``predom_soil``
-**NL**,Number of soil layers,``soil_layers``
-**EWT**,"Elevation of water table from ground surface (feet), +1 to indicate that EWT was unknown",``ewt``
-**SQF**,"Sample quality factor (0: nature of the sampler is unknown; 1:	driven heavy-walled samplers, e.g., the standard sampler; 2: driven samplers of higher quality than for #1, e.g., offshore wireline samplers and Dames and Moore (D&M) sampler; 3: pushed 2"" shelby tube (ST) samplers, driven 3"" ST, Swedish foil sampler; 4: pushed thin-walled samplers, generally fixed piston, 3"" or more; 5: top quality samples, generally trimmed samples taken using a fixed-piston thin-walled sampler, often 5"" diameter; hand carved from blocks)",``sqf``
-**IC**,"=0 if EVSO is fixed (perhaps a cased off upperlayer was left out of the compressed database but the EVSO values were calculated for the real profile which is not shown here), =1 if EVSO can be changed (means the whole profile is shown)",``i_code``
-**Vib**,"Boolean (T/F), TRUE if any part of driving was by vibration",``vibro``
-**REO**,"Boolean (T/F), TRUE if data was checked by Dr. Olson",``reo_check``
-**TS**,"Boolean (T/F), TRUE if checked by an unknown party",``ts_check``
-**UTB**,"Boolean (T/F), TRUE if University of Texas (UT) Boring",``ut_boring``
-**UTS**,"Boolean (T/F), TRUE if University of Texas (UT) Sounding",``ut_sound``
-**Case**,"Boolean (T/F), TRUE if cased",``cased``
-**PDr**,"Boolean (T/F), TRUE if predrilled. The later data forms show evidence of preboring, where appropriate. In some cases, we suspect that the authors of the reports simply neglected to mention preboring. In other cases, they mentioned it in obscure places in the report (we found such cases). In many cases, piles were probably prebored and no mention is made in the report.",``predrilled``
-**RDr**,"Boolean (T/F), TRUE if relief drilled",``relief_drilled``
-**Jet**,"Boolean (T/F), TRUE if jetted",``jetted``
-**Soil**,"Soil type (COBB, SICL, etc.)",``soil_type``
-**HL**,Soil layer thickness (feet),``layer_height``
-**EVSO**,Mean vertical effective stress (ksf),``evso``
-**TUW**,Total unit weight (kcf),``tuw``
-**WC**,Water content (%),``water_content``
-**LL**,Liquid limit (%),``liquid_limit``
-**PI**,Plasticity index (%),``plasticity``
-**UU**,Unconfined shearing strength (ksf),``ssuu``
-**FV**,Field vane shearing strength (ksf),``ssfv``
-**MS**,"Shearing strength from Torvane, penetrometer, etc. (ksf)",``ssms``
-**QT**,Shearing strength from Q triaxials (ksf),``ssqt``
-**N**,Measured (uncorrected) N value (bpf).  This is all we have now because details of the techniques were rarely reported and the data were never reported by us.  Most of the older data used a manual drop hammer (low efficiency) and the rods were 3/4 in. heavy duty water pipe (low efficiency),``nval``
-**Nc**,N values corrected to 60% efficiency (bpf).,``cnval``
-**QC**,Cone tip resistance (ksf),``qc``
-**FSL**,Cone sleeve shear (ksf),``fsl``
-**QCT**,Measured capacity at 0.5-inch butt settlement (kips),``load_half``
-**QMDT**,Measured capacity at Davisson's point (kips),``load_dav``
-**QMP**,Peak applied load (kips),``load_peak``
-**QBF**,Capacity extrapolated per Brown-Fleming (kips),``load_extr``
-**SFD**,Butt settlement at Davisson's failure point (inches),``sett_dav``
-**SFP**,Butt settlement at 95% of the peak applied load (inches),``sett_peak``
-**DQF**,"Data quality factor. The DQF represents our qualitative view of the overall quality of the data. (5)	indicates outstanding data. Generally we knew the author. There were soil borings very close to the pile and numerous soil tests were performed. The SQF was high. The soil profile was uniform enough that we thought the soil conditions at the load test point were well known. There was a reasonable set-up time for the pile. The pile was often instrumented. (1) indicates major uncertainties. For example, the soil profile may vary widely from place to place on a site and there is no boring right next to the pile. In other cases the only measure of clay strength is an N value. In some cases the measured soil properties scattered greatly with respect to depth. In some cases the driving record did not compare with the soil profile, e.g., a sudden increase in driving resistance at the end when there was no evidence of a stronger layer at that depth.",``dqf``
-**SetUpTm**,Set up time (days),``setup_time``
-**Ref**,"The reference number (reference to a paper, report, etc.) from the reference list in a separate file",``source_ref``
+**Comment**,Normally a description of the project,``projects.description``
+**Warning**,A field of up to 30 columns warning the user of problems,``projects.warning``
+**LTN**,Load test number,``projects.source_id``
+**Type**,"Pile type. Allowed values are TIMB (timber), CIPC (cast-in-place concrete), CONC (precast concrete), STLP (steel pipe), HPIL (H piles) and RAYC (Raymond)",``piles.type``
+**Shape**,"Pile shape. Allowed values are SQRE (square, used for H piles as well as other square piles), CIRC (circular), OCTA (octagonal), and HEXA (hexagonal)",``piles.shape``
+**Load**,"Load direction. Available options: COMP, TENS",``load_tests.direction``
+**Len**,The entire length of the pile used in the calculation of AE/L (feet),``piles.length``
+**ExpL**,Distance from the top of the pile to the exposed soil surface (feet),"``piles.exp_length`` --> ``piles.emb_length``"
+**DR**,"The ratio of the area of pile material at the tip to the area of the enclosing geometric shape.  For open-ended pipe piles it is (D-D)/D.  If the pile was driven open ended and then drilled out and filled with concrete, this value was set at 1.0.  If the pile has an oversized cover plate, the displacement ratio was set at 1.0 or larger",``piles.dratio``
+**Tapr**,"Boolean (T/F), TRUE for a tapered pile",``piles.tapered``
+**AEOL**,AE/L in kips/inch,``piles.aeol``
+**Wgt**,"Pile weight (kips), not submerged",``piles.weight``
+**Site**,Site name,``projects.site_name``
+**Loc**,The geographic location of the load test,"``projects.location`` --> ``locations.description``"
+**PD**,"Diameter of a circular pile and distance across the flats for a square, octagonal, or hexagonal section (inches)","``piles.diameter``, ``taper_dims.diameter``"
+**LD(i)**,For tapered piles only: Distance from pile butt to point i (feet),``taper_dims.length``
+**CIR**,Pile circumference (feet) (steel/soil for HPIL),"``piles.circumference``, ``taper_dims.circumference``"
+**PROF**,"Predominant soil. Available options: SAND, CLAY, or SACL",``borings.predom_soil``
+**NL**,Number of soil layers,``borings.layer_count``
+**EWT**,"Elevation of water table from ground surface (feet), +1 to indicate that EWT was unknown",``borings.ewt``
+**SQF**,"Sample quality factor (0: nature of the sampler is unknown; 1:	driven heavy-walled samplers, e.g., the standard sampler; 2: driven samplers of higher quality than for #1, e.g., offshore wireline samplers and Dames and Moore (D&M) sampler; 3: pushed 2"" shelby tube (ST) samplers, driven 3"" ST, Swedish foil sampler; 4: pushed thin-walled samplers, generally fixed piston, 3"" or more; 5: top quality samples, generally trimmed samples taken using a fixed-piston thin-walled sampler, often 5"" diameter; hand carved from blocks)",``borings.sqf``
+**IC**,"=0 if EVSO is fixed (perhaps a cased off upperlayer was left out of the compressed database but the EVSO values were calculated for the real profile which is not shown here), =1 if EVSO can be changed (means the whole profile is shown)",``misc.i_code``
+**Vib**,"Boolean (T/F), TRUE if any part of driving was by vibration",``piles.vibro``
+**REO**,"Boolean (T/F), TRUE if data was checked by Dr. Olson",``misc.reo_check``
+**TS**,"Boolean (T/F), TRUE if checked by an unknown party",``misc.ts_check``
+**UTB**,"Boolean (T/F), TRUE if University of Texas (UT) Boring",``misc.ut_boring``
+**UTS**,"Boolean (T/F), TRUE if University of Texas (UT) Sounding",``misc.ut_sound``
+**Case**,"Boolean (T/F), TRUE if cased",``piles.cased``
+**PDr**,"Boolean (T/F), TRUE if predrilled. The later data forms show evidence of preboring, where appropriate. In some cases, we suspect that the authors of the reports simply neglected to mention preboring. In other cases, they mentioned it in obscure places in the report (we found such cases). In many cases, piles were probably prebored and no mention is made in the report.",``piles.predrilled``
+**RDr**,"Boolean (T/F), TRUE if relief drilled",``piles.relief_drilled``
+**Jet**,"Boolean (T/F), TRUE if jetted",``piles.jetted``
+**Soil**,"Soil type (COBB, SICL, etc.)",``layers.soil_type``
+**HL**,Soil layer thickness (feet),``layers.height``
+**EVSO**,Mean vertical effective stress (ksf),``layers.evso``
+**TUW**,Total unit weight (kcf),``layers.tuw``
+**WC**,Water content (%),``layers.water_content``
+**LL**,Liquid limit (%),``layers.liquid_limit``
+**PI**,Plasticity index (%),``layers.plasticity``
+**UU**,Unconfined shearing strength (ksf),``layers.ssuu``
+**FV**,Field vane shearing strength (ksf),``layers.ssfv``
+**MS**,"Shearing strength from Torvane, penetrometer, etc. (ksf)",``layers.ssms``
+**QT**,Shearing strength from Q triaxials (ksf),``layers.ssqt``
+**N**,Measured (uncorrected) N value (bpf).  This is all we have now because details of the techniques were rarely reported and the data were never reported by us.  Most of the older data used a manual drop hammer (low efficiency) and the rods were 3/4 in. heavy duty water pipe (low efficiency),``layers.nval``
+**Nc**,N values corrected to 60% efficiency (bpf).,``layers.cnval``
+**QC**,Cone tip resistance (ksf),``layers.qc``
+**FSL**,Cone sleeve shear (ksf),``layers.fsl``
+**QCT**,Measured capacity at 0.5-inch butt settlement (kips),``interp_capacities``
+**QMDT**,Measured capacity at Davisson's point (kips),``interp_capacities``
+**QMP**,Peak applied load (kips),``interp_capacities``
+**QBF**,Capacity extrapolated per Brown-Fleming (kips),``interp_capacities``
+**SFD**,Butt settlement at Davisson's failure point (inches),``interp_capacities``
+**SFP**,Butt settlement at 95% of the peak applied load (inches),``interp_capacities``
+**DQF**,"Data quality factor. The DQF represents our qualitative view of the overall quality of the data. (5)	indicates outstanding data. Generally we knew the author. There were soil borings very close to the pile and numerous soil tests were performed. The SQF was high. The soil profile was uniform enough that we thought the soil conditions at the load test point were well known. There was a reasonable set-up time for the pile. The pile was often instrumented. (1) indicates major uncertainties. For example, the soil profile may vary widely from place to place on a site and there is no boring right next to the pile. In other cases the only measure of clay strength is an N value. In some cases the measured soil properties scattered greatly with respect to depth. In some cases the driving record did not compare with the soil profile, e.g., a sudden increase in driving resistance at the end when there was no evidence of a stronger layer at that depth.",``projects.dqf``
+**SetUpTm**,Set up time (days),``load_tests.setup_time``
+**Ref**,"The reference number (reference to a paper, report, etc.) from the reference list in a separate file",``projects.source_ref``

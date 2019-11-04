@@ -65,3 +65,4 @@ Members of the Ph.D. Guidance Committee:
    1-intro/_intro.rst
    2-database/_database.rst
    references.rst
+   notations.rst
