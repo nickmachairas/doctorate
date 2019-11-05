@@ -99,40 +99,15 @@ Original Attribute,Description,Sample Record,New Attribute
 **Capacity After 5th Restrike (KIPS)**,"This field represents the maximum static pile resistance estimate, in units of kips, provided by PDA at the beginning of the fifth restrike (i.e., RMX).",374,``pda_restrikes.capacity``
 **6th Restrike Date/Time**,"In this database field, which has been formatted to accept dated entries of the form: Month/Day/Year Time-of-Day (e.g., 3/8/1984 10:12:55 AM), the date and time corresponding to the sixth restrike are input.","5/27/2009 10:09:46",``pda_restrikes.date_time``
 **Capacity After 6th Restrike (KIPS)**,"This field represents the maximum static pile resistance estimate, in units of kips, provided by PDA at the beginning of the sixth restrike (i.e., RMX).",402,``pda_restrikes.capacity``
-**Pressure Cells**,"**Were Push-In Pressure Cells used to monitor lateral earth and porewater pressure?:** This yes/no database field receives a checkmark if one or more push-in pressure cells were installed near the location of the test pile for acquisition of horizontal stress and porewater pressure data; otherwise, this database field is left unchecked.","YES",
-**Number of Pressure Cells Used**,"When the database field *Were Push-In Pressure Cells used to monitor lateral earth and porewater pressure?* is true, the total number of push-in pressure cells installed near the location of the test pile is reported in this text database field.",2,
-**Depths of Pressure Cells**,"When the database field *Were Push-In Pressure Cells used to monitor lateral earth and porewater pressure? is true, the depths to which each of the push-in pressure cells identified in the database field *Number of Pressure Cells Used* were installed are reported in this text database field.","Cell #1: 23.17 ft; Cell #2: 23.25 ft",
-**Pressure Cell Data**,"**Complete Pressure Cell Data:** This hyperlink database field allows for the establishment of a direct path to the file(s) holding all data acquired from the installed push-in pressure cells.","*(link to local directory)*",
-**CPT Test**,"**Was a Cone Penetration Test (CPT) Performed?:** This yes/no database field receives a checkmark if one or more CPTs were performed near the location of the test pile; otherwise, this database field is left unchecked.","YES",
-**Number of CPT Soundings**,"When the database field *Was a Cone Penetration Test (CPT) Performed?* is true, the total number of soundings performed near the location of the test pile is reported in this text database field.",3,
-**Number of Pore Pressure Dissipation Tests**,"When the database field *Was a Cone Penetration Test (CPT) Performed?* is true, the number of pore pressure dissipation tests conducted in conjunction with each of the CPT soundings identified in the database field *Number of CPT Soundings* is reported in this text database field.",1,
-**Cone Penetration Test (CPT) Data**,"This hyperlink database field allows for the establishment of a direct path to the file(s) holding all data acquired from the various CPTs performed near the location of the test pile.","*(link to local directory)*",
-**BST**,"**Was a Borehole Shear Test (BST) Performed?:** This yes/no database field receives a checkmark if one or more BSTs were performed near the location of the test pile; otherwise, this database field is left unchecked.","YES",
-**Number of BSTs**,"**Number of BSTs Performed:** When the database field *Was a Borehole Shear Test (BST) Performed?* is true, the total number of BSTs performed near the location of the test pile is reported in this text database field.",1,
-**Depths of BSTs**,"When the database field *Was a Borehole Shear Test (BST) Performed?* is true, the depths at which each of the BSTs identified in the database field *Number of BSTs Performed* were performed are reported in this text database field.","Test #1: 8.83 ft, 23.83 ft, 35.83 ft",
-**Borehole Shear Test (BST) Data**,"This hyperlink database field allows for the establishment of a direct path to the file(s) holding all data acquired from the various BSTs performed near the location of the test pile.","*(link to local directory)*",
-,,,
-,**Average Soil Profile**,,
-**ID**,"Unique identifier for the table.","[1923, 1924, ...]",
-**Record ID**,"Field that references the project ID.","[269, 269, ...]",
-**Soil Layer**,"Soil layer index.","[1, 2, ...]",
-**Material Description**,"Description of soil conditions.","[Clay, Silty Clay to Clay, ...]",
-**Thickness (FEET)**,"Layer thickness, in feet.","[25, 4, ...]",
-**NAVG (BLOWS/FT)**,"Average SPT blow count.","[12, N/A, ...]",
-**Unit Friction**,"Nominal unit skin friction value specified by the design chart found in the Iowa LRFD Bridge Design Manual (Iowa DOT, 2010) for each soil layer.","[1.2, 1.2, ...]",
-**Total Friction**,"Total soil layer nominal skin friction value resulting from the multiplication of the soil layer thickness by the nominal unit skin friction value.","[30, 4.8, ...]",
-,,,
-,**Borehole/SPT Information**,,
-**ID**,"Unique identifier for the table.","[5582, 5583, ...]",
-**Record ID**,"Field that references the project ID.","[269, 269, ...]",
-**Borehole Number**,,"[ISU5, ...]",
-**Soil Layer**,"Soil layer index.","[1, 2, ...]",
-**Description**,"Description of soil conditions.","[Dark Brown SLC, Gray-Olive SLC, ...]",
-**Depth (FEET)**,"Layer thickness, in feet.","[2, 8, ...]",
-**Average SPT Value (BLOWS/FT)**,"Average SPT blow count.","[N/A, 6, ...]",
-,,,
-,**Static Load Test Results**,,
-**ID**,"Unique identifier for the table.","[8657, 8658, 8659, 8660, 8661, 8662, 8663, 8664, 8665, 8666, ...]",
-**Record ID**,"Field that references the project ID.","[269, 269, ...]",
-**Load (TONS)**,,"[0, 6.82, 14.41, 21.43, 29.05, 35.95, 44.8, 51.23, 59.08, 66.66, ...]",
-**Gauge Reading (INCHES)**,,"[0, 0.008, 0.02, 0.03, 0.05, 0.07, 0.09, 0.11, 0.14, 0.16, ...]",
+**Pressure Cells**,"**Were Push-In Pressure Cells used to monitor lateral earth and porewater pressure?:** This yes/no database field receives a checkmark if one or more push-in pressure cells were installed near the location of the test pile for acquisition of horizontal stress and porewater pressure data; otherwise, this database field is left unchecked.","YES","*(skipped; data referenced but not available)*"
+**Number of Pressure Cells Used**,"When the database field *Were Push-In Pressure Cells used to monitor lateral earth and porewater pressure?* is true, the total number of push-in pressure cells installed near the location of the test pile is reported in this text database field.",2,"*(skipped; data referenced but not available)*"
+**Depths of Pressure Cells**,"When the database field *Were Push-In Pressure Cells used to monitor lateral earth and porewater pressure? is true, the depths to which each of the push-in pressure cells identified in the database field *Number of Pressure Cells Used* were installed are reported in this text database field.","Cell #1: 23.17 ft; Cell #2: 23.25 ft","*(skipped; data referenced but not available)*"
+**Pressure Cell Data**,"**Complete Pressure Cell Data:** This hyperlink database field allows for the establishment of a direct path to the file(s) holding all data acquired from the installed push-in pressure cells.","*(link to local directory)*","*(skipped; data referenced but not available)*"
+**CPT Test**,"**Was a Cone Penetration Test (CPT) Performed?:** This yes/no database field receives a checkmark if one or more CPTs were performed near the location of the test pile; otherwise, this database field is left unchecked.","YES","*(skipped; data referenced but not available)*"
+**Number of CPT Soundings**,"When the database field *Was a Cone Penetration Test (CPT) Performed?* is true, the total number of soundings performed near the location of the test pile is reported in this text database field.",3,"*(skipped; data referenced but not available)*"
+**Number of Pore Pressure Dissipation Tests**,"When the database field *Was a Cone Penetration Test (CPT) Performed?* is true, the number of pore pressure dissipation tests conducted in conjunction with each of the CPT soundings identified in the database field *Number of CPT Soundings* is reported in this text database field.",1,"*(skipped; data referenced but not available)*"
+**Cone Penetration Test (CPT) Data**,"This hyperlink database field allows for the establishment of a direct path to the file(s) holding all data acquired from the various CPTs performed near the location of the test pile.","*(link to local directory)*","*(skipped; data referenced but not available)*"
+**BST**,"**Was a Borehole Shear Test (BST) Performed?:** This yes/no database field receives a checkmark if one or more BSTs were performed near the location of the test pile; otherwise, this database field is left unchecked.","YES","*(skipped; data referenced but not available)*"
+**Number of BSTs**,"**Number of BSTs Performed:** When the database field *Was a Borehole Shear Test (BST) Performed?* is true, the total number of BSTs performed near the location of the test pile is reported in this text database field.",1,"*(skipped; data referenced but not available)*"
+**Depths of BSTs**,"When the database field *Was a Borehole Shear Test (BST) Performed?* is true, the depths at which each of the BSTs identified in the database field *Number of BSTs Performed* were performed are reported in this text database field.","Test #1: 8.83 ft, 23.83 ft, 35.83 ft","*(skipped; data referenced but not available)*"
+**Borehole Shear Test (BST) Data**,"This hyperlink database field allows for the establishment of a direct path to the file(s) holding all data acquired from the various BSTs performed near the location of the test pile.","*(link to local directory)*","*(skipped; data referenced but not available)*"

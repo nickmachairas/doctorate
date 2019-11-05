@@ -1,0 +1,8 @@
+Original Attribute,Description,Sample Record,New Attribute
+**ID**,"Unique identifier for the table.","[5582, 5583, ...]",``spt_data.id``
+**Record ID**,"Field that references the project ID.","[269, 269, ...]","*referenced through* ``borings``"
+**Borehole Number**,,"[ISU5, ...]",``borings.name``
+**Soil Layer**,"Soil layer index.","[1, 2, ...]",``spt_data.index``
+**Description**,"Description of soil conditions.","[Dark Brown SLC, Gray-Olive SLC, ...]",``spt_data.description``
+**Depth (FEET)**,"Layer thickness, in feet.","[2, 8, ...]",``spt_data.depth``
+**Average SPT Value (BLOWS/FT)**,"Average SPT blow count.","[N/A, 6, ...]",``spt_data.nval``
