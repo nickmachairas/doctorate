@@ -211,6 +211,15 @@ Database Design
 
 
 
+``ref_icapacities`` **values:**
+   - Load @ 0.5 inches
+   - Standard Davisson
+   - Brown
+   - Maximum Load
+   - Maximum Displacement
+
+
+
 .. figure:: figures/olson_db_schema.png
    :name: olson_db_schema
 
