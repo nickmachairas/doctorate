@@ -66,3 +66,4 @@ Members of the Ph.D. Guidance Committee:
    2-database/_database.rst
    references.rst
    notations.rst
+   p1-fhwa/fhwa_paper.rst

@@ -40,9 +40,21 @@ Associate Committee on the National Building Code (1975), *Canadian Manual on Fo
 
 Chiu, Kuan (1993), "A Study of Axial Load Capacity of Piles from Case Histories", M.S. Thesis, Univ. of Texas (May)
 
+.. _Bowles1977:
+
+Bowles, J. E. (1977). *Foundation Analysis and Design*. McGraw-Hill.
+
 .. _Briaud1987:
 
 Briaud, J.-L., Anderson, J., Perdomo, D., and Tucker, L. M. (1987). "Evaluation of API Method Using 98 Vertical Pile Load Tests." *Proc., Offshore Technology Conference*, 19th Annual Offshore Technology Conference, Houston, Texas. 447-451. `<http://dx.doi.org/10.4043/5411-MS>`_
+
+.. _Caltrans2014:
+
+CALTRANS (2014) *Caltrans Geotechnical Manual.* Office of Geotechnical Services. - <http://www.dot.ca.gov/hq/esc/geotech/geo_manual/manual.html> (Last accessed November 2017)
+
+.. _Davisson1972:
+
+Davisson, M. T. (1972). "High Capacity Piles." *Proceedings of Soil Mechanics Lecture Series on Innovations in Foundation Construction*, ASCE Illinois Section, Chicago, 81–112.
 
 .. _Dennis1982:
 
@@ -55,6 +67,18 @@ Dennis, N. D., and Olson, R. E. (1983a). "Axial Capacity of Steel Pipe Piles in 
 .. _Dennis1983b:
 
 Dennis, N. D., and Olson, R. E. (1983b). "Axial Capacity of Steel Pipe Piles in Clay." *Soil Behavior Fundamentals to Innovations in Geotechnical Engineering Honoring Roy E. Olson*, ASCE, 176–194.
+
+.. _Eslami1997:
+
+Eslami, A., and Fellenius, B. H. (1997). "Pile capacity by direct CPT and CPTu methods applied to 102 case histories." *Canadian Geotechnical Journal*, NRC Research Press, 34(6), 886–904.
+
+.. _Fellenius1991:
+
+Fellenius, B. (1991). "Chapter 13 - Pile Foundations." *Foundation Engineering Handbook (2nd Edition)*, H.-Y. Fang, ed., Van Nostrand Reinhold Publisher, New York, 511–536.
+
+.. _Fellenius1999:
+
+Fellenius, B. H. (1999). "On the preparation of a piling paper." *A guide prepared for the deep foundations institute annual meeting.* Deep Foundation Institute, Dearborn.
 
 .. _Go1990:
 
@@ -83,6 +107,22 @@ Lacasse, S. (1988), "Uncertainties in Offshore Geotechnical Engineering, Interna
 .. _Long2012:
 
 Long, J., and Anderson, A. (2012). "Improved Design for Driven Piles on a Pile Load Test Program in Illinois". FHWA-ICT-12-011. Illinois Department of Transportation ICT 27-69. `<http://hdl.handle.net/2142/45809>`_
+
+.. _Machairas2018conf:
+
+Machairas N, Highley G, Iskander M (2018). "Evaluation of FHWA pile design method against the FHWA deep foundation load test database version 2.0." *2018 TRB Annual Meeting*, Paper No.18-05548
+
+.. _MDSC2015:
+
+MDSC. (2015). *DrivenPiles - User Manual*. MDSC Inc.
+
+.. _Meyerhof1976:
+
+Meyerhof, G. G. (1976). "Bearing Capacity and Settlement of Pile Foundations." *Journal of the Geotechnical Engineering Division*, 102(3), 195–228.
+
+.. _MS_SSMA:
+
+"Microsoft SQL Server Migration Assistant v6.0 for Access." (n.d.). *Microsoft Download Center*, <https://www.microsoft.com/en-us/download/details.aspx?id=43690> (Apr. 18, 2017).
 
 .. _Nordlund1963:
 
@@ -117,6 +157,10 @@ Olson, R. E., and Shantz, T. J. (2004). "Axial Load Capacity of Piles in Califor
 
 Olson, R. E., and Iskander, M. G. (2009). "Axial Load Capacity of Un-Tapered Piles in Cohesionless Soils." *Contemporary Topics in Deep Foundations*, ASCE, 231–238. `<https://doi.org/10.1061/41021(335)29>`_
 
+.. _oneill2001:
+
+O’Neill, M. W. (2001). "Side resistance in piles and drilled shafts." *Journal of Geotechnical and Geoenvironmental Engineering*. American Society of Civil Engineers, 127(1), 3–16.
+
 .. _Paikowsky2001:
 
 Paikowsky, S. G. (2001). "Load and Resistance Factor Design (LRFD) for dynamic analysis of deep foundations." * Proc., 15th International Conference on Soil Mechanics & Foundation Engineering*, Istanbul, Turkey. 981–984. `<http://icsmge-workshop.lsu.edu/>`_
@@ -128,6 +172,10 @@ Peck, R. B. (1958), "A Study of the Comparative Behavior of Friction Piles." Hig
 .. _Petek2016:
 
 Petek, K., Mitchell, R., and Ellis, H. (2016). *FHWA Deep Foundation Load Test Database Version 2.0 User Manual*. U.S. Department of Transportation Federal Highway Administration, McLean, VA United States. `<https://trid.trb.org/view.aspx?id=1442726>`_ and `<https://www.fhwa.dot.gov/publications/research/infrastructure/structures/bridge/dfltd/index.cfm>`_
+
+.. _Randolph2003:
+
+Randolph M. (2003) "Science and empiricism in pile foundation design", Geotechnique, 53, 10, pp. 847-875.
 
 .. _WebPlotDigitizer:
 
@@ -152,3 +200,7 @@ Tomlinson, M. J. (1957), "The Adhesion of Piles in Clay Soils", *Proc., Fourth I
 .. _Tomlinson1971:
 
 Tomlinson, M. J. (1971), "Some effects of pile driving on skin friction", *Proc., Conference on the Behaviour of Piles*, Institution of Civil Engineers, London, pp. 107–14. `<https://www.icevirtuallibrary.com/doi/full/10.1680/bop.44548.0012>`_
+
+.. _Tomlinson1994:
+
+Tomlinson, M. J. (1994). *Pile Design and Construction Practice, Fourth Edition*. E & FN Spon, London.
