@@ -36,10 +36,6 @@ Aschenbrener, T. B. (1984), "The Settlement Behavior of Single Piles in Clay," M
 
 Associate Committee on the National Building Code (1975), *Canadian Manual on Foundation Engineering*, National Research Council of Canada
 
-.. _Chiu1993:
-
-Chiu, Kuan (1993), "A Study of Axial Load Capacity of Piles from Case Histories", M.S. Thesis, Univ. of Texas (May)
-
 .. _Bowles1977:
 
 Bowles, J. E. (1977). *Foundation Analysis and Design*. McGraw-Hill.
@@ -48,9 +44,17 @@ Bowles, J. E. (1977). *Foundation Analysis and Design*. McGraw-Hill.
 
 Briaud, J.-L., Anderson, J., Perdomo, D., and Tucker, L. M. (1987). "Evaluation of API Method Using 98 Vertical Pile Load Tests." *Proc., Offshore Technology Conference*, 19th Annual Offshore Technology Conference, Houston, Texas. 447-451. `<http://dx.doi.org/10.4043/5411-MS>`_
 
+.. _Buitinck2013:
+
+Buitinck, L., et al. (2013). "API design for machine learning software: experiences from the scikit-learn project." *ECML PKDD Workshop: Languages for Data Mining and Machine Learning*, 108–122.
+
 .. _Caltrans2014:
 
 CALTRANS (2014) *Caltrans Geotechnical Manual.* Office of Geotechnical Services. - <http://www.dot.ca.gov/hq/esc/geotech/geo_manual/manual.html> (Last accessed November 2017)
+
+.. _Chiu1993:
+
+Chiu, Kuan (1993), "A Study of Axial Load Capacity of Piles from Case Histories", M.S. Thesis, Univ. of Texas (May)
 
 .. _Davisson1972:
 
@@ -84,6 +88,10 @@ Fellenius, B. H. (1999). "On the preparation of a piling paper." *A guide prepar
 
 Go, Van (1990), "Axial Static Load Capacity of Untapered Piles in Sand", M.S. Thesis, University of Texas (Aug)
 
+.. _Gunn1998:
+
+Gunn, S. R. (1998). "Support vector machines for classification and regression." *ISIS technical report*, 14, 85–86.
+
 .. _Hannigan2016a:
 
 Hannigan, P. J., Rausche, F., Likins, G. E., Robinson, B. R., and Becker, M. L. (2016a). *Design and Construction of Driven Pile Foundations - Volume I - Report No. FHWA-NHI-16-009*. National Highway Institute, Federal Highway Administration, U.S. Department of Transportation, Washington D.C. `<https://www.fhwa.dot.gov/engineering/geotech/pubs/gec12/index.cfm>`_
@@ -111,6 +119,10 @@ Long, J., and Anderson, A. (2012). "Improved Design for Driven Piles on a Pile L
 .. _Machairas2018conf:
 
 Machairas N, Highley G, Iskander M (2018). "Evaluation of FHWA pile design method against the FHWA deep foundation load test database version 2.0." *2018 TRB Annual Meeting*, Paper No.18-05548
+
+.. _Machairas2018:
+
+Machairas, N., Highley, G. A., and Iskander, M. G. (2018). "Evaluation of FHWA Pile Design Method Against the FHWA Deep Foundation Load Test Database Version 2.0." *Transportation Research Record*, SAGE Publications Ltd.
 
 .. _MDSC2015:
 
@@ -169,6 +181,10 @@ Paikowsky, S. G. (2001). "Load and Resistance Factor Design (LRFD) for dynamic a
 
 Peck, R. B. (1958), "A Study of the Comparative Behavior of Friction Piles." Highway Research Board Special Report No. 36, 72 pp. `<https://trid.trb.org/view/1175996>`_
 
+.. _Pedregosa2011:
+
+Pedregosa, F., et al. (2011). "Scikit-learn: Machine Learning in Python." *Journal of machine learning research, JMLR*, 12(Oct), 2825–2830.
+
 .. _Petek2016:
 
 Petek, K., Mitchell, R., and Ellis, H. (2016). *FHWA Deep Foundation Load Test Database Version 2.0 User Manual*. U.S. Department of Transportation Federal Highway Administration, McLean, VA United States. `<https://trid.trb.org/view.aspx?id=1442726>`_ and `<https://www.fhwa.dot.gov/publications/research/infrastructure/structures/bridge/dfltd/index.cfm>`_
@@ -176,6 +192,10 @@ Petek, K., Mitchell, R., and Ellis, H. (2016). *FHWA Deep Foundation Load Test D
 .. _Randolph2003:
 
 Randolph M. (2003) "Science and empiricism in pile foundation design", Geotechnique, 53, 10, pp. 847-875.
+
+.. _Raschka2015:
+
+Raschka, S. (2015). *Python Machine Learning*. Packt Publishing.
 
 .. _WebPlotDigitizer:
 
@@ -188,6 +208,10 @@ Roling, M. J., Sritharan, S., and Suleiman, M. T. (2010). "Development of LRFD P
 .. _Roling2011:
 
 Roling, M. J., Sri Sritharan, and Suleiman, M. T. (2011). "Introduction to PILOT Database and Establishment of LRFD Resistance Factors for the Construction Control of Driven Steel H-Piles." *Journal of Bridge Engineering*, 16(6), 728–738. `<https://doi.org/10.1061/(ASCE)BE.1943-5592.0000247>`_
+
+.. _Smola2004:
+
+Smola, A. J., and Schölkopf, B. (2004). "A tutorial on support vector regression." *Statistics and computing*. Kluwer Academic Publishers, 14(3), 199–222.
 
 .. _Tavera2016:
 
@@ -204,3 +228,7 @@ Tomlinson, M. J. (1971), "Some effects of pile driving on skin friction", *Proc.
 .. _Tomlinson1994:
 
 Tomlinson, M. J. (1994). *Pile Design and Construction Practice, Fourth Edition*. E & FN Spon, London.
+
+.. _Waskom2018:
+
+Waskom, M., Botvinnik, O., O’Kane, Drew, Hobson, P., Ostblom, J., Lukauskas, S., Gemperline, D. C., Augspurger, T., Halchenko, Y., Cole, J. B., Warmenhoven, J., de Ruiter, J., Pye, C., Hoyer, S., Vanderplas, J., Villalba, S., Kunter, G., Quintero, E., Bachant, P., Martin, M., Meyer, K., Miles, A., Ram, Y., Brunner, T., Yarkoni, T., Williams, M. L., Evans, C., Fitzgerald, C., and Qalieh, A. (2018). *seaborn: statistical data visualization*. `<http://dx.doi.org/10.5281/zenodo.1313201>`

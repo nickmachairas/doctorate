@@ -67,3 +67,4 @@ Members of the Ph.D. Guidance Committee:
    references.rst
    notations.rst
    p1-fhwa/fhwa_paper.rst
+   p2-ifcee/ifcee_paper.rst

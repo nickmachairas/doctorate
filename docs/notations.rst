@@ -40,6 +40,10 @@ Various notation styles are encountered across literature. This document uses sy
 .. |spt_1| replace:: :math:`N_1`
 .. |spt_60| replace:: :math:`N_{60}`
 .. |spt_160| replace:: :math:`(N_1)_{60}`
+.. |Q_c| replace:: :math:`Q_c`
+.. |Q_m| replace:: :math:`Q_m`
+.. |Q_p| replace:: :math:`Q_p`
+.. |modulus| replace:: :math:`E`
 
 :|gwt|: Depth to groundwater table (feet/meters)
 :|layer_height|: Soil layer height (feet/meters)
@@ -61,5 +65,7 @@ Various notation styles are encountered across literature. This document uses sy
 :|spt_1|: SPT N value corrected for overburden stress
 :|spt_60|: SPT N value corrected for 60% energy transfer
 :|spt_160|: SPT N value corrected for energy and overburden stress
-
-
+:|Q_c|: Pile calculated load (capacity), often referred to as nominal resistance, :math:`R_n` (tons/MN)
+:|Q_m|: Pile measured (aka interpreted) capacity as obtained from static load tests (tons/MN)
+:|Q_p|: Pile predicted capacity obtained from statistical and predictive models (tons/MN)
+:|modulus|: Elastic modulus of material, Young's modulus (...)
