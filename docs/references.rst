@@ -26,7 +26,11 @@ Alyahyai, K. S. (1987), "Use of Case Histories in Prediction of Load-Settlement 
 
 .. _API1989:
 
-American Petroleum Institute. (1989). *Recommended Practice for Planning, Designing and Constructing Fixed Offshore Platforms (RP 2A) - 18th Edition*. American Petroleum Institute.
+American Petroleum Institute (1989). *Recommended Practice for Planning, Designing and Constructing Fixed Offshore Platforms (RP 2A) - 18th Edition*. American Petroleum Institute (API).
+
+.. _API1993:
+
+American Petroleum Institute (1993). *API Recommended Practice for Planning, Designing, and Constructing Fixed Offshore Platforms*. Report RP-2A. American Petroleum Institute (API).
 
 .. _Aschenbrenner1984:
 
@@ -84,6 +88,10 @@ Fellenius, B. (1991). "Chapter 13 - Pile Foundations." *Foundation Engineering H
 
 Fellenius, B. H. (1999). "On the preparation of a piling paper." *A guide prepared for the deep foundations institute annual meeting.* Deep Foundation Institute, Dearborn.
 
+.. _Focht1972:
+
+Focht, J. A., and Vijayvergiya, V. N. (1972) *A New Way to Predict Capacity of Piles in Clay*. Offshore Technology Conference. Houston, Texas, May.
+
 .. _Go1990:
 
 Go, Van (1990), "Axial Static Load Capacity of Untapered Piles in Sand", M.S. Thesis, University of Texas (Aug)
@@ -107,6 +115,10 @@ Iskander, M., and Olson, R. E. (1992). "Review of API Guidelines for Pipe Piles 
 .. _Kalavar2000:
 
 Kalavar, S., and Ealy, C. (2000). "FHWA Deep Foundation Load Test Database." *Proc., New Technological and Design Developments in Deep Foundations*, Geo-Denver 2000, August 5-8, 2000, Denver, Colorado, 192–206. `<https://doi.org/10.1061/40511(288)14>`_
+
+.. _Kraft1981:
+
+Kraft, L. M., Jr., Focht, J. A., Jr., and Amerasinghe, S. F. (1981). *Friction Capacity of Piles Driven into Clay*. Journal of the Geotechnical Engineering Division, ASCE, Vol. 107, No. 11, pp. 1521 - 1541.
 
 .. _Lacasse1988:
 
@@ -135,6 +147,10 @@ Meyerhof, G. G. (1976). "Bearing Capacity and Settlement of Pile Foundations." *
 .. _MS_SSMA:
 
 "Microsoft SQL Server Migration Assistant v6.0 for Access." (n.d.). *Microsoft Download Center*, <https://www.microsoft.com/en-us/download/details.aspx?id=43690> (Apr. 18, 2017).
+
+.. _NCHRP2015:
+
+National Academies of Sciences, Engineering, and Medicine (2015). *National Cooperative Highway Research Program (NCHRP) Synthesis 478: Design and Load Testing of Large Diameter Open-Ended Driven Piles*. The National Academies Press, Washington, D.C.
 
 .. _Nordlund1963:
 
@@ -173,6 +189,11 @@ Olson, R. E., and Iskander, M. G. (2009). "Axial Load Capacity of Un-Tapered Pil
 
 O’Neill, M. W. (2001). "Side resistance in piles and drilled shafts." *Journal of Geotechnical and Geoenvironmental Engineering*. American Society of Civil Engineers, 127(1), 3–16.
 
+
+.. _Paikowsky1990:
+
+Paikowsky, S. G. and Whitman, R. V. (1990). *The Effects of Plugging on Pile Performance and Design*. Canadian Geotechnical Journal, Vol. 27, No. 4, pp. 429-440.
+
 .. _Paikowsky2001:
 
 Paikowsky, S. G. (2001). "Load and Resistance Factor Design (LRFD) for dynamic analysis of deep foundations." * Proc., 15th International Conference on Soil Mechanics & Foundation Engineering*, Istanbul, Turkey. 981–984. `<http://icsmge-workshop.lsu.edu/>`_
@@ -196,6 +217,10 @@ Randolph M. (2003) "Science and empiricism in pile foundation design", Geotechni
 .. _Raschka2015:
 
 Raschka, S. (2015). *Python Machine Learning*. Packt Publishing.
+
+.. _Reese2006:
+
+Reese, L. C., Isenhower, W. M., and Wang, S.-T. (2006). *Analysis and design of shallow and deep foundations*. John Wiley & Sons, Hoboken, NJ.
 
 .. _WebPlotDigitizer:
 
@@ -225,9 +250,25 @@ Tomlinson, M. J. (1957), "The Adhesion of Piles in Clay Soils", *Proc., Fourth I
 
 Tomlinson, M. J. (1971), "Some effects of pile driving on skin friction", *Proc., Conference on the Behaviour of Piles*, Institution of Civil Engineers, London, pp. 107–14. `<https://www.icevirtuallibrary.com/doi/full/10.1680/bop.44548.0012>`_
 
+.. _Tomlinson1980:
+
+Tomlinson, M.J. (1980). *Foundation Design and Construction, Fourth Edition*. Pitman Advanced Publishing Program, Boston, MA, 793 p.
+
 .. _Tomlinson1994:
 
 Tomlinson, M. J. (1994). *Pile Design and Construction Practice, Fourth Edition*. E & FN Spon, London.
+
+.. _USACE1991:
+
+U.S. Army Corps of Engineers (1991). *Design of Pile Foundations*. Engineer Manual 1110-2-2906. Washington, DC.
+
+.. _Wang2019a:
+
+Wang, S. T., Arrellaga, J. A., and Vasquez, L. (2019a). *APILE v2019 Technical Manual - A Program for the Study of Driven Piles under Axial Loads*. ENSOFT, Inc.
+
+.. _Wang2019b:
+
+Wang, S. T., Arrellaga, J. A., and Vasquez, L. (2019b). *APILE v2019 User’s Manual - A Program for the Study of Driven Piles under Axial Loads*. ENSOFT, Inc.
 
 .. _Waskom2018:
 

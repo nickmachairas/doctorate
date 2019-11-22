@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Prediction of the Ultimate Capacity of Driven Piles and Optimization of Design Parameters'
+project = 'Modern Data Management and Analysis of Driven Piles'
 copyright = '2019, Nikolaos Machairas'
 author = 'Nikolaos Machairas'
 
@@ -77,3 +77,130 @@ html_static_path = ['_static']
 
 def setup(app):
     app.add_stylesheet('css/custom.css')
+
+
+# -- LaTeX customizations
+
+latex_elements = {
+    'pointsize': '12pt',
+    'geometry': '\\usepackage[top = 1in, bottom = 1in, left = 1.5in, right = 1in]{geometry}',
+    'extraclassoptions': 'oneside',
+    'preamble': r'''
+        
+        %\renewcommand{\baselinestretch}{1.5}
+        %\linespread{1.5}
+        
+        %\usepackage{listings}
+        %\renewcommand\lstlistlistingname{List of Listings}
+        %\lstdefinestyle{inText}{
+        %   basicstyle=\tiny\ttfamily
+        %}
+        %\lstset{frame=single}
+        
+        %\RequirePackage{tocbibind} %% % c omment this to remove page number for following
+        %\addto\captionsenglish{\renewcommand{\contentsname}{Table of contents}}
+        %\addto\captionsenglish{\renewcommand{\listfigurename}{List of figures}}
+        %\addto\captionsenglish{\renewcommand{\listtablename}{List of tables}}
+        % \addto\captionsenglish{\renewcommand{\chaptername}{Chapter}}
+        
+        
+        %% spacing between line
+        \usepackage{setspace}
+        \onehalfspacing
+        %\doublespacing
+        %\singlespacing
+        
+        % line spacing and font size for tables
+        \usepackage{etoolbox}
+        \BeforeBeginEnvironment{longtable}{\begin{singlespace}\footnotesize}
+        \AfterEndEnvironment{longtable}{\end{singlespace}}
+        \BeforeBeginEnvironment{tabulary}{\begin{singlespace}\footnotesize}
+        \AfterEndEnvironment{tabulary}{\end{singlespace}}
+        
+        %% reduce spacing for itemize
+        \usepackage{enumitem}
+        \setlist{nosep}
+        
+        
+
+    ''',
+    'maketitle': r'''
+    
+        \pagenumbering{Roman} %% % to avoid page 1 conflict with actual page 1
+        
+        \begin{titlepage}
+        \centering
+            
+            \textbf{\Large MODERN DATA MANAGEMENT AND}
+            \vspace*{0.05 in}
+
+            \textbf{\Large ANALYSIS OF DRIVEN PILES}
+            \vspace*{0.1 in}
+            
+            \noindent\rule{8cm}{0.4pt}
+            \vspace*{0.2 in}
+            
+            \textbf{\Large DISSERTATION}
+            \vspace*{0.3 in}
+            
+            \textbf{\normalsize Submitted in Partial Fulfillment of}
+            \vspace*{0.15 in}
+            
+            \textbf{\normalsize the Requirements for}
+            \vspace*{0.15 in}
+            
+            \textbf{\normalsize the Degree of}
+            \vspace*{0.2 in}
+            
+            \textbf{\Large DOCTOR OF PHILOSOPHY (CIVIL ENGINEERING)}
+            \vspace*{0.3 in}
+            
+            \textbf{\normalsize at the}
+            \vspace*{0.3 in}
+            
+            \textbf{\LARGE NEW YORK UNIVERSITY}
+            
+            \textbf{\LARGE TANDON SCHOOL OF ENGINEERING}
+            \vspace*{0.3 in}
+            
+            \textbf{\normalsize by}
+            \vspace*{0.3 in}
+            
+            \textbf{\Large Nikolaos Machairas}
+            \vspace*{0.3 in}
+            
+            \textbf{\normalsize January 2020}
+        
+        \end{titlepage}
+        
+        \clearpage
+        
+        \clearpage
+        \pagenumbering{roman}
+        \tableofcontents
+        \cleardoublepage
+        \addcontentsline{toc}{chapter}{\listfigurename}
+        \listoffigures
+        \cleardoublepage
+        \addcontentsline{toc}{chapter}{\listtablename}
+        \listoftables
+        \clearpage
+        \pagenumbering{arabic}
+    ''',
+    'tableofcontents': ' ',
+}
+
+
+from sphinx.highlighting import PygmentsBridge
+from pygments.formatters.latex import LatexFormatter
+
+
+class CustomLatexFormatter(LatexFormatter):
+    def __init__(self, **options):
+        super(CustomLatexFormatter, self).__init__(**options)
+        self.verboptions = r"formatcom=\linespread{1}\scriptsize"
+
+
+PygmentsBridge.latex_formatter = CustomLatexFormatter
+
+# latex_appendices = ['p3-ldoep-calc/ldoep_calc_paper']

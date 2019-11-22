@@ -33,9 +33,11 @@ Various notation styles are encountered across literature. This document uses sy
 .. |pile_area_exterior| replace:: :math:`A_{so}`
 .. |nominal_resistance| replace:: :math:`R_n`
 .. |nominal_shaft| replace:: :math:`R_s`
-.. |nominal_toe| replace:: :math:`R_t`
-.. |unit_shaft| replace:: :math:`r_s`
-.. |unit_toe| replace:: :math:`r_t`
+.. |nominal_toe| replace:: :math:`R_p`
+.. |unit_shaft| replace:: :math:`f_s`
+.. |unit_shaft_interior| replace:: :math:`f_{si}`
+.. |unit_shaft_exterior| replace:: :math:`f_{so}`
+.. |unit_toe| replace:: :math:`q_p`
 .. |spt_uncorr| replace:: :math:`N`
 .. |spt_1| replace:: :math:`N_1`
 .. |spt_60| replace:: :math:`N_{60}`
@@ -59,7 +61,9 @@ Various notation styles are encountered across literature. This document uses sy
 :|nominal_resistance|: Nominal resistance, total (tons/MN)
 :|nominal_shaft|: Nominal shaft resistance (tons/MN)
 :|nominal_toe|: Nominal toe resistance (tons/MN)
-:|unit_shaft|: Unit shaft resistance (...)
+:|unit_shaft|: Unit shaft resistance, adhesion (...)
+:|unit_shaft_interior|: Unit shaft resistance, interior (...)
+:|unit_shaft_exterior|: Unit shaft resistance, exterior (...)
 :|unit_toe|: Unit toe resistance (...)
 :|spt_uncorr|: Uncorrected field SPT resistance value
 :|spt_1|: SPT N value corrected for overburden stress
