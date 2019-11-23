@@ -4,6 +4,10 @@ Bibliography
 ############
 
 
+.. _AASHTO2012:
+
+American Association of State Highway and Transportation Officials (AASHTO). (2012). *AASHTO LRFD Bridge Design Specifications*. Washington, D.C.
+
 .. _Abu-Hejleh2013:
 
 Abu-Hejleh, N., and Anderson, S. (2013). "Memorandum- Deep Foundation Load Test Database (DFLTD)." Federal Highway Administration.
@@ -80,6 +84,10 @@ Dennis, N. D., and Olson, R. E. (1983b). "Axial Capacity of Steel Pipe Piles in 
 
 Eslami, A., and Fellenius, B. H. (1997). "Pile capacity by direct CPT and CPTu methods applied to 102 case histories." *Canadian Geotechnical Journal*, NRC Research Press, 34(6), 886–904.
 
+.. _Fang1991:
+
+Fang, H.-Y. (1991). *Foundation Engineering Handbook (2nd Edition)*. Springer Science & Business Media
+
 .. _Fellenius1991:
 
 Fellenius, B. (1991). "Chapter 13 - Pile Foundations." *Foundation Engineering Handbook (2nd Edition)*, H.-Y. Fang, ed., Van Nostrand Reinhold Publisher, New York, 511–536.
@@ -148,6 +156,10 @@ Meyerhof, G. G. (1976). "Bearing Capacity and Settlement of Pile Foundations." *
 
 "Microsoft SQL Server Migration Assistant v6.0 for Access." (n.d.). *Microsoft Download Center*, <https://www.microsoft.com/en-us/download/details.aspx?id=43690> (Apr. 18, 2017).
 
+.. _NAVFAC1986:
+
+Naval Facilities Engineering Command. (1986). *Design Manual 7.01 (DM-7.01) Soil Mechanics*. NAVFAC, Alexandria, VA.
+
 .. _NCHRP2015:
 
 National Academies of Sciences, Engineering, and Medicine (2015). *National Cooperative Highway Research Program (NCHRP) Synthesis 478: Design and Load Testing of Large Diameter Open-Ended Driven Piles*. The National Academies Press, Washington, D.C.
@@ -198,6 +210,10 @@ Paikowsky, S. G. and Whitman, R. V. (1990). *The Effects of Plugging on Pile Per
 
 Paikowsky, S. G. (2001). "Load and Resistance Factor Design (LRFD) for dynamic analysis of deep foundations." * Proc., 15th International Conference on Soil Mechanics & Foundation Engineering*, Istanbul, Turkey. 981–984. `<http://icsmge-workshop.lsu.edu/>`_
 
+.. _Peck1953:
+
+Peck, R. B., Hanson, W. E., and Thornburn, T. H. (1953). "Foundation Engineering." *Soil Science*.
+
 .. _Peck1958:
 
 Peck, R. B. (1958), "A Study of the Comparative Behavior of Friction Piles." Highway Research Board Special Report No. 36, 72 pp. `<https://trid.trb.org/view/1175996>`_
@@ -233,6 +249,10 @@ Roling, M. J., Sritharan, S., and Suleiman, M. T. (2010). "Development of LRFD P
 .. _Roling2011:
 
 Roling, M. J., Sri Sritharan, and Suleiman, M. T. (2011). "Introduction to PILOT Database and Establishment of LRFD Resistance Factors for the Construction Control of Driven Steel H-Piles." *Journal of Bridge Engineering*, 16(6), 728–738. `<https://doi.org/10.1061/(ASCE)BE.1943-5592.0000247>`_
+
+.. _Shioi1982:
+
+Shioi, Y. and Fukui, J. (1982). *Application of N-Value to Design of Foundation in Japan*. 2nd ESOPT, Vol. 1, 40-93.
 
 .. _Smola2004:
 

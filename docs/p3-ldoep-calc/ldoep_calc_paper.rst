@@ -256,3 +256,288 @@ where:
 Note that for plugged and unplugged analyses, :eq:`ldoep_calc_eq8` through :eq:`ldoep_calc_eq11` must be adjusted according to :eq:`ldoep_calc_eq2` & :eq:`ldoep_calc_eq3`.
 
 
+
+Revised Lambda Method
+=====================
+
+The Lambda method has gone through several revisions since it was first introduced. Focht and Vijayvergiya (:ref:`1972 <Focht1972>`) proposed that side resistance be calculated using :eq:`ldoep_calc_eq12`.
+
+
+
+.. math::
+   :label: ldoep_calc_eq12
+
+   R_s = \sum f_s A_s = \sum \lambda \, (\bar{\sigma'} + 2 \bar{s_u}) \, A_s
+
+
+where:
+
+.. |lambda| replace:: :math:`\lambda`
+.. |sigma_p| replace:: :math:`\bar{\sigma'}`
+.. |su_bar| replace:: :math:`\bar{s_u}`
+
+
+:|lambda|: pile penetration coefficient
+:|sigma_p|: average vertical effective stress between the ground surface and the pile toe
+:|su_bar|: average undrained shear strength
+
+
+Kraft et al. (:ref:`1981 <Kraft1981>`) revised the pile penetration coefficient, :math:`\lambda`, proposing formulas for normally consolidated soils (:eq:`ldoep_calc_eq13`) and overconsolidated soils (:eq:`ldoep_calc_eq14`). When information on consolidation was missing or was unreliable, cohesive soils were assumed to be over-consolidated if :math:`s_u/\sigma` was equal to or larger than 0.1.
+
+
+.. math::
+   :label: ldoep_calc_eq13
+
+   \lambda = 0.178 - 0.016 \ln \pi_3
+
+
+.. math::
+   :label: ldoep_calc_eq14
+
+   \lambda = 0.232 - 0.032 \ln \pi_3
+
+
+where:
+
+.. |pi3| replace:: :math:`\pi_3`
+.. |pi3_eq| replace:: :math:`\dfrac{\pi b f_{s.max}D^2 }{AEU}`
+.. |b| replace:: :math:`b`
+.. |fs_max| replace:: :math:`f_{s.max}`
+.. |A| replace:: :math:`A`
+.. |E| replace:: :math:`E`
+.. |U| replace:: :math:`U`
+
+:|pi3|: |pi3_eq|
+:|b|: pile diameter
+:|fs_max|: peak unit skin friction
+:|D|: embedded pile length
+:|A|: cross-sectional area
+:|E|: modulus of elasticity
+:|U|: pile displacement needed to develop side shear (normally 0.1 inch)
+
+
+
+American Petroleum Institute (API) Method
+=========================================
+
+The API design method is widely regarded as the best method for the design of LDOEPs due to the Institute’s long history in the design of offshore platforms. It was presented in the "Recommended Practice" Report RP-2A in 1986 and was revised in 1987 and 1993. Side resistance in cohesionless soils can be calculated using :eq:`ldoep_calc_eq15`.
+
+
+.. math::
+   :label: ldoep_calc_eq15
+
+   R_s = \sum f_s A_s = \sum K \, \bar{\sigma'} \, \tan \delta \, A_s
+
+
+where:
+
+:|K|: coefficient of lateral earth (0.8 for open-ended piles, 1.0 for full displacement piles)
+:|sigma_p|: average vertical effective stress
+:|delta|: angle of friction between pile and soil (:ref:`API RP-2A, 1993 <API1993>`)
+
+
+Toe resistance in cohesionless soils is given by :eq:`ldoep_calc_eq16`.
+
+
+.. math::
+   :label: ldoep_calc_eq16
+
+   R_p = q_p A_p = \sigma' N_q \, A_p
+
+
+where:
+
+.. |sigma_| replace:: :math:`\sigma'`
+
+:|sigma_|: effective stress at pile toe
+:|N_q|: bearing capacity factor
+
+
+Neither unit shaft resistance, :math:`f_s`, nor unit toe resistance, :math:`q_p`, increase linearly without limit. API RP-2A limiting unit shaft and toe resistance values based on soil consistency, from very loose sand/silt to very dense sand/gravel.
+
+.. TODO: Add API tables
+
+The general equation for shaft resistance in cohesive soils according to the revised API method is presented in :eq:`ldoep_calc_eq17`.
+
+
+.. math::
+   :label: ldoep_calc_eq17
+
+   R_s = \sum f_s A_s = \sum \alpha s_u \, A_s
+
+.. math::
+   :label: ldoep_calc_eq18
+
+   \alpha =
+    \begin{cases}
+     0.5\psi^{-0.5} & \textrm{if} \quad \psi \leq 1.0 \\
+     0.5\psi^{-0.25} & \textrm{if} \quad \psi > 1.0
+    \end{cases} \quad \leq 1.0
+
+where:
+
+.. |psi| replace:: :math:`\psi`
+
+:|alpha|: adhesion coefficient governed by :eq:`ldoep_calc_eq18` where :math:`\psi = s_u/\bar{\sigma'}`
+:|sigma_p|: average vertical effective stress
+
+
+Finally, toe resistance in cohesive soils is given by :eq:`ldoep_calc_eq19`, exactly the same way as for the USACE method.
+
+
+.. math::
+   :label: ldoep_calc_eq19
+
+   R_p = q_p A_p = 9 \, s_u \, A_p
+
+
+Note that for plugged and unplugged analyses, :eq:`ldoep_calc_eq15` through :eq:`ldoep_calc_eq19` must be adjusted according to :eq:`ldoep_calc_eq2` & :eq:`ldoep_calc_eq3`.
+
+
+
+***********************************
+Overview of Pile Load Test Database
+***********************************
+
+DFLTD v.2 contains two subsets of data: (i) tests contained in the DFLTD v.1 database (:ref:`Kalavar and Ealy, 2000 <Kalavar2000>`), and (ii) a second subset of newer load tests referred to as the *Large-Diameter Open End Pile (LDOEP) Database*. For this study we only used tests from the LDOEP Database, since (a) fewer than 10 tests in DFLTD v.1 met the aforementioned scope criteria, and (b) widely perceived notion of the inferior nature of tests in DFLTD v.1, in comparison to the LDOEP Database.
+
+
+.. figure:: figures/ldoep_calc_fig1.png
+   :width: 350 px
+   :name: ldoep_calc_fig1
+
+   Distribution of pile length and diameter
+
+
+
+LDOEP Database Statistics
+=========================
+
+Not all records from the LDOEP database were used in this study due to incomplete or unreliable data. As can be seen in :numref:`ldoep_calc_fig1`, the length of the 62 piles analyzed ranged from 36 to 333 feet with the majority being 100 to 175 feet long (Q1 to Q3 range). The diameter of the piles ranged from 30 to 108 inches with the majority being 40 to 60 inches wide (Q1 to Q3 range).
+
+The LDOEP database included data for 116 static load tests (75%) and 39 statnamic load tests (25%) for a total of 155 tests. Out of the 155 tests, 139 were compressive tests (90%) and 16 were tensile tests. Although dynamic testing is increasingly being relied on due to the very high loads required to conduct static load testing on LDOEPs, the authors opted for using the available static load test so as not to introduce additional variables and provide consistent interpreted capacities for a fair comparison. Furthermore, static load testing is still considered as the reference standard for design verification.
+
+For this study, only compressive static load tests were considered. There was no attempt to factor the effect of setup, at this time, except to exclude tests conducted fewer than four days after pile installation, since most design methods do not explicitly address the role of setup. A summary of LDOEP database statistics, as well as the final dataset is presented in :numref:`ldoep_calc_fig2`.
+
+
+.. figure:: figures/ldoep_calc_fig2.png
+   :width: 450 px
+   :name: ldoep_calc_fig2
+
+   Summary of LDOEP statistics
+
+
+
+***********************************
+INTERACTING WITH THE LDOEP DATABASE
+***********************************
+
+DFLTD v.2, was organized in a relational schema and delivered as a Microsoft Access product with a standard graphical user interface. The data was provided in multiple tables, that at times contained similar or conflicting information for the same record.  On a previous study of driven pile capacities, Machairas et al. (:ref:`2018 <Machairas2018>`) migrated DFLTD v.2 from Microsoft Access to a cloud-based SQL relational database. The same cloud-based database was used in this paper.
+
+
+Soil Data Integrity Check, Completion and Curation
+==================================================
+
+The single greatest challenge, when dealing with geotechnical databases has been missing or misinterpreted values for soil properties. When calculating the capacity of a pile using any of the four design methods, for each layer of the stratum there must be at a minimum available values for (A: cohesive soils) total unit weight and undrained shear strength and (B: cohesionless soils) total unit weight and internal friction angle. If any of these values is missing, there are two options: either reject the database record or attempt to infer the missing values from other available information. In cases where data is plentiful, a trade-off analysis can help make the correct decision. However, when it comes to pile load test databases, information is so scarce that approximation of missing data is necessitated.
+
+To put things into perspective, specifically in the LDOEP database, unit weights were assigned to multiple tables. Out of the 2,422 delineated layers from borings only 345 layers (14%) have interpreted total unit weight values. Also, in the ``DeepFoundationSoilLayer`` table out of the 1,374 layers, 367 layers (27%) had interpreted total unit weight values, 143 layers (10%) had interpreted cohesion values and only 34 layers (2%) had interpreted friction angle values.
+
+All soil data in our database were reviewed for completeness by a practicing licensed Professional Engineer including lab data, boring and CPT results, soil type/description, SPT-N values, CPT sounding parameters (:math:`f_s`, :math:`q_c` or :math:`q_t`, friction ratio, and other related data). Unit conversions were performed to standard English Units. The PE generated detailed soil profiles with soil properties either by generating the soil profile using the references and methodology mentioned in this study, or by using the interpreted soil profiles and their properties provided by the database, if in agreement with the exploration logs of the database, as described above.
+
+Where derived profiles were provided or when interpreted soil profiles were given, all soil properties were checked against the explorations in order to verify that the derived profiles matched the exploration log as far as soil description and SPT-N values are concerned. The inspection consisted of an examination on whether the interpreted soil profiles agreed with the exploration logs. A detailed log of inconsistencies was kept. For instance, a cohesion value of 500 psf when N values for a clay layer were on the order of 25 to 30 blows/foot or an internal friction angle of 30 degrees when N values for the sand layer were 10, are clearly unreasonable and generally not in agreement with standard geotechnical engineering practice. In such cases, we overrode interpreted soil profiles as needed based on logs or made a note if or where the interpreted values for the derived soil profiles were used. Where derived profiles were not provided, a design profile was created using existing exploration data. However, in records were various existing exploration data existed with no clear indication which exploration applies to which pile load test, the record was determined inconclusive and was excluded altogether from the study.
+
+
+
+Soil Property Approximations
+============================
+
+Unless laboratory data was recorded in the database, the following approximations were performed using SPT N-values and relevant soil properties.
+
+- Correlation between friction angle, :math:`\phi`, and SPT N-values for cohesionless soils was performed using the relationship from Peck et al. (:ref:`1953 <Peck1953>`). For convenience, :eq:`ldoep_calc_eq20` from Shioi and Fukui (:ref:`1982 <Shioi1982>`) was applied to available SPT N-values which translates the Peck relationship to a mathematical format. A limiting friction angle of 48 degrees was applied for gravelly sands or sandy gravels which were very dense (N > 80).
+- Undrained shear strength for cohesive soils was approximated based on the guidelines provided by Naval Facilities Engineering Command (NAVFAC) Design Manual 7.01 (:ref:`1986 <NAVFAC1986>`) and ASCE (1996), as shown in :numref:`ldoep_calc_table1`.
+- Total unit weight of soil was approximated based on the values also shown in :numref:`ldoep_calc_table1`.
+- Rock was modeled as very dense cohesionless soil, but this was encountered in very few cases.
+
+
+.. math::
+   :label: ldoep_calc_eq20
+
+   \phi = 0.3 N + 27 \leq 48^\circ
+
+
+
+.. table:: Approximation of soil properties from SPT data (adapted from Fang et al., :ref:`1991 <Fang1991>` and NAVFAC DM 7.01, ASCE 1996)
+   :widths: 10, 25, 10, 25, 30
+   :align: center
+   :name: ldoep_calc_table1
+
+   +-------+---------------------+---------+-------------------+-----------------+
+   | Soil  | Density/            | N       | Total Unit Weight | Undrained Shear |
+   |       | Consistency         |         | (pcf)             | Strength (psf)  |
+   +=======+=====================+=========+===================+=================+
+   |       | Very Loose          | < 4     | 90 - 105          |                 |
+   |       +---------------------+---------+-------------------+                 |
+   |       | Loose               | 5 - 10  | 95 - 110          |                 |
+   |       +---------------------+---------+-------------------+                 |
+   | SANDS | Medium Dense        | 11 - 30 | 105 - 120         | n/a             |
+   |       +---------------------+---------+-------------------+                 |
+   |       | Dense               | 31 - 50 | 115 - 130         |                 |
+   |       +---------------------+---------+-------------------+                 |
+   |       | Very Dense          | > 50    | 125 - 140         |                 |
+   +-------+---------------------+---------+-------------------+-----------------+
+   | CLAYS | Very Soft           | 0 - 2   | 90 - 100          | 100 - 250       |
+   |       +---------------------+---------+-------------------+-----------------+
+   |       | Soft                | 3 - 4   | 100 - 110         | 250 - 500       |
+   |       +---------------------+---------+-------------------+-----------------+
+   |       | Firm                | 5 - 8   | 105 - 125         | 500 - 1,000     |
+   |       +---------------------+---------+-------------------+-----------------+
+   |       | Stiff               | 9 - 16  | 115 - 130         | 1,000 - 2,000   |
+   |       +---------------------+---------+-------------------+-----------------+
+   |       | Very Stiff          | 17 - 32 | 120 - 140         | 2,000 - 4,000   |
+   |       +---------------------+---------+-------------------+-----------------+
+   |       | Hard                | > 32    | > 130             | > 4,000         |
+   +-------+---------------------+---------+-------------------+-----------------+
+
+
+
+********************
+Analytical Procedure
+********************
+
+In order to calculate nominal pile capacities, this study employed the four pile design methods described above. For interpreted (also referred to as *measured*) capacity we followed The American Association of State Highway and Transportation Officials (AASHTO) Bridge Design Specifications (:ref:`2012 <AASHTO2012>`) where for piles wider than 36 inches in diameter, the modified Davisson criterion (:eq:`ldoep_calc_eq21`) must be used.
+
+
+.. math::
+   :label: ldoep_calc_eq21
+
+   \Delta = \dfrac{QL}{AE} + \dfrac{b}{30}
+
+where:
+
+.. |Q| replace:: :math:`Q`
+.. |L| replace:: :math:`L`
+
+:|Q|: test load
+:|L|: total length of pile
+:|A|: cross-sectional area
+:|E|: material modulus
+:|b|: pile diameter/width
+
+
+
+Internal Plug, Plugged and Unplugged Conditions
+===============================================
+
+Three design conditions that were considered for each method, as follows:
+
+- **Internal Plug Condition.** Toe resistance is calculated based on :eq:`ldoep_calc_eq2` & :eq:`ldoep_calc_eq3` and is taken as the smaller of (1) the calculated internal friction along the inside walls of the pile inner diameter plus the tip resistance from the pile annulus section, and (2) the full toe area assuming a plugged case (plugged condition). Internal unit skin friction is assumed to be the same as exterior unit skin friction for cohesionless materials, however for cohesive materials :math:`f_{si}` is taken as 0.4 :math:`f_{so}` by specifying a value for remolded shear strength that is 40% the undrained shear strength for cohesive materials.
+- **Plugged Condition.** In this case it is assumed that the pile behaves as a full displacement pile (closed-ended). Therefore, the total capacity is the sum of skin friction on the exterior wall plus end bearing of the full toe area (:eq:`ldoep_calc_eq2`).
+- **Unplugged (coring) Condition.** It is assumed that the pile cores like a "cookie cutter" through the soil and the capacity is the sum of skin friction on the exterior wall plus end bearing or tip resistance of the pile section only (annulus section). The internal friction along the pile inside diameter is ignored completely (:eq:`ldoep_calc_eq3`).
+
+
+Batch Processing
+================
+
+We employed *APILE Offshore 2019* by ENSOFT Inc. for all 62 pile capacity calculations, however input piles were automatically generated from the database using a custom Python program. In order to expedite the process and further reduce the risk of user-induced errors during data entry and model setup, all necessary APILE input data files (``.ap9d``) were automatically produced using a custom-made Python program. The Python program would query the research team’s cloud-based database for all required LDOEPs and geotechnical properties. The process was repeated for all 62 piles and all plugging conditions producing 186 APILE data files (62 piles x 3 plugging conditions).
+
+Another Python program was developed that automatically extracted all required information from all APILE output files and combined the results in a single data file, ready to be analyzed and plotted as presented in the following sections.
