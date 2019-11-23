@@ -116,6 +116,8 @@ latex_elements = {
         \AfterEndEnvironment{longtable}{\end{singlespace}}
         \BeforeBeginEnvironment{tabulary}{\begin{singlespace}\footnotesize}
         \AfterEndEnvironment{tabulary}{\end{singlespace}}
+        \BeforeBeginEnvironment{tabular}{\begin{singlespace}\footnotesize}
+        \AfterEndEnvironment{tabular}{\end{singlespace}}
         
         %% reduce spacing for itemize
         \usepackage{enumitem}
@@ -173,10 +175,24 @@ latex_elements = {
         
         \end{titlepage}
         
-        \clearpage
         
-        \clearpage
         \pagenumbering{roman}
+        
+        \newpage
+            \chapter*{Committee signature page}
+        
+        \newpage
+            \chapter*{Vita}
+        
+        \newpage
+            \chapter*{Acknowledgements}
+        
+        \newpage
+            \chapter*{Dedication Page}
+        
+        \newpage
+            \chapter*{Abstract}
+        
         \tableofcontents
         \cleardoublepage
         \addcontentsline{toc}{chapter}{\listfigurename}

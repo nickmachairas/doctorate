@@ -242,6 +242,10 @@ Smola, A. J., and Schölkopf, B. (2004). "A tutorial on support vector regressio
 
 Tavera, E., Rix, G., Burnworth, G., and Jung, J. (2016). *Calibration of Region-Specific Gates Pile Driving Formula for LRFD*. Louisiana Department of Transportation and Development. `<https://rosap.ntl.bts.gov/view/dot/30895>`_
 
+.. _Terzaghi1967:
+
+Terzaghi, K. and Peck, R. B. *Soil Mechanics in Engineering Practice*. New York, Wiley. 1967
+
 .. _Tomlinson1957:
 
 Tomlinson, M. J. (1957), "The Adhesion of Piles in Clay Soils", *Proc., Fourth International Conference on Soil Mechanics and Foundation Engineering*, Thomas Telford Ltd., London, Vol. 2, pp. 66-71.
