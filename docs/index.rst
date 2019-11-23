@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Prediction of the Ultimate Capacity of Driven Piles and Optimization of Design Parameters
-=========================================================================================
+Modern Data Management and Analysis of Driven Piles
+===================================================
 
 .. only:: html
 
@@ -62,7 +62,7 @@ Prediction of the Ultimate Capacity of Driven Piles and Optimization of Design P
    1-intro/_intro.rst
    2-database/_database.rst
    references.rst
-   notations.rst
+   90-piles-notations/notations.rst
    p1-fhwa/fhwa_paper.rst
    p2-ifcee/ifcee_paper.rst
    p3-ldoep-calc/ldoep_calc_paper.rst

@@ -1,15 +1,96 @@
-###########################
+############################################
+Pile Schematics, Notations and Abbreviations
+############################################
+
+
+***************
+Pile Schematics
+***************
+
+Consolidating the various data sources presented the challenge of referring to the same pile features with different names and symbols. In an effort to standardize and facilitate analytical processes, the following schematics were produced showing all relevant symbols.
+
+
+Steel H-Piles
+=============
+
+Schematic shown in :numref:`hpile_schematic`.
+
+.. figure:: figures/h_piles.png
+   :width: 450 px
+   :name: hpile_schematic
+
+   H-Pile Schematic
+
+
+
+Pipe Piles (Open and Closed Ended)
+==================================
+
+Schematic shown in :numref:`pipe_pile_schematic`.
+
+.. figure:: figures/pipe_piles.png
+   :width: 450 px
+   :name: pipe_pile_schematic
+
+   Pipe Pile Schematic
+
+
+
+Concrete Piles (All Sections)
+=============================
+
+Schematic shown in :numref:`concrete_pile_schematic`.
+
+.. figure:: figures/concrete_piles.png
+   :width: 450 px
+   :name: concrete_pile_schematic
+
+   Driven Concrete Pile Schematic
+
+
+.. math::
+   :label: concrete_pile_alpha_eq
+
+   \alpha = b \tan \dfrac{\pi}{n}
+
+
+Timber Piles
+============
+
+Schematic shown in :numref:`timber_pile_schematic`.
+
+.. figure:: figures/timber_piles.png
+   :width: 450 px
+   :name: timber_pile_schematic
+
+   Timber Pile Schematic
+
+
+Cast-in-place Concrete Piles
+============================
+
+Schematic shown in :numref:`cipc_pile_schematic`.
+
+.. figure:: figures/cipc_piles.png
+   :width: 450 px
+   :name: cipc_pile_schematic
+
+   Cast-in-place Concrete Pile Schematic
+
+
+
+
+
+***************************
 Notations and Abbreviations
-###########################
-
-
+***************************
 
 Various notation styles are encountered across literature. This document uses symbols adopted from :ref:`Hannigan et al., 2016a <Hannigan2016a>` and :ref:`Fellenius, 1999 <Fellenius1999>`. :numref:`notations_figure` presents a quick reference to the most commonly used symbols. See below for the complete list.
 
 
 
 .. TODO: update figure with soil properties and pile x-areas
-.. figure:: _static/notations.png
+.. figure:: figures/notations.png
    :width: 350 px
    :name: notations_figure
 
