@@ -34,30 +34,3 @@ The database was designed and distributed in Microsoft Access. Information in th
 
    E-R Diagram of the Iowa PILOT Database
 
-
-.. csv-table:: Iowa PILOT Database *Pile Load Test Records* Table Attributes
-   :file: tables/iowa_attributes1.csv
-   :header-rows: 1
-   :widths: 20, 30, 20, 30
-   :name: IowaAttrTable1
-
-
-.. csv-table:: Iowa PILOT Database *Average Soil Profile* Table Attributes
-   :file: tables/iowa_attributes2.csv
-   :header-rows: 1
-   :widths: 20, 30, 20, 30
-   :name: IowaAttrTable2
-
-
-.. csv-table:: Iowa PILOT Database *Borehole/SPT Information* Table Attributes
-   :file: tables/iowa_attributes3.csv
-   :header-rows: 1
-   :widths: 20, 30, 20, 30
-   :name: IowaAttrTable3
-
-
-.. csv-table:: Iowa PILOT Database *Static Load Test Results* Table Attributes
-   :file: tables/iowa_attributes4.csv
-   :header-rows: 1
-   :widths: 20, 30, 20, 30
-   :name: IowaAttrTable4

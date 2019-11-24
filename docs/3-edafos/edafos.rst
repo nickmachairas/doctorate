@@ -623,8 +623,7 @@ Most of the values of total unit weight (TUW, a.k.a. moist unit weight), :math:`
    \gamma_t = \bigg( \dfrac{1 + w}{1 + w G_s} \bigg) \; G_s \gamma_w
 
 
-Prof. Olson
-used cases in which water contents were measured to calculate total unit weights for all soils and then performed correlations of those values of total unit weight with whatever other properties were available, meaning undrained shear strength, :math:`s_u`, for cohesive soils, and SPT-N values for all soils, and used these other properties to estimate total unit weight for cases in which water contents were not defined. These correlations were often bad but at least they gave a consistent basis for estimating :math:`\gamma_t`. The correlations are shown below for cohesive and cohesionless soils.
+Prof. Olson used cases in which water contents were measured to calculate total unit weights for all soils and then performed correlations of those values of total unit weight with whatever other properties were available, meaning undrained shear strength, :math:`s_u`, for cohesive soils, and SPT-N values for all soils, and used these other properties to estimate total unit weight for cases in which water contents were not defined. These correlations were often poor but they gave a consistent basis for estimating :math:`\gamma_t`. The correlations are shown below for cohesive and cohesionless soils.
 
 
 .. rubric:: Cohesive Soils
@@ -634,29 +633,41 @@ Values for undrained shear strength may come from the following:
 - Field vane shearing strength (:math:`s_{u.FV}`)
 - Shearing strength from Torvane, penetrometer, etc (:math:`s_{u.MS}`)
 - Shearing strength from triaxial tests (:math:`s_{u.QT}`)
-- Unconfined shearing strength (:math:`s_{u.QU}`)
+- Unconfined shearing strength (:math:`s_{u.UU}`)
 
 
 Priority for choosing a value for :math:`s_u` if multiple are available is:
 
-.. math:: s_{u.QT} > s_{u.QU} > s_{u.MS} > s_{u.FV}
+.. math:: s_{u.QT} > s_{u.UU} > s_{u.MS} > s_{u.FV}
 
-But use as:
+But must adjust according to :eq:`olson_ss_cases`:
 
 .. math::
+   :label: olson_ss_cases
 
    s_u =
    \begin{cases}
    s_{u.QT} \\
-   1.2 \times s_{u.QU} \\
+   1.2 \times s_{u.UU} \\
    1.2 \times s_{u.MS} \\
    0.7 \times s_{u.FV}
    \end{cases}
 
 
+
+Correlations were adjusted depending on the specific type of the cohesive soil. Different equations were produced for clays (CLAY) and silty clays (SICL), clayey silts (CLSI) and sandy clays (SACL). All cases are summarized in :eq:`olson_tuw_clay_cases` and :eq:`olson_tuw_sicl_cases`. :math:`s_u` must be provided in ksf and :math:`\gamma_t` is returned in pcf.
+
+
+.. note::
+
+   If both SS and N were undefined, TUW was set to 0 as code that values of EVSO cannot be defined.
+
+
+
 For clay (``CLAY``):
 
 .. math::
+   :label: olson_tuw_clay_cases
 
    \gamma_t =
    \begin{cases}
@@ -669,6 +680,7 @@ For clay (``CLAY``):
 For silt/clay (``SICL``), clay/silt (``CLSI``) and sand/clay (``SACL``):
 
 .. math::
+   :label: olson_tuw_sicl_cases
 
    \gamma_t =
    \begin{cases}
@@ -678,20 +690,42 @@ For silt/clay (``SICL``), clay/silt (``CLSI``) and sand/clay (``SACL``):
    \end{cases}
 
 
+
+.. .. math::
+      :label: olson_tuw_clay_cases_alt
+
+      \gamma_t =
+      \begin{cases}
+         \textrm{for} \quad \textrm{CLAY:} & \begin{cases}
+            113.9 + 9.276 \ln(s_u) & \textrm{ if } \quad s_u > 0 \\
+            107.5 + 5.116 \ln(N) & \textrm{ otherwise }
+         \end{cases} \\ \\
+         \textrm{for} \quad \textrm{SICL, CLSI, SACL:} & \begin{cases}
+            113 + 22 \times s_u & \textrm{ if } \quad 0.5 < s_u < 1.5 \\
+            113 + 9.276 \ln(N) & \textrm{ if } \quad N > 0
+         \end{cases}
+      \end{cases}
+
+
+
 .. rubric:: Cohesionless Soils
 
-For sand (``SAND``):
 
-.. math:: \gamma_t = 126 \textrm{ pcf}
+Correlations for cohesionless soils depended on the soil type. :eq:`olson_tuw_sand_cases` summarises cases for sands (SAND), silty sands (SISA), sandy silts (SASI), silts (SILT), cobbles/gravels (CBGV), gravels (GRAV), sandy gravels (SAGV), gravely sands (GVSA), cobbles (COBB).
 
-For silt/sand (``SISA``), sand/silt (``SASI``) and silt (``SILT``):
 
-.. math:: \gamma_t = 125 + 0.15 N \textrm{ pcf} < 135 \textrm{ pcf}
+.. math::
+   :label: olson_tuw_sand_cases
 
-For cobble/gravel (``CBGV``), gravel (``GRAV``), sand/gravel (``SAGV``),
-gravel/sand (``GVSA``) and cobbles (``COBB``):
+   \gamma_t =
+   \begin{cases}
+      126 \textrm{ pcf} & \textrm{for} \quad \textrm{SAND} \\
+      125 + 0.15 N < 135 \textrm{ pcf} & \textrm{for} \quad \textrm{SISA, SASI, SILT} \\
+      132 \textrm{ pcf} & \textrm{for} \quad \textrm{CBGV, GRAV, SAGV, GVSA, COBB}
+   \end{cases}
 
-.. math:: \gamma_t = 132 \textrm{ pcf}
+
+
 
 
 .. rubric:: Olson Soil Classification to USCS

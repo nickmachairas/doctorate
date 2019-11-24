@@ -44,6 +44,14 @@ Aschenbrener, T. B. (1984), "The Settlement Behavior of Single Piles in Clay," M
 
 Associate Committee on the National Building Code (1975), *Canadian Manual on Foundation Engineering*, National Research Council of Canada
 
+.. _Bachus2018:
+
+Bachus, R., Cadden, A., and Machairas, N. (2018). "DIGGS Does Pipelines." *Pipelines 2018*, American Society of Civil Engineers (ASCE), 281–289.
+
+.. _Bachus2019:
+
+Bachus, R., Machairas, N., and Cadden, A. (2019). "DIGGS Does Deep Foundations." *Proceedings of the 44th Annual Conference on Deep Foundations*, Deep Foundation Institute, Chicago IL, October 15-18 2019, 814–827.
+
 .. _Bowles1977:
 
 Bowles, J. E. (1977). *Foundation Analysis and Design*. McGraw-Hill.
@@ -195,7 +203,7 @@ Olson, R. E. (1990), "Axial Load Capacity of Steel Pipe Piles in Sand", *Proc. O
 
 .. _Olson1994:
 
-Olson, R. E., and Iskander, M. (1994). "Axial Load Capacity of Pipe Piles in Sands." *Proc., First Regional Conference and Exhibition on Advanced Technology in Civil Engineering*, ASCE–SAS, 383–394.
+Olson, R. E., and Iskander, M. (1994). "Axial Load Capacity of Pipe Piles in Sands." *Proc., First Regional Conference and Exhibition on Advanced Technology in Civil Engineering*, Saudi Arabia, ASCE–SAS, Manama Bahrain, 383–394.
 
 .. _Olson1998:
 

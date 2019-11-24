@@ -82,6 +82,10 @@ def setup(app):
 
 # -- LaTeX customizations
 
+latex_appendices = ['a1-db-tables/_db_appendix']
+
+texinfo_appendices = ['a1-db-tables/_db_appendix']
+
 latex_elements = {
     'pointsize': '12pt',
     'geometry': '\\usepackage[top = 1in, bottom = 1in, left = 1.5in, right = 1in]{geometry}',
@@ -221,5 +225,3 @@ class CustomLatexFormatter(LatexFormatter):
 
 
 PygmentsBridge.latex_formatter = CustomLatexFormatter
-
-# latex_appendices = ['p3-ldoep-calc/ldoep_calc_paper']
