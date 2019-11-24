@@ -57,13 +57,14 @@ Modern Data Management and Analysis of Driven Piles
 
 .. toctree::
    :numbered:
-   :maxdepth: 4
+   :maxdepth: 5
 
    1-intro/_intro.rst
    2-database/_database.rst
    3-edafos/edafos.rst
+   4-nominal/_nominal_capacity.rst
    references.rst
    90-piles-notations/notations.rst
    p1-fhwa/fhwa_paper.rst
    p2-ifcee/ifcee_paper.rst
-   p3-ldoep-calc/ldoep_calc_paper.rst
+

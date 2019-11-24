@@ -1,10 +1,7 @@
-#############################################################################
-Evaluation of Pile Design Methods for Large Diameter Open-Ended Piles (LDOEP)
-#############################################################################
 
-.. rubric:: Nikolaos Machairas, Andrew Rizk and Magued G. Iskander
+For Large Diameter Open-Ended Piles (LDOEP)
+===========================================
 
-.. rubric:: Abstract
 
 Large-Diameter Open-Ended Piles (LDOEP) are increasingly being used for support of infrastructure projects. Yet many of the methods in current use for calculating pile capacity are based on databases of interpreted load test data for small diameter piles. The scope of this study was limited to impact or vibratory driven un-tapered steel and concrete pipe-piles, larger than 30 inches in diameter, loaded in compression, using a static load test.
 
@@ -14,9 +11,9 @@ Scatter between measured (interpreted) and predicted capacities is significant, 
 
 
 
-************
+
 Introduction
-************
+------------
 
 Large Diameter Open-Ended Pipe Piles (LDOEPs) have enjoyed limited use for transportation infrastructure. LDOEPs are ideal for support of heavy axial loads, high lateral forces, and large bending moments. LDOEPs are widely used in the offshore industry where these concerns are paramount. In recent years LDOEPs have also enjoyed considerable use for support of wind energy turbine converters. Use of LDOEPs for support of bridge structures has been increasing, especially where liquefiable layers are encountered, or seismic concerns dominate. However, the rate of adoption has been limited by the lack of design guidance geared towards bridge structures.
 
@@ -35,369 +32,20 @@ For this study, several programs were developed in Python, and in conjunction wi
 The scope was limited to impact or vibratory driven un-tapered steel and concrete pipe-piles, larger than 30 inches in diameter, loaded in compression, using a static load test. Although LDOEP are sometimes defined to include piles larger than 36 in. in diameter, in this study, LDOEP was defined to include piles larger than 30 inches in diameter for a number of reasons. First, to increase the size of available load tests for analysis by 15%. Second, because piles in the 30 to 36 inches are among the most commonly used piles sizes for support of infrastructure. Third, the design methods have been developed using piling that was largely smaller than 30 in. in diameter. Finally, the performance of standard diameter piling is provided in the paper, and it fits well with larger diameter piles.
 
 
+.. removed stuff from here
 
-*******************
-Pile Design Methods
-*******************
-
-The ultimate bearing capacity, :math:`R_n` (aka nominal resistance), of driven piles is typically given by nominally adding the shaft and toe resistances (:eq:`ldoep_calc_eq1`).
-
-
-.. math::
-   :label: ldoep_calc_eq1
-
-   R_n = R_s + R_p = \sum f_s A_s + q_p A_p
-
-
-where:
-
-.. |R_s| replace:: :math:`R_s`
-.. |R_p| replace:: :math:`R_p`
-.. |A_s| replace:: :math:`A_s`
-.. |A_p| replace:: :math:`A_p`
-.. |f_s| replace:: :math:`f_s`
-.. |q_p| replace:: :math:`q_p`
-
-:|R_s|: Shaft resistance
-:|f_s|: Unit shaft resistance, adhesion
-:|A_s|: Shaft surface area
-:|R_p|: Toe resistance
-:|q_p|: Unit toe resistance
-:|A_p|: Toe cross sectional area
-
-
-For open-ended piles, soil plugging must be taken into account. In the case where a pile is plugged, capacity is calculated with :eq:`ldoep_calc_eq1` using the external side resistance and the toe resistance from the full width of the toe. However, when an open-ended pile cores the soil stratum while driving, the pile is modelled as unplugged or partially plugged and :eq:`ldoep_calc_eq1` is adjusted to account for internal and external side resistance as well as toe resistance from the pile’s annulus cross-sectional area. FHWA advises, following Paikowsky and Whitman (:ref:`1990 <Paikowsky1990>`) recommendations, that static resistance of an open-ended pipe pile be calculated from the lesser of :eq:`ldoep_calc_eq2` for plugged conditions and :eq:`ldoep_calc_eq3` for unplugged conditions (:ref:`Hannigan et al., 2016a <Hannigan2016a>`).
-
-
-.. math::
-   :label: ldoep_calc_eq2
-
-   R_n = \sum f_{so} A_{so} + q_{p} A_{pp}
-
-
-.. math::
-   :label: ldoep_calc_eq3
-
-   R_n = \sum f_{so} A_{so} + \sum f_{si} A_{si} + q_{p} A_{p} - W_p
-
-
-where:
-
-
-.. |f_so| replace:: :math:`f_{so}`
-.. |f_si| replace:: :math:`f_{si}`
-.. |A_so| replace:: :math:`A_{so}`
-.. |A_si| replace:: :math:`A_{si}`
-.. |A_pp| replace:: :math:`A_{pp}`
-.. |W_p| replace:: :math:`W_p`
-
-:|f_so|: exterior unit shaft resistance
-:|A_so|: exterior surface area
-:|f_si|: interior unit shaft resistance
-:|A_si|: interior surface area
-:|A_pp|: cross sectional area of pile and soil plug at pile toe
-:|W_p|: weight of soil plug
 
 
 For a comprehensive comparison, this study adopted four popular pile design methods that were identified in NCHRP 478 (:ref:`2015 <NCHRP2015>`): (a) the Federal Highway Administration (FHWA) method, (b) the United States Army Corps of Engineers (USACE) method, (c) the Revised Lambda method and (d) the Revised American Petroleum Institute (API) method. Details of each design method, and the specific parameters employed are available in Reese et al. (:ref:`2006 <Reese2006>`). Several other methods are sometimes used for LDOEPs including Fugro, NGI, ICP, UWA, however all are CPT based. Although the CPT provides a superior tool for geotechnical investigations, the authors did not include CPT methods in this study, (1) in an effort to reduce the variables affecting the analysis. Also, (2) available CPT data was sufficiently complete to allow capacity calculations for only a dozen records.
 
 
 
-Federal Highway Administration (FHWA) Method
-============================================
+.. removed stuff from here
 
-The FHWA Report on the Design and Construction of Driven Pile Foundations (:ref:`Hannigan et al., 2016a <Hannigan2016a>`; :ref:`Hannigan et al., 2016b <Hannigan2016b>`) recommends that for pile diameters less than 18 inches, nominal resistance be calculated using the Nordlund method (:ref:`Nordlund, 1963 <Nordlund1963>`) for cohesionless soils and the :math:`\alpha`-method (:ref:`Tomlinson, 1980 <Tomlinson1980>`) for cohesive soils. Although neither method has been developed for piles larger than 18 inches in diameter, they are the most widely used methods in State DOTs for the design of all driven piles, including LDOEPs (:ref:`NCHRP 2015 <NCHRP2015>`).
 
-For uniform (non-tapered) piles, side resistance by the Nordlund method is calculated using :eq:`ldoep_calc_eq4` and toe resistance is calculated using :eq:`ldoep_calc_eq5`. The method uses corrected SPT N-values (or, preferably, lab-produced strength parameters) to determine the soil friction angle for each soil layer and uses a series of published tables and charts to assume correlations for the coefficient of lateral earth pressure and the soil-pile friction angle. These values are used along with the effective overburden pressure, to determine the side resistance for each defined layer. Pile tip bearing capacity factors are also correlated from the soil friction angle using charts. Upper limits are placed upon skin friction and pile tip resistance, :math:`R_p`, in order to limit the magnitude of the computed unit skin and tip resistance and calculate a safer ultimate pile capacity.
 
-
-
-.. math::
-   :label: ldoep_calc_eq4
-
-   R_s = \sum K_d \, C_F \, \sigma'_d \, \sin(\delta) \, C_d \, \Delta d
-
-
-.. math::
-   :label: ldoep_calc_eq5
-
-   R_p = \alpha_t \, N'_q \, A_p \, \sigma'_p
-
-
-where:
-
-
-.. |K_d| replace:: :math:`K_d`
-.. |C_F| replace:: :math:`C_F`
-.. |s_d| replace:: :math:`\sigma'_d`
-.. |delta| replace:: :math:`\delta`
-.. |C_d| replace:: :math:`C_d`
-.. |D_d| replace:: :math:`\Delta_d`
-.. |a_t| replace:: :math:`\alpha_t`
-.. |N_q| replace:: :math:`N'_q`
-.. |s_p| replace:: :math:`\sigma'_p`
-
-:|K_d|: coefficient of lateral earth pressure at depth :math:`d`
-:|C_F|: correction factor for |K_d| when :math:`\delta \neq \phi`
-:|s_d|: vertical effective stress at the center of depth increment :math:`d`
-:|delta|: friction angle between pile and soil
-:|C_d|: pile perimeter at depth :math:`d`
-:|D_d|: length of pile segment
-:|a_t|: dimensionless factor (dependent on pile depth width relationship)
-:|N_q|: bearing capacity factor
-:|s_p|: vertical effective stress at pile toe
-
-
-
-In cohesive layers, side and toe resistances calculated by the :math:`\alpha`-method are based on :eq:`ldoep_calc_eq6` & :eq:`ldoep_calc_eq7`. When dealing with mixed soil profiles, Tomlinson provides adjustment factors to account for drag-down of weaker soils into stiffer layers, a phenomenon that occurs during pile driving and reduces the side resistance. These factors were accounted for in our calculations.
-
-
-
-.. math::
-   :label: ldoep_calc_eq6
-
-   R_s = \sum f_s A_s = \sum C_\alpha A_s = \sum \alpha \, s_u \, A_s
-
-
-.. math::
-   :label: ldoep_calc_eq7
-
-   R_p = q_p A_p = N_c s_u A_p
-
-
-
-where:
-
-.. |C_a| replace:: :math:`C_\alpha`
-.. |alpha| replace:: :math:`\alpha`
-.. |s_u| replace:: :math:`s_u`
-.. |N_c| replace:: :math:`N_c`
-
-:|C_a|: adhesion
-:|alpha|: adhesion factor
-:|s_U|: undrained shear strength
-:|A_s|: shaft surface area
-:|N_c|: bearing capacity factor
-
-
-Note that for plugged and unplugged analyses, :eq:`ldoep_calc_eq4` through :eq:`ldoep_calc_eq7` must be adjusted according to :eq:`ldoep_calc_eq2` & :eq:`ldoep_calc_eq3`.
-
-
-
-United States Army Corps of Engineers (USACE) Method
-====================================================
-
-For side resistance in cohesionless soils, USACE specifies that skin friction increases linearly down to a critical depth, :math:`D_c`, and remains constant below that depth. The critical depth, :math:`D_c`, is a function of pile diameter, :math:`b`, such that :math:`D_c = 10b` for loose sands, :math:`D_c = 15b` for medium-dense sands and :math:`D_c = 20b` for dense sands. Side resistance can then be calculated according to Eq. 8.
-
-
-.. math::
-   :label: ldoep_calc_eq8
-
-   R_s = \sum f_s A_s = \sum K \, \sigma'_v \, \tan \delta \, A_s
-
-
-where:
-
-.. |K| replace:: :math:`K`
-.. |s_v| replace:: :math:`\sigma'_v`
-.. |gamma_p| replace:: :math:`\gamma'`
-.. |D| replace:: :math:`D`
-
-:|K|: lateral earth pressure coefficient
-:|s_v|: vertical effective overburden pressure (:math:`\sigma'_v = \gamma' D` when :math:`D<D_c` or :math:`\sigma'_v = \gamma' D_c` when :math:`D \geq D_c`)
-:|delta|: angle of friction between pile and soil (from :ref:`USACE, 1991 <USACE1991>`)
-:|gamma_p|: effective unit weight of soil
-:|D|: depth along the pile
-
-
-For toe resistance in cohesionless soils, the same critical depth relationship as for skin friction can be used. Toe resistance can then be calculated according to :eq:`ldoep_calc_eq9`.
-
-
-.. math::
-   :label: ldoep_calc_eq9
-
-   R_p = q_p A_p = \sigma'_v \, N_q \, A_p
-
-
-where:
-
-:|s_v|: vertical effective overburden pressure (:math:`\sigma'_v = \gamma' D` when :math:`D<D_c` or :math:`\sigma'_v = \gamma' D_c` when :math:`D \geq D_c`)
-:|N_q|: bearing capacity factor (from :ref:`Terzaghi and Peck, 1967 <Terzaghi1967>`)
-
-
-For side resistance in cohesive soils, the USACE method is largely similar to the :math:`\alpha`-method in that resistance is due to the adhesion of the cohesive material to the side of the pile and is calculated according to :eq:`ldoep_calc_eq10`.
-
-
-.. math::
-   :label: ldoep_calc_eq10
-
-   R_s = \sum f_s A_s = \sum c_a \, A_s = \sum \alpha \, s_u \, A_s
-
-
-where:
-
-:|C_a|: adhesion between pile and cohesive soil
-:|alpha|: adhesion factor (from :ref:`USACE, 1991 <USACE1991>`)
-
-
-Toe resistance in cohesive soils is calculated by USACE according to :eq:`ldoep_calc_eq11`.
-
-
-.. math::
-   :label: ldoep_calc_eq11
-
-   R_p = q_p A_p = 9 \, s_u \, A_p
-
-where:
-
-:|s_u|: undrained shear strength at pile toe, normally the average over a depth of two pile diameters below the toe
-
-
-Note that for plugged and unplugged analyses, :eq:`ldoep_calc_eq8` through :eq:`ldoep_calc_eq11` must be adjusted according to :eq:`ldoep_calc_eq2` & :eq:`ldoep_calc_eq3`.
-
-
-
-Revised Lambda Method
-=====================
-
-The Lambda method has gone through several revisions since it was first introduced. Focht and Vijayvergiya (:ref:`1972 <Focht1972>`) proposed that side resistance be calculated using :eq:`ldoep_calc_eq12`.
-
-
-
-.. math::
-   :label: ldoep_calc_eq12
-
-   R_s = \sum f_s A_s = \sum \lambda \, (\bar{\sigma'} + 2 \bar{s_u}) \, A_s
-
-
-where:
-
-.. |lambda| replace:: :math:`\lambda`
-.. |sigma_p| replace:: :math:`\bar{\sigma'}`
-.. |su_bar| replace:: :math:`\bar{s_u}`
-
-
-:|lambda|: pile penetration coefficient
-:|sigma_p|: average vertical effective stress between the ground surface and the pile toe
-:|su_bar|: average undrained shear strength
-
-
-Kraft et al. (:ref:`1981 <Kraft1981>`) revised the pile penetration coefficient, :math:`\lambda`, proposing formulas for normally consolidated soils (:eq:`ldoep_calc_eq13`) and overconsolidated soils (:eq:`ldoep_calc_eq14`). When information on consolidation was missing or was unreliable, cohesive soils were assumed to be over-consolidated if :math:`s_u/\sigma` was equal to or larger than 0.1.
-
-
-.. math::
-   :label: ldoep_calc_eq13
-
-   \lambda = 0.178 - 0.016 \ln \pi_3
-
-
-.. math::
-   :label: ldoep_calc_eq14
-
-   \lambda = 0.232 - 0.032 \ln \pi_3
-
-
-where:
-
-.. |pi3| replace:: :math:`\pi_3`
-.. |pi3_eq| replace:: :math:`\dfrac{\pi b f_{s.max}D^2 }{AEU}`
-.. |b| replace:: :math:`b`
-.. |fs_max| replace:: :math:`f_{s.max}`
-.. |A| replace:: :math:`A`
-.. |E| replace:: :math:`E`
-.. |U| replace:: :math:`U`
-
-:|pi3|: |pi3_eq|
-:|b|: pile diameter
-:|fs_max|: peak unit skin friction
-:|D|: embedded pile length
-:|A|: cross-sectional area
-:|E|: modulus of elasticity
-:|U|: pile displacement needed to develop side shear (normally 0.1 inch)
-
-
-
-American Petroleum Institute (API) Method
-=========================================
-
-The API design method is widely regarded as the best method for the design of LDOEPs due to the Institute’s long history in the design of offshore platforms. It was presented in the "Recommended Practice" Report RP-2A in 1986 and was revised in 1987 and 1993. Side resistance in cohesionless soils can be calculated using :eq:`ldoep_calc_eq15`.
-
-
-.. math::
-   :label: ldoep_calc_eq15
-
-   R_s = \sum f_s A_s = \sum K \, \bar{\sigma'} \, \tan \delta \, A_s
-
-
-where:
-
-:|K|: coefficient of lateral earth (0.8 for open-ended piles, 1.0 for full displacement piles)
-:|sigma_p|: average vertical effective stress
-:|delta|: angle of friction between pile and soil (:ref:`API RP-2A, 1993 <API1993>`)
-
-
-Toe resistance in cohesionless soils is given by :eq:`ldoep_calc_eq16`.
-
-
-.. math::
-   :label: ldoep_calc_eq16
-
-   R_p = q_p A_p = \sigma' N_q \, A_p
-
-
-where:
-
-.. |sigma_| replace:: :math:`\sigma'`
-
-:|sigma_|: effective stress at pile toe
-:|N_q|: bearing capacity factor
-
-
-Neither unit shaft resistance, :math:`f_s`, nor unit toe resistance, :math:`q_p`, increase linearly without limit. API RP-2A limiting unit shaft and toe resistance values based on soil consistency, from very loose sand/silt to very dense sand/gravel.
-
-.. TODO: Add API tables
-
-The general equation for shaft resistance in cohesive soils according to the revised API method is presented in :eq:`ldoep_calc_eq17`.
-
-
-.. math::
-   :label: ldoep_calc_eq17
-
-   R_s = \sum f_s A_s = \sum \alpha s_u \, A_s
-
-.. math::
-   :label: ldoep_calc_eq18
-
-   \alpha =
-    \begin{cases}
-     0.5\psi^{-0.5} & \textrm{if} \quad \psi \leq 1.0 \\
-     0.5\psi^{-0.25} & \textrm{if} \quad \psi > 1.0
-    \end{cases} \quad \leq 1.0
-
-where:
-
-.. |psi| replace:: :math:`\psi`
-
-:|alpha|: adhesion coefficient governed by :eq:`ldoep_calc_eq18` where :math:`\psi = s_u/\bar{\sigma'}`
-:|sigma_p|: average vertical effective stress
-
-
-Finally, toe resistance in cohesive soils is given by :eq:`ldoep_calc_eq19`, exactly the same way as for the USACE method.
-
-
-.. math::
-   :label: ldoep_calc_eq19
-
-   R_p = q_p A_p = 9 \, s_u \, A_p
-
-
-Note that for plugged and unplugged analyses, :eq:`ldoep_calc_eq15` through :eq:`ldoep_calc_eq19` must be adjusted according to :eq:`ldoep_calc_eq2` & :eq:`ldoep_calc_eq3`.
-
-
-
-***********************************
 Overview of Pile Load Test Database
-***********************************
+-----------------------------------
 
 DFLTD v.2 contains two subsets of data: (i) tests contained in the DFLTD v.1 database (:ref:`Kalavar and Ealy, 2000 <Kalavar2000>`), and (ii) a second subset of newer load tests referred to as the *Large-Diameter Open End Pile (LDOEP) Database*. For this study we only used tests from the LDOEP Database, since (a) fewer than 10 tests in DFLTD v.1 met the aforementioned scope criteria, and (b) widely perceived notion of the inferior nature of tests in DFLTD v.1, in comparison to the LDOEP Database.
 
@@ -411,7 +59,7 @@ DFLTD v.2 contains two subsets of data: (i) tests contained in the DFLTD v.1 dat
 
 
 LDOEP Database Statistics
-=========================
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Not all records from the LDOEP database were used in this study due to incomplete or unreliable data. As can be seen in :numref:`ldoep_calc_fig1`, the length of the 62 piles analyzed ranged from 36 to 333 feet with the majority being 100 to 175 feet long (Q1 to Q3 range). The diameter of the piles ranged from 30 to 108 inches with the majority being 40 to 60 inches wide (Q1 to Q3 range).
 
@@ -428,15 +76,14 @@ For this study, only compressive static load tests were considered. There was no
 
 
 
-***********************************
 Interacting with the LDOEP Database
-***********************************
+-----------------------------------
 
 DFLTD v.2, was organized in a relational schema and delivered as a Microsoft Access product with a standard graphical user interface. The data was provided in multiple tables, that at times contained similar or conflicting information for the same record.  On a previous study of driven pile capacities, Machairas et al. (:ref:`2018 <Machairas2018>`) migrated DFLTD v.2 from Microsoft Access to a cloud-based SQL relational database. The same cloud-based database was used in this paper.
 
 
 Soil Data Integrity Check, Completion and Curation
-==================================================
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The single greatest challenge, when dealing with geotechnical databases has been missing or misinterpreted values for soil properties. When calculating the capacity of a pile using any of the four design methods, for each layer of the stratum there must be at a minimum available values for (A: cohesive soils) total unit weight and undrained shear strength and (B: cohesionless soils) total unit weight and internal friction angle. If any of these values is missing, there are two options: either reject the database record or attempt to infer the missing values from other available information. In cases where data is plentiful, a trade-off analysis can help make the correct decision. However, when it comes to pile load test databases, information is so scarce that approximation of missing data is necessitated.
 
@@ -449,7 +96,7 @@ Where derived profiles were provided or when interpreted soil profiles were give
 
 
 Soil Property Approximations
-============================
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Unless laboratory data was recorded in the database, the following approximations were performed using SPT N-values and relevant soil properties.
 
@@ -500,9 +147,8 @@ Unless laboratory data was recorded in the database, the following approximation
 
 
 
-********************
 Analytical Procedure
-********************
+--------------------
 
 In order to calculate nominal pile capacities, this study employed the four pile design methods described above. For interpreted (also referred to as *measured*) capacity we followed The American Association of State Highway and Transportation Officials (AASHTO) Bridge Design Specifications (:ref:`2012 <AASHTO2012>`) where for piles wider than 36 inches in diameter, the modified Davisson criterion (:eq:`ldoep_calc_eq21`) must be used.
 
@@ -526,7 +172,7 @@ where:
 
 
 Internal Plug, Plugged and Unplugged Conditions
-===============================================
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Three design conditions that were considered for each method, as follows:
 
@@ -536,7 +182,7 @@ Three design conditions that were considered for each method, as follows:
 
 
 Batch Processing
-================
+^^^^^^^^^^^^^^^^
 
 We employed *APILE Offshore 2019* by ENSOFT Inc. for all 62 pile capacity calculations, however input piles were automatically generated from the database using a custom Python program. In order to expedite the process and further reduce the risk of user-induced errors during data entry and model setup, all necessary APILE input data files (``.ap9d``) were automatically produced using a custom-made Python program. The Python program would query the research team’s cloud-based database for all required LDOEPs and geotechnical properties. The process was repeated for all 62 piles and all plugging conditions producing 186 APILE data files (62 piles x 3 plugging conditions).
 
@@ -544,9 +190,8 @@ Another Python program was developed that automatically extracted all required i
 
 
 
-*************************************
 Overall Performance of Design Methods
-*************************************
+-------------------------------------
 
 Capacity calculations were performed for all 62 available piles and boring combinations. The corresponding calculated capacities (:math:`Q_c`), were computed using the four design methods presented above: (1) Nordlund and Tomlinson (FHWA), (2) USACE, (3) Revised Lambda and (4) API.  Interpreted failure load, frequently referred to as *measured capacity* (:math:`Q_m`), was also obtained using the modified Davisson criterion (:eq:`ldoep_calc_eq21`). Calculated and measured pile capacities are compared, on log-log plots, in order to optimize the visual separation of the data,  along with reference, 1:½, 1:1 and 1:2 (:math:`Q_c:Q_m`) lines. Three plugging conditions were considered for each design method: (a) internal plug, (b) plugged, and (c) unplugged. Finally, individual data is separated on each of the 12 plots (4 design methods x 3 conditions) into steel pipe piles and concrete cylinder piles. The results are presented in :numref:`ldoep_calc_fig3`.
 
@@ -613,9 +258,8 @@ There exists significant uncertainty related to the behavior of the interior soi
 
 
 
-*******************************
 Effect of Predominant Soil Type
-*******************************
+-------------------------------
 
 Pile behavior varies depending on the soil type, hence it is important to confirm that the capacities computed using any design method do not exhibit a bias related to the type of soil where the pile has been installed. The relationship between the soil type was explored as follows. First, the percentage of sand was computed by taking the weighted average of the soil layer heights, containing cohesionless soils, along the depth of the pile.  Data was classified such that load tests with 70–100% of the profile in sand were labeled sands, 31–69%  mixed, and 0–30% in sand labeled clays. This approach did not involve any capacity computations and was therefore independent of the design method employed, which permitted having a consistent set of load tests used across all design methods.
 
@@ -714,9 +358,8 @@ The unplugged condition is explored in more detail in :numref:`ldoep_calc_fig4`.
 
 
 
-****************************************************
 Effect of Pile Diameter and Embedded Length on Qc/Qm
-****************************************************
+----------------------------------------------------
 
 A long standing problem with many design methods for predicting pile capacity is that their use led to underprediction of capacities of short piles and overprediction of the capacity of long piles. Calculated capacity normalized by measured (interpreted) capacity is plotted against pile length and diameter in :numref:`ldoep_calc_fig5`. The regression line shows that the ratio is increasing with pile embedded length for all methods. The slopes ranged from 0.0008L (USACE) to 0.0045L (FHWA). This suggests that an increase in length of 100 ft, would correspond to over estimation of capacity by 45%, 26%, 21%, and 8% for the FHWA, API, Lamda, and USACE, respectively.
 
@@ -730,9 +373,8 @@ With respect to diameter, slopes ranged from 0.0158D (FHWA) to -0.0012D (API). A
 
 
 
-*******************
 Effect of Pile Type
-*******************
+-------------------
 
 There are significant differences in the frictional behavior of steel pipe pile and prestressed concrete LDOEPs particularly in sandy soils, especially during driving. The potential for sandy soil arching within the void is greater for concrete piles, potentially increasing the interior side resistance at the pile-soil interface within the plug, during static loading. However, the likelihood of pile concrete cylinder piles plugging during driving is believed to be low (:ref:`NCHRP 2015 <NCHRP2015>`).
 
@@ -747,9 +389,9 @@ Most piles included in this analysis were steel pipe piles, but seven piles were
 
 
 
-**************************************
+
 Comparison with Smaller Diameter Piles
-**************************************
+--------------------------------------
 
 Machairas et al. (:ref:`2018 <Machairas2018>`) investigated the efficacy of FHWA design methods using data made available by the DFLTD v.2. In that study, only two out of 213 piles were larger than 24 in. in diameter. Comparison of the mean :math:`Q_c/Q_m` and its standard deviation of both data sets (:numref:`ldoep_calc_table4`) provides an opportunity to assess the adequacy of extrapolating design procedures in common use for situations that they were not intended for. Comparison of the current FHWA analyses with Machairas et al. (:ref:`2018 <Machairas2018>`) provides for the opportunity for comparison of pile sizes using the same design methods. The comparison suggests that the performance of LDOEPs is equal or inferior to the performance of smaller piles. However, the unplugged assumption is better suited from LDOEPs than for smaller diameter piles.
 
@@ -802,9 +444,8 @@ Machairas et al. (:ref:`2018 <Machairas2018>`) investigated the efficacy of FHWA
 
 
 
-***********************************
 Summary, Discussion and Conclusions
-***********************************
+-----------------------------------
 
 Large Diameter Open Ended Pipe Piles (LDOEP) are more commonly used now, yet the methods used to predict their static capacities have been generally based on piling smaller than 24 in. in diameter. In this study, the efficacy of four commonly used design methods was explored using data made possible by the recently released Deep Foundation Load Test Database (DFLTD v.2). The scope was limited to impact or vibratory driven, un-tapered steel and concrete pipe piles, loaded in compression, using a static load test. 62 applicable records were analyzed with piles having diameters ranging between 30 and 108 in. DFLTD v.2 was ported to a Relational Database Management System that was queried using Structured Query Language (SQL), to permit batch processing of the data using APILE Offshore 2019.
 
