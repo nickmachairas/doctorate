@@ -61,6 +61,7 @@ Modern Data Management and Analysis of Driven Piles
 
    1-intro/_intro.rst
    2-database/_database.rst
+   3-edafos/edafos.rst
    references.rst
    90-piles-notations/notations.rst
    p1-fhwa/fhwa_paper.rst

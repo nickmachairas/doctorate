@@ -108,6 +108,14 @@ Go, Van (1990), "Axial Static Load Capacity of Untapered Piles in Sand", M.S. Th
 
 Gunn, S. R. (1998). "Support vector machines for classification and regression." *ISIS technical report*, 14, 85–86.
 
+.. _Hannigan2006a:
+
+Hannigan, P. J., Goble, G. G., Likins, G. E., and Rausche, F. (2006a). *Design and Construction of Driven Pile Foundations Reference Manual - Volume II - Report No. FHWA-NHI-05-043*. National Highway Institute, Federal Highway Administration, U.S. Department of Transportation, Washington D.C.
+
+.. _Hannigan2006b:
+
+Hannigan, P. J., Goble, G. G., Likins, G. E., and Rausche, F. (2006b). *Design and Construction of Driven Pile Foundations Reference Manual - Volume I - Report No. FHWA-NHI-05-042*. National Highway Institute, Federal Highway Administration, U.S. Department of Transportation, Washington D.C.
+
 .. _Hannigan2016a:
 
 Hannigan, P. J., Rausche, F., Likins, G. E., Robinson, B. R., and Becker, M. L. (2016a). *Design and Construction of Driven Pile Foundations - Volume I - Report No. FHWA-NHI-16-009*. National Highway Institute, Federal Highway Administration, U.S. Department of Transportation, Washington D.C. `<https://www.fhwa.dot.gov/engineering/geotech/pubs/gec12/index.cfm>`_
@@ -115,6 +123,10 @@ Hannigan, P. J., Rausche, F., Likins, G. E., Robinson, B. R., and Becker, M. L. 
 .. _Hannigan2016b:
 
 Hannigan, P. J., Rausche, F., Likins, G. E., Robinson, B. R., and Becker, M. L. (2016b). *Design and Construction of Driven Pile Foundations - Volume II - Report No. FHWA-NHI-16-010*. National Highway Institute, Federal Highway Administration, U.S. Department of Transportation, Washington D.C. `<https://www.fhwa.dot.gov/engineering/geotech/pubs/gec12/index.cfm>`_
+
+.. _Hunt1984:
+
+Hunt, R. E. (1984). *Geotechnical Engineering Investigation Manual*. McGraw-Hill New York.
 
 .. _Iskander1992:
 
