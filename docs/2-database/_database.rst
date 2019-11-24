@@ -1,4 +1,6 @@
 
+.. _nyu_pile_capacity:
+
 #############################
 Pile Load Test Data Warehouse
 #############################
