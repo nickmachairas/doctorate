@@ -65,6 +65,5 @@ Modern Data Management and Analysis of Driven Piles
    4-nominal/_nominal_capacity.rst
    references.rst
    90-piles-notations/notations.rst
-   p1-fhwa/fhwa_paper.rst
    p2-ifcee/ifcee_paper.rst
 

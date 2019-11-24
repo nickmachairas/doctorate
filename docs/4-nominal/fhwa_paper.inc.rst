@@ -1,20 +1,15 @@
-#########################################################################################################
-Evaluation of the FHWA Pile Design Method against the FHWA Deep Foundation Load Test Database Version 2.0
-#########################################################################################################
 
-.. rubric:: Nikolaos Machairas, Gregory A. Highley, Magued G. Iskander
-
-
-.. rubric:: Abstract
+For Standard Diameter Piles
+===========================
 
 The efficacy of the Federal Highway Administration (FHWA) pile design method was explored using data made possible by the 2017 release of FHWA *Deep Foundation Load Test Database* (DFLTD v.2). Information contained within DFLTD v.2 was leveraged to evaluate the most common pile design methods against failure loads obtained via in situ static load testing procedures. In the process, the authors developed a custom relational database and software to batch process the available information. The scope was limited to impact-driven, un-tapered, steel and concrete piles, loaded in compression, using a static load test. DFLTD v.2 contains 3,116 unique-combination project/exploration/foundation/test cases of which 213 contained sufficient data to permit batch processing of the results in order to compute the axial load capacity and interpret the static failure load, according to the study scope.
 
 Scatter between measured (interpreted) and predicted capacities is significant, where the computed capacity was off by a factor of 2 in many tests. The range in calculated to measured  (i.e. interpreted) capacities (Qc/Qm) was from 0.12 to 8.88, and the mean Qc/Qm was 1.48. Preliminary evaluation suggest that the method performs better in clay than in sand, overpredicts the capacities of long and larger diameter piles. The authors trust that this study will permits engineers and state agencies to better understand the efficacy of the most commonly employed design methods, thus resulting in more resilient infrastructure.
 
 
-************
+
 Introduction
-************
+------------
 
 The accuracy and precision of empirically produced observations is positively affected by the sample size and reliability of the data used in the study. In sciences wherein experimentation for data creation is expensive, time consuming, or otherwise problematic, the field of study in general relies upon sharing of raw data to build upon this sample size. Currently accepted design practices for driven piles are mainly empirical or semi-empirical.  However, mass data production from pile load tests is expensive and time-consuming.  Beyond these inherent limitations in empirical pile design analysis, many of the available load tests have insufficient data from which to gather an interpreted ultimate pile capacity.
 
@@ -26,9 +21,8 @@ The evaluation is made preliminary due to the fact that the DFLTD v.2 has just b
 
 
 
-****************************************************
 History and Applications of Pile Load Test Databases
-****************************************************
+----------------------------------------------------
 
 Many of the methods in current use for pile design are based on small databases of interpreted loadtest data. For piles in sand, ... (text removed) ... Similarly, for clays, Tomlinson (:ref:`Tomlinson, 1957 <Tomlinson1957>`; :ref:`Tomlinson, 1971 <Tomlinson1971>`) employed a small data set of 56 piles to develop his popular Alpha-design method that was based in part on data published by Peck (:ref:`Peck, 1958 <Peck1958>`). These methods were adopted by several design standards including, The Canadian Manual on Foundation Engineering (:ref:`1975 <Canadian1975>`), The American Petroleum Institute (API) (:ref:`API RP 2A, 1989 <API1989>`), and FHWA (:ref:`Nordlund, 1963 <Nordlund1963>`; :ref:`Nordlund, 1979 <Nordlund1979>`). Due to the dependence of soil behavior upon geography and site-specific circumstances and the use of limited data employed to launch historical foundation design methods, it is possible that many currently practiced methods of pile design, are based on empirical formulas that required gross overgeneralization to develop.
 
@@ -42,15 +36,15 @@ FHWA rekindled the effort to gather and distribute load test information on pile
 
 
 
-**************************
+
 Working with the DFLTD v.2
-**************************
+--------------------------
 
 The release of DFLTD v.2 updated the query process, expanding upon the capabilities of the first version (:ref:`Kalavar and Ealy, 2000 <Kalavar2000>`). The graphical user interface within Microsoft Access allows load tests to be filtered based on a predefined set of options to view or export only those containing the desired project, foundation, and soil parameters. There is currently limited functionality to filter test records for data completion, to locate tests with all necessary parameters to carry out design calculations for the pile foundations included in the database. Furthermore, the process of extracting data, while sufficient for a case-by-case investigation, could not accommodate the need of this research endeavor to analyse cases in batch mode. For these main reasons, the authors worked with the backend of DFLTD v.2 and exported all data to a server-based database system.
 
 
 Database Migration
-==================
+^^^^^^^^^^^^^^^^^^
 
 One of the most important updates in DFLTD v.2 was organizing data in a relational schema. This was a major limitation of the first version where data retrieval was programmatic and non-relational. While the delivery platform, Microsoft Access, remained the same the relational schema allows for complex search queries expanding the functionality of the provided graphical interface. The industry standard for interaction with Relational Database Management Systems (RDBMS) is the Structured Query Language (SQL). Having a relational backend, DFLTD v.2 can be queried using SQL. Microsoft offers basic functionality to do so within MS Access therefore DFLTD v.2 was migrated to a RDBMS hosted on Microsoft Windows Server 2012. Microsoft SQL Server Migration Assistant v6.0 for Access (:ref:`link <MS_SSMA>`) was used to ensure compatibility across both platforms. Multiple random checks ensured that data transfer was successful.
 
@@ -58,7 +52,7 @@ This structure allows for data retrieval based on any kind of permissible filter
 
 
 Load Test Selection
-===================
+^^^^^^^^^^^^^^^^^^^
 
 The ability to run complex SQL queries was crucial in filtering out the load test cases within DFLTD v.2 for which it would be impossible to calculate pile capacity due to missing values. In total, DFLTD v.2 in its graphical interface shows 916 projects with 1798 load tests. What was needed in this study was the unique combination of project/exploration/foundation/test cases of which the total count was 3,116. This count is larger than the load test count because it includes all combinations of explorations per pile for a given project since a project can have multiple associated piles and explorations. Given that there is limited information on the relative position of explorations to pile foundations, a sensible approach is to analyze for all combinations.  Applying a single load test to different soil borings can result in bias in the correlation depending upon site variability. For highly variable sites, the method can artificially introduce a large difference between calculated and measured resistances. The opposite is also true for uniform site condition.
 
@@ -129,9 +123,9 @@ The evaluation is made preliminary due to the fact that the DFLTD v.2 has just b
 
 
 
-************************
+
 FHWA Pile Design Methods
-************************
+------------------------
 
 In 2016, FHWA published a revised report on the Design and Construction of Driven Pile Foundations (:ref:`Hannigan et al., 2016a <Hannigan2016a>`; :ref:`Hannigan et al., 2016b <Hannigan2016b>`). Within this document, FHWA recommends several empirical and semi-empirical design methods for determining the ultimate capacity of single piles. The FHWA Report categorizes the design methods as follows: Methods of Static Analysis for Piles in Cohesionless Soils and Methods of Static Analysis for Piles in Cohesive Soils. The Report also includes design recommendations for piles driven into mixed soil profiles (i.e. layers of both sand and clay).
 
@@ -145,9 +139,9 @@ For steel H and unfilled open end pipe piles, the authors followed FHWA guidance
 
 
 
-******************
-Analysis Procedure
-******************
+
+Analytical Procedure
+--------------------
 
 In order to batch process all load tests available in DFLTD v.2 it was necessary to develop a suite of algorithms written in Python that can reproduce the Nordlund and Tomlinson design methods exactly as they are outlined within the FHWA design manual. Note that the software application DrivenPiles by Multidimensional Software Creations (:ref:`MDSC <MDSC2015>`), follows a slightly modified design methodology than the one presented in the FHWA design manual (:ref:`Hannigan et al., 2016a <Hannigan2016a>`), making it unsuitable for this study. The Python program follows the design procedures laid out in the FHWA design manual to evaluate given soil and pile data and output corresponding ultimate capacity values for each soil type (sand, clay, mixed). This code also serves as a platform from which to compare static design results with interpreted design results.
 
@@ -157,9 +151,9 @@ Several pre-solved cases were used to validate the results produced by the algor
 
 
 
-******************************************************
+
 Qc/Qm Comparison in Sand, Clay and Mixed Soil Profiles
-******************************************************
+------------------------------------------------------
 
 Analyses were performed for piles in the current database using the FHWA method, to compute the calculated capacity (Qc). Interpreted failure load, as obtained from the Davisson criterion, is frequently referred to as "measured capacity (Qm)". Data is presented for sand, clay, and mixed soil profiles. Sand and clay profiles contained tests where more than 70% of the capacity was derived from the relevant soil. In order to optimize the visual separation of the points, calculated (Qc) and measured (Qm) pile capacities are plotted in a log-log scale (:numref:`fhwa_paper_fig3`). As a reference, 1:½, 1:1 and 1:2 (Qc:Qm) lines were added on the plots. A histogram of the distribution of Qc/Qm is also presented for piles in each profile.
 
@@ -172,9 +166,9 @@ Ideally, Qc/Qm should be close to 1. The scatter between measured and predicted 
    Distribution of calculated (Qc) v. interpreted – also known as (aka.) measured (Qm) capacity for all soil profiles.
 
 
-***********************************
+
 Overall Performance (per pile type)
-***********************************
+-----------------------------------
 
 Data is plotted according to pile type as shown in :numref:`fhwa_paper_fig4`. A frequency distribution of Qc/Qm is also presented for piles in each pile type. There are few tests represented for some pile types, so it is difficult to generalize the results. It appears that the design method performed best for square concrete piles. This is not surprising considering that Tomlinson’s database was heavily weighted towards this pile type. On the other hand, round concrete piles and open pipe piles exhibited the highest average (2.30 and 2.37 respectively) and standard deviation values (1.62 and 2.94 respectively) for Qc/Qm. The effect of pile shape in calculated capacity is a point for future exploration.
 
@@ -186,9 +180,9 @@ Data is plotted according to pile type as shown in :numref:`fhwa_paper_fig4`. A 
 
 
 
-*********************************
+
 Effect of Pile Penetration Length
-*********************************
+---------------------------------
 
 Calculated capacity normalized by measured (interpreted) capacity is plotted against pile length (:numref:`fhwa_paper_fig5`). The regression line shows that the ratio is increasing with pile embedded length. A long standing problem with many design methods for predicting pile capacity is that their use led to underprediction of capacities of short piles and overprediction of the capacity of long piles (25, 16). Data may have been skewed by a few long pipe piles. The number of observations for long piles is small and the quality of the data is generally suspect, but the consistency of the data is cause for concern, especially because long piles are often used to support offshore and bridge structures. The linear function produced by the coefficients of the regression line suggests that the effect is large. The regression trend may have been skewed by the outlier points at 120 and 130 feet penetration lengths with Qc/Qm values > 7, since the remainder of the points for pile penetrations larger than 100 feet have Qc/Qm values in the range of 1.2 to 1.4. Nevertheless, all things being equal, regression suggests that capacity can be overestimated by 50% for a 125 ft. pile, and by 100% for a 250 ft long pile. Sorting out the length effect depending on pile type resulted in conflicting trends depending on pile shape.  The authors believe that the available data may not necessarily produce realistic trend lines for each pile type, and as a result the effort was abandoned.
 
@@ -204,17 +198,17 @@ Overprediction of capacities for long piles does not necessarily indicate proble
 
 
 
-***********************
+
 Effect of Pile Diameter
-***********************
+-----------------------
 
 Calculated capacity normalized by measured (interpreted) capacity is also plotted against pile diameter (:numref:`fhwa_paper_fig5`). The regression line shows that the ratio is increasing with pile diameter, suggesting that capacity can be overestimated by 15% for each additional 12 inch increase in pile diameter. However, when the analysis is repeated for the 183 piles (85% of total)  having 0.33 < Qc/Qm < 3, the trend is reversed. In any case, fewer than a dozen tests having diameters > 25 inches are available, which is cause for concern.
 
 
 
-***********************
+
 Summary and Conclusions
-***********************
+-----------------------
 
 FHWA recommendations have become the accepted industry standard for pile design as demonstrated by its widespread use. In this study the efficacy of the design method was explored using data made possible by the recently released Deep Foundation Load Test Database (DFLTD v.2). The scope was limited to impact driven, un-tapered steel and concrete piles loaded in compression, using a static load test. DFLTD v.2 was ported to a Relational Database Management System (RDBMS) that was queried using Structured Query Language (SQL). DFLTD contains 3,116 unique-combination project/exploration/foundation/test cases of which 213 contained sufficient data to permit batch processing of the results in order to compute the axial load capacity and interpret the static failure load.
 

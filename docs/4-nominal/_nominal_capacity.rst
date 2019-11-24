@@ -86,4 +86,5 @@ Evaluation of Nominal Capacity Methods
 **************************************
 
 
+.. include:: fhwa_paper.inc.rst
 .. include:: ldoep_calc_paper.inc.rst

@@ -214,7 +214,7 @@ There exists significant uncertainty related to the behavior of the interior soi
    :name: ldoep_calc_table2
 
    +-------------------------+----+------------------+----------------------------+-------------------------------+----------+
-   |                         | n  | R\ :sup:`2` [1]_ | :math:`\mu_{Q_c/Q_m}` [2]_ | :math:`\sigma_{Q_c/Q_m}` [3]_ | CV [4]_  |
+   |                         | n  | R\ :sup:`2` [3]_ | :math:`\mu_{Q_c/Q_m}` [4]_ | :math:`\sigma_{Q_c/Q_m}` [5]_ | CV [6]_  |
    +=========+===============+====+==================+============================+===============================+==========+
    |         | Internal Plug | 62 | -3.618           | 2.10                       | 1.47                          | 0.70     |
    |         +---------------+----+------------------+----------------------------+-------------------------------+----------+
@@ -251,10 +251,10 @@ There exists significant uncertainty related to the behavior of the interior soi
 .. note:: Bolded numbers in table cells indicate the best values in the set
 
 
-.. [1] A coefficient of determination closer to 1.000 is better
-.. [2] Mean closer to 1.00 is better
-.. [3] Lower standard deviation is better
-.. [4] Lower coefficient of variation is better
+.. [3] A coefficient of determination closer to 1.000 is better
+.. [4] Mean closer to 1.00 is better
+.. [5] Lower standard deviation is better
+.. [6] Lower coefficient of variation is better
 
 
 
@@ -430,16 +430,16 @@ Machairas et al. (:ref:`2018 <Machairas2018>`) investigated the efficacy of FHWA
    |                         |                |               |             +--------------------+------+------------------+-----------+
    |                         |                |               |             | Unplugged          | 0.92 | 0.20 - 2.74      | 0.48      |
    +-------------------------+----------------+---------------+-------------+--------------------+------+------------------+-----------+
-   | FHWA                    | 213            | 14 - 54       | 31 - 80     | Various            | 1.48 | 0.13 - 2.95 [6]_ | 1.16      |
-   | (smaller diameter) [5]_ |                |               |             |                    |      |                  |           |
+   | FHWA                    | 213            | 14 - 54       | 31 - 80     | Various            | 1.48 | 0.13 - 2.95 [8]_ | 1.16      |
+   | (smaller diameter) [7]_ |                |               |             |                    |      |                  |           |
    +-------------------------+----------------+---------------+-------------+--------------------+------+------------------+-----------+
    | FHWA                    | 11             | 12 - 30       | 30 - 195    | Unplugged          | 2.37 | 0.30 - 8.88      | 2.94      |
-   | (open ended) [5]_       |                |               |             |                    |      |                  |           |
+   | (open ended) [7]_       |                |               |             |                    |      |                  |           |
    +-------------------------+----------------+---------------+-------------+--------------------+------+------------------+-----------+
 
 
-.. [5] From :ref:`Machairas et al., 2018 <Machairas2018>`. Steel pipe piles only.
-.. [6] After removing outliers (0.13 - 8.88 prior to removing outliers)
+.. [7] From :ref:`Machairas et al., 2018 <Machairas2018>`. Steel pipe piles only.
+.. [8] After removing outliers (0.13 - 8.88 prior to removing outliers)
 
 
 
