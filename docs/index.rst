@@ -63,7 +63,7 @@ Modern Data Management and Analysis of Driven Piles
    2-database/_database.rst
    3-edafos/edafos.rst
    4-nominal/_nominal_capacity.rst
+   6-ifcee-analytics/ifcee_paper.rst
    references.rst
    90-piles-notations/notations.rst
-   p2-ifcee/ifcee_paper.rst
 

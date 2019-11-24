@@ -1,10 +1,7 @@
-#################################################################
-An Investigation of Pile Design Utilizing Advanced Data Analytics
-#################################################################
+#############################################
+Pile Design Utilizing Advanced Data Analytics
+#############################################
 
-.. rubric:: Nikolaos Machairas and Magued G. Iskander
-
-.. rubric:: Abstract
 
 This study explores the use of state-of-the-art data analytics techniques for predicting the axial load capacity of piles. A *Support Vector Machine* algorithm was developed. 213 load tests obtained from FHWA’s Deep Foundation Load Test Database (DFLTD) v.2 were used to evaluate the performance of the developed approach against the FHWA design method. The scope was limited to impact­driven, un-tapered, steel and concrete piles, loaded in compression, using a static load test. The results of the predictive analysis show an improvement over the capacities obtained by the FHWA pile design method. Perhaps more remarkably, the predictive model outperformed the FHWA pile design method by relying only on seven readily available features as compared to a laborious and error-prone design methodology. This study demonstrates the potential of machine learning in geotechnical engineering as an alternative to conventional design approaches. The methodology is also demonstrated with an online capacity computation tool.
 

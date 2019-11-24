@@ -124,7 +124,9 @@ latex_elements = {
         \usepackage{enumitem}
         \setlist{nosep}
         
-        
+        %% page line numbers
+        \usepackage{lineno}
+        \linenumbers
 
     ''',
     'maketitle': r'''
