@@ -1,0 +1,12 @@
+Column,Type,Null,Units,NYU GPLTD-W Field
+lng_KeyProject (PK),int,NO,,
+lng_KeyDeepFoundation (PK),int,NO,,
+txt_ConcretePlacementCode,nvarchar(10),YES,,
+txt_BottomCleanOutCode,nvarchar(6),YES,,
+txt_ShaftCaliperYN,nvarchar(1),YES,,
+txt_ConcreteVolumeYN,nvarchar(1),YES,,
+txt_InstallationRemarks,nvarchar(255),YES,,
+txt_CreatedBy,nvarchar(16),YES,,
+dte_AddDate,datetime2,YES,,
+txt_ModifiedBy,nvarchar(18),YES,,
+dte_ModifiedDate,datetime2,YES,,

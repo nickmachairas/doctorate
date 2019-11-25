@@ -1,0 +1,13 @@
+Column,Type,Null,Units,NYU GPLTD-W Field
+lng_KeyProject (PK),int,NO,,
+lng_KeyDeepFoundation (PK),int,NO,,
+lng_KeyLoadTest (PK),int,NO,,
+lng_KeySequence (PK),int,NO,,
+dbl_BaseForce,float,YES,,
+dbl_BaseForceWithResidual,float,YES,,
+dbl_UnitBaseResistance,float,YES,,
+dbl_BaseDisplacement,float,YES,,
+txt_CreatedBy,nvarchar(15),YES,,
+dte_AddDate,datetime2,YES,,
+txt_ModifiedBy,nvarchar(15),YES,,
+dte_ModifiedDate,datetime2,YES,,

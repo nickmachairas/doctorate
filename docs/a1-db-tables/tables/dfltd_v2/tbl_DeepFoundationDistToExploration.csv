@@ -1,0 +1,9 @@
+Column,Type,Null,Units,NYU GPLTD-W Field
+lng_KeyProject (PK),int,NO,,
+lng_KeyDeepFoundation (PK),int,NO,,
+txt_KeyExplorationName (PK),nvarchar(25),NO,,
+dbl_DistanceToExploration,float,YES,,
+txt_CreatedBy,nvarchar(16),YES,,
+dte_AddDate,datetime2,YES,,
+txt_ModifiedBy,nvarchar(18),YES,,
+dte_ModifiedDate,datetime2,YES,,

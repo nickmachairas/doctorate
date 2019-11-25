@@ -268,7 +268,11 @@ Roling, M. J., Sritharan, S., and Suleiman, M. T. (2010). "Development of LRFD P
 
 .. _Roling2011:
 
-Roling, M. J., Sri Sritharan, and Suleiman, M. T. (2011). "Introduction to PILOT Database and Establishment of LRFD Resistance Factors for the Construction Control of Driven Steel H-Piles." *Journal of Bridge Engineering*, 16(6), 728–738. `<https://doi.org/10.1061/(ASCE)BE.1943-5592.0000247>`_
+Roling, M. J., Sritharan, S., and Suleiman, M. T. (2011). "Introduction to PILOT Database and Establishment of LRFD Resistance Factors for the Construction Control of Driven Steel H-Piles." *Journal of Bridge Engineering*, 16(6), 728–738. `<https://doi.org/10.1061/(ASCE)BE.1943-5592.0000247>`_
+
+.. _ShannonWilson2015:
+
+Shannon & Wilson, Inc. (2015). *Task 2 – Recommended Database Structure: Report to the Federal Highway Administration on DTFH61-14-C-00036 Bearing Resistance of Large Diameter Open-End Piles.* Federal Highway Administation.
 
 .. _Shioi1982:
 

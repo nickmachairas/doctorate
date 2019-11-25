@@ -9,9 +9,9 @@ Furthermore, and as a tribute to Dr. Roy Olson, parts from his personal notes ar
 
 
 
-****************************************
-Olson APC Database Tables and Attributes
-****************************************
+*****************************
+Olson APC Database Attributes
+*****************************
 
 .. _olson_notes:
 
@@ -34,6 +34,7 @@ A list of issues identified by Dr. Olson in developing the APC database:
 #. *We had a number of Japanese pile load tests on large diameter (usually 30") steel pipe piles in sand. Unfortunately, the text is in Japanese. We were able to guess soil profiles based on hatchings used in boring logs and we could read the Arabic numerals to get depths and N values. Subsequently, Tung was able to translate some of the data and he concluded we had made major errors. His corrected data are in other files and will be substituted for data in the database when time permits.*
 
 
+|
 
 
 From Dr. Olson's notes on the APC database:
@@ -121,4 +122,8 @@ Iowa PILOT Database Tables and Attributes
 
 
 
+************************************
+FHWA DFLTD v.2 Tables and Attributes
+************************************
 
+.. include:: fhwa_dfltd_appx.inc.rst
