@@ -1,9 +1,18 @@
 
 .. _nyu_pile_capacity:
 
-#################################
-NYU Pile Load Test Data Warehouse
-#################################
+######################################################################################
+NYU Pile Capacity: An Interactive Web Application and Unifying Pile Load Test Database
+######################################################################################
+
+
+.. figure:: figures/plt_warehouse_schematic.png
+   :name: plt_warehouse_schematic
+
+   Schematic of a Comprehensive Pile Load Test Data Warehouse [#]_
+
+
+.. [#] Icons by Microsoft Azure Cloud and Enterprise. Diagram inspired by edX DAT216x *Delivering a Relational Data Warehouse*
 
 
 *******
