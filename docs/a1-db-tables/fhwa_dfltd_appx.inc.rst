@@ -13,24 +13,6 @@
    determined from stored data, there was no mention in existing documentation.
 
 
-.. figure:: figures/DFLTD_v2_ER_Diagram.png
-   :target: figures/DFLTD_v2_ER_Diagram.png
-   :align: center
-   :alt: DFLTD_v2_ER_Diagram.png
-
-   DFLTD v.2 Entity Relationship Diagram exported from MS Access (web-doc: click to enlarge)
-
-
-.. figure:: figures/DFLTD_v2_Relationship_Diagram.jpg
-   :target: figures/DFLTD_v2_Relationship_Diagram.jpg
-   :align: center
-   :alt: DFLTD_v2_Relationship_Diagram.jpg
-
-   DFLTD v.2 Database Table Relationships, from :ref:`Petek et. al (2016) <Petek2016>`
-   (web-doc: click to enlarge)
-
-
-
 
 Data Tables
 ===========

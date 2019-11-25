@@ -65,13 +65,28 @@ FHWA DFLTD v.2
 
 
 
-******************************************
-Design of NYU Database and Web Application
-******************************************
+*******************************************
+Design and Development of NYU Pile Capacity
+*******************************************
+
+
+A quick observation from the previous section, `Original Data Sources`_, is that all databases were distributed as standalone datasets or software applications that were intended to be be installed on a local computer. Any changes would be saved locally making it very difficult to share data. Also, Iowa PILOT and LTRC LAPLTD are the only databases with forms that allow for entry of new records. Lastly, and perhaps more importantly, with all existing pile load test databases there has been no consideration on useful data export or data *connectors* that would allow for wide range analyses on an entire dataset rather than a case-by-case basis. *The goal of NYU Pile Capacity* was to address these shortcomings.
+
+
+Unifying Database Schema
+========================
+
+Database design is an iterative process. It involves multiple cycles of development and with each cycle the design keeps getting refined to better fit the project needs. The main objective was to combine all four previously described databases in one relational database, transferring all information necessary for capacity calculation. Out of the four source databases, the *Olson APC database* was the most concise and to-the-point collection of relevant data and it served as the basis of the design of the NYU database schema that was then expanded to accommodate data from the other three sources.
+
+
+.. figure:: figures/olson_db_schema.png
+   :name: olson_db_schema
+
+   Entity-Relationship Diagram of the database reduced from the *Olson Database* raw files
+
+
 
 :numref:`OlsonVarsTable` (appendix) summarizes the variables available in the *Olson APC Database* raw data files. The reduction of these variables to a relational schema is presented in :numref:`olson_db_schema`. It is important to note that in this iteration, normalization rules are not strictly enforced. For instance, attributes ``ssuu``, ``ssfv``, ``ssms``, ``ssqt`` are all storing information on shear strength obtained from different tests and it could be argued that they are violating the "non-repeating attribute" rule of the 1st Normal Form (1NF). However, in the context of geotechnical engineering, it is unlikely that a value for shear stregth obtained from a new lab test will needs to be stored. It is also unlikely that multiple values of shear strength from the same lab test will need to be stored for a single layer. As such, it is far more practical to keep these four attributes in the ``layers`` relation than move them in separate relations in order to be strictly compliant with the normalization process.
-
-
 
 
 ``ref_icapacities`` **values:**
@@ -83,9 +98,7 @@ Design of NYU Database and Web Application
 
 
 
-.. figure:: figures/olson_db_schema.png
-   :name: olson_db_schema
+.. figure:: figures/nyu_db_logic.png
+   :name: nyu_db_logic
 
-   Entity-Relationship Diagram of the database reduced from the *Olson Database* raw files
-
-
+   NYU Pile Capacity: Partial E-R Diagram of Logical Workflow

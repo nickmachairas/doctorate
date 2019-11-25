@@ -131,6 +131,11 @@ latex_elements = {
         %% page line numbers
         \usepackage{lineno}
         \linenumbers
+        
+        %% footer
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhf{}
 
     ''',
     'maketitle': r'''
