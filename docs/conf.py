@@ -136,6 +136,13 @@ latex_elements = {
         \usepackage{fancyhdr}
         \pagestyle{fancy}
         \fancyhf{}
+        
+        %% watermark
+        \usepackage{draftwatermark}
+        \SetWatermarkText{Draft v.0.5}
+        \SetWatermarkScale{1}
+        \SetWatermarkColor[gray]{0.93}
+        \SetWatermarkAngle{52}
 
     ''',
     'maketitle': r'''
