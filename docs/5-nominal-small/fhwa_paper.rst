@@ -1,6 +1,8 @@
 
-For Standard Diameter Piles
-===========================
+********************************************************************
+Evaluation of Nominal Resistance Methods for Standard Diameter Piles
+********************************************************************
+
 
 The efficacy of the Federal Highway Administration (FHWA) pile design method was explored using data made possible by the 2017 release of FHWA *Deep Foundation Load Test Database* (DFLTD v.2). Information contained within DFLTD v.2 was leveraged to evaluate the most common pile design methods against failure loads obtained via in situ static load testing procedures. In the process, the authors developed a custom relational database and software to batch process the available information. The scope was limited to impact-driven, un-tapered, steel and concrete piles, loaded in compression, using a static load test. DFLTD v.2 contains 3,116 unique-combination project/exploration/foundation/test cases of which 213 contained sufficient data to permit batch processing of the results in order to compute the axial load capacity and interpret the static failure load, according to the study scope.
 

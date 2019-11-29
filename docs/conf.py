@@ -138,11 +138,11 @@ latex_elements = {
         \fancyhf{}
         
         %% watermark
-        \usepackage{draftwatermark}
-        \SetWatermarkText{Draft v.0.5}
-        \SetWatermarkScale{1}
-        \SetWatermarkColor[gray]{0.93}
-        \SetWatermarkAngle{52}
+        % \usepackage{draftwatermark}
+        % \SetWatermarkText{Draft v.0.5}
+        % \SetWatermarkScale{1}
+        % \SetWatermarkColor[gray]{0.96}
+        % \SetWatermarkAngle{52}
 
     ''',
     'maketitle': r'''

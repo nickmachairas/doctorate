@@ -1,14 +1,7 @@
 
-################
-Nominal Capacity
-################
-
-
-
-
-****************************************
-Presentation of Nominal Capacity Methods
-****************************************
+##########################################
+Presentation of Nominal Resistance Methods
+##########################################
 
 
 The ultimate bearing capacity, :math:`R_n` (aka nominal resistance), of driven piles is typically given by nominally adding the shaft and toe resistances (:eq:`ldoep_calc_eq1`).
@@ -78,13 +71,3 @@ where:
 .. include:: api.inc.rst
 .. include:: olson.inc.rst
 
-
-
-
-**************************************
-Evaluation of Nominal Capacity Methods
-**************************************
-
-
-.. include:: fhwa_paper.inc.rst
-.. include:: ldoep_calc_paper.inc.rst

@@ -1,6 +1,7 @@
 
-For Large Diameter Open-Ended Piles (LDOEP)
-===========================================
+***************************************************
+Evaluation of Nominal Resistance Methods for LDOEPs
+***************************************************
 
 
 Large-Diameter Open-Ended Piles (LDOEP) are increasingly being used for support of infrastructure projects. Yet many of the methods in current use for calculating pile capacity are based on databases of interpreted load test data for small diameter piles. The scope of this study was limited to impact or vibratory driven un-tapered steel and concrete pipe-piles, larger than 30 inches in diameter, loaded in compression, using a static load test.
@@ -162,6 +163,9 @@ where:
 
 .. |Q| replace:: :math:`Q`
 .. |L| replace:: :math:`L`
+.. |A| replace:: :math:`A`
+.. |E| replace:: :math:`E`
+.. |b| replace:: :math:`b`
 
 :|Q|: test load
 :|L|: total length of pile
