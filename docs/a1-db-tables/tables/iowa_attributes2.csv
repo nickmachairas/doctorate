@@ -1,0 +1,9 @@
+Original Attribute,Description,Sample Record,New Attribute
+**ID**,"Unique identifier for the table.","[1923, 1924, ...]",``layers.id``
+**Record ID**,"Field that references the project ID.","[269, 269, ...]","*referenced through* ``borings``"
+**Soil Layer**,"Soil layer index.","[1, 2, ...]",``layers.index``
+**Material Description**,"Description of soil conditions.","[Clay, Silty Clay to Clay, ...]",``layers.description``
+**Thickness (FEET)**,"Layer thickness, in feet.","[25, 4, ...]",``layers.height``
+**NAVG (BLOWS/FT)**,"Average SPT blow count.","[12, N/A, ...]",``layers.nval``
+**Unit Friction (KIPS/FT)**,"Nominal unit skin friction value specified by the design chart found in the Iowa LRFD Bridge Design Manual (Iowa DOT, 2010) for each soil layer.","[1.2, 1.2, ...]",``layers.iowa_unit_friction``
+**Total Friction (KIPS/FT)**,"Total soil layer nominal skin friction value resulting from the multiplication of the soil layer thickness by the nominal unit skin friction value.","[30, 4.8, ...]",``layers.iowa_total_friction``

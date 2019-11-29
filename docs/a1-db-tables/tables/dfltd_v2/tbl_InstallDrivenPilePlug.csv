@@ -1,0 +1,13 @@
+Column,Type,Null,Units,NYU GPLTD-W Field
+lng_KeyProject (PK),int,NO,,
+lng_KeyDeepFoundation (PK),int,NO,,
+dbl_DrivingShoeInnerDiameter,float,YES,,
+dbl_DrivingShoeOuterDiameter,float,YES,,
+txt_PlugLengthRatioYN,nvarchar(5),YES,,
+txt_IncrementalFillingRatioYN,nvarchar(5),YES,,
+txt_FinalFillingRatioYN,nvarchar(5),YES,,
+txt_PlugRemarks,nvarchar(255),YES,,
+txt_CreatedBy,nvarchar(16),YES,,
+dte_AddDate,datetime2,YES,,
+txt_ModifiedBy,nvarchar(18),YES,,
+dte_ModifiedDate,datetime2,YES,,

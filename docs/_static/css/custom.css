@@ -12,3 +12,11 @@
 .toctree-wrapper ul {
   margin-left: 15px !important;
 }
+
+table tr td {
+  font-size: 12px;
+}
+
+th {
+  font-size: 12px !important;
+}
