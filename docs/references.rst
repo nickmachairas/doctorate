@@ -8,6 +8,10 @@ Bibliography
 
 American Association of State Highway and Transportation Officials (AASHTO). (2012). *AASHTO LRFD Bridge Design Specifications*. Washington, D.C.
 
+.. _AASHTO2014:
+
+American Association of State Highway and Transportation Officials (AASHTO). (2014). *AASHTO LRFD Bridge Design Specifications, 7th Edition*. Washington, D.C. 1960p.
+
 .. _Abu-Hejleh2013:
 
 Abu-Hejleh, N., and Anderson, S. (2013). "Memorandum- Deep Foundation Load Test Database (DFLTD)." Federal Highway Administration.
@@ -23,6 +27,10 @@ Abu-Hejleh, N., Abu-Farsakh, M., Suleiman, M. T., and Tsai, C. (2015a). "State o
 .. _Al-Shafei1987:
 
 Al-Shafei, K. A. R. (1987), "Axial Load Capacities of Steel Pipe Piles in Sand," M.S. Thesis, University of Texas (May).
+
+.. _ASCE1941:
+
+American Society of Civil Engineers, ASCE. (1941). Progress Report of the Committee on the Bearing Capacity of Pile Foundations. *Proc. ASCE*.
 
 .. _Alyahyai1987:
 
@@ -60,13 +68,29 @@ Bowles, J. E. (1977). *Foundation Analysis and Design*. McGraw-Hill.
 
 Briaud, J.-L., Anderson, J., Perdomo, D., and Tucker, L. M. (1987). "Evaluation of API Method Using 98 Vertical Pile Load Tests." *Proc., Offshore Technology Conference*, 19th Annual Offshore Technology Conference, Houston, Texas. 447-451. `<http://dx.doi.org/10.4043/5411-MS>`_
 
+.. _Briaud1988:
+
+Briaud, J.L., Tucker, L.M. (1988). "Measured and Predicted Axial Response of 98 Piles." *Journal of Geotechnical Engineering*, Vol. 114, No. 9, ASCE, Reston, VA, USA.
+
 .. _Buitinck2013:
 
 Buitinck, L., et al. (2013). "API design for machine learning software: experiences from the scikit-learn project." *ECML PKDD Workshop: Languages for Data Mining and Machine Learning*, 108–122.
 
+.. _ButlerHoy1976:
+
+Butler, H.D. and Hoy, H.E. (1976). *User’s manual for the Texas quick load method for foundation load testing.* FHWA-IP-77-8, Federal Highway Administration, Office of Development, Washington, pp. 59.
+
 .. _Caltrans2014:
 
 CALTRANS (2014) *Caltrans Geotechnical Manual.* Office of Geotechnical Services. - <http://www.dot.ca.gov/hq/esc/geotech/geo_manual/manual.html> (Last accessed November 2017)
+
+.. _Chellis1961:
+
+Chellis, R.D. (1961). *Pile Foundations*. McGraw Hill Book Company.
+
+.. _Chin1971:
+
+Chin, F.K., 1971. "Discussion on Pile test. Arkansas River project." ASCE Journal for Soil Mechanics and Foundation Engineering, 97(SM6) p.930-932.
 
 .. _Chiu1993:
 
@@ -75,6 +99,18 @@ Chiu, Kuan (1993), "A Study of Axial Load Capacity of Piles from Case Histories"
 .. _Davisson1972:
 
 Davisson, M. T. (1972). "High Capacity Piles." *Proceedings of Soil Mechanics Lecture Series on Innovations in Foundation Construction*, ASCE Illinois Section, Chicago, 81–112.
+
+.. _DeBeer1968:
+
+DeBeer, E.E. (1968) "Proefondervindlijke bijdrage tot de studie van het grensdraag vermogen van zand onder funderingen op staal." Tijdshift der Openbar Verken van Belgie, No. 6, 1967 and No. 4, 5, and 6, 1968 (in Dutch).
+
+.. _Decourt1999:
+
+Decourt, L. (1999). "Behavior  of  foundations  under  working  load  conditions." *Proc. of 11th Pan-American Conference on Soil Mechanics and Geotechnical Engineering*, Foz DoIguassu, Brazil, August 1999, Vol. 4, pp. 453-488.
+
+.. _Decourt2008:
+
+Decourt, L., (2008). "Loading tests: interpretation and prediction of their results." ASCE GeoInstitute Geo-Congress, New Orleans, March 9-12, *Honoring John Schmertmann — From Research to Practice in Geotechnical Engineering*, Geotechnical Special Publication 180, Edited by J.E. Laier, D.K. Crapps, and M.H. Hussein, pp.452-488.
 
 .. _Dennis1982:
 
@@ -104,9 +140,17 @@ Fellenius, B. (1991). "Chapter 13 - Pile Foundations." *Foundation Engineering H
 
 Fellenius, B. H. (1999). "On the preparation of a piling paper." *A guide prepared for the deep foundations institute annual meeting.* Deep Foundation Institute, Dearborn.
 
+.. _Fellenius2018:
+
+Fellenius, B. H. (2018). *Basics of Foundation Design*. Pile Buck International, Inc., Vero Beach, FL.
+
 .. _Focht1972:
 
 Focht, J. A., and Vijayvergiya, V. N. (1972) *A New Way to Predict Capacity of Piles in Clay*. Offshore Technology Conference. Houston, Texas, May.
+
+.. _FullerHoy1970:
+
+Fuller, F. M. and Hoy, H. E. (1970). "Pile Load Tests Including Quick-Load Test Method Conventional Methods and Interpretations." HRB 333, p. 78-86.
 
 .. _Go1990:
 
@@ -131,6 +175,14 @@ Hannigan, P. J., Rausche, F., Likins, G. E., Robinson, B. R., and Becker, M. L. 
 .. _Hannigan2016b:
 
 Hannigan, P. J., Rausche, F., Likins, G. E., Robinson, B. R., and Becker, M. L. (2016b). *Design and Construction of Driven Pile Foundations - Volume II - Report No. FHWA-NHI-16-010*. National Highway Institute, Federal Highway Administration, U.S. Department of Transportation, Washington D.C. `<https://www.fhwa.dot.gov/engineering/geotech/pubs/gec12/index.cfm>`_
+
+.. _Hansen1963:
+
+Hansen, J.B. (1963). "Discussion on Hyperbolic Stress-Strain Response. Cohesive soils." *ASCE Journal for Soil Mechanics and Foundation Engineering*, 89(SM4) p.241-242.
+
+.. _Housel1956:
+
+Housel, W.S. (1956). "Field and laboratory correlation of the bearing capacity of hardpan for the design of deep foundation." *Proc. of American Society for Materials and Testing*, ASTM, Vol.56, pp.1,320-1,346.
 
 .. _Hunt1984:
 
@@ -286,6 +338,10 @@ Smola, A. J., and Schölkopf, B. (2004). "A tutorial on support vector regressio
 
 Tavera, E., Rix, G., Burnworth, G., and Jung, J. (2016). *Calibration of Region-Specific Gates Pile Driving Formula for LRFD*. Louisiana Department of Transportation and Development. `<https://rosap.ntl.bts.gov/view/dot/30895>`_
 
+.. _Terzaghi1942:
+
+Terzaghi, K. (1942). Discussion of the Progress Report of the Committee on the Bearing Capacity of Pile Foundations. ASCE Proc. 68(2) 311-323
+
 .. _Terzaghi1967:
 
 Terzaghi, K. and Peck, R. B. *Soil Mechanics in Engineering Practice*. New York, Wiley. 1967
@@ -309,6 +365,14 @@ Tomlinson, M. J. (1994). *Pile Design and Construction Practice, Fourth Edition*
 .. _USACE1991:
 
 U.S. Army Corps of Engineers (1991). *Design of Pile Foundations*. Engineer Manual 1110-2-2906. Washington, DC.
+
+.. _VanderVeen1953:
+
+Van der Veen, C. (1953). "The bearing capacity of a pile." * Proc. of the 3rd ICSMFE*, Zurich, Switzerland, August 16-27, Vol. 2, pp. 84-90.
+
+.. _Vesic1963:
+
+Vesic, A. (1963) "Bearing Capacity of Deep Foundations in Sand". *Highway Research Record 39*. National Academy of Sciences, National Research Council, pp. 112-53
 
 .. _Wang2019a:
 
