@@ -42,7 +42,7 @@ The author was charged with the completion of two main objectives with several s
 
 The product of the first objective was `Pile Capacity <http://pilecapacity.com>`_, an online application with an HTML & Javascript frontend and a Python & Postgres backend that allows for collaborative analyses for driven piles and easily sharable results. *Pile Capacity* is envisioned to serve as an example of proper and efficient data management for the Geoprofession.
 
-A product of the the second objective is *edafos* (`<https://github.com/nickmachairas/edafos>`_), a Python module programmed to run capacity calculations which allowed for batch-processing and analysis of hundreds of pile load test records.
+A product of the the second objective was *edafos* (`<https://github.com/nickmachairas/edafos>`_), a Python module programmed to run capacity calculations which allowed for batch-processing and analysis of hundreds of pile load test records.
 
 Based on these two tools, this study was able to evaluate the efficacy of nominal resistance and interpreted capacity methods, under varying conditions, and provide recommendations on which method performs best. This is a departure from the *one-method-fits-all* approach of current practice in the Geoprofession.
 

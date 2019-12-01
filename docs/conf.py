@@ -143,6 +143,9 @@ latex_elements = {
         % \SetWatermarkScale{1}
         % \SetWatermarkColor[gray]{0.96}
         % \SetWatermarkAngle{52}
+        
+        %% to move the signatures to the right
+        \usepackage{changepage}
 
     ''',
     'maketitle': r'''
@@ -152,31 +155,38 @@ latex_elements = {
         \begin{titlepage}
         \centering
             
-            \textbf{\Large MODERN DATA MANAGEMENT AND}
+            \vspace*{3.75 in}
+            
+            For Guidance Committee Review\\
+            v.0.6 - 11/30/2019
+            
+            \newpage
+            
+            \textbf{\LARGE MODERN DATA MANAGEMENT AND}
             \vspace*{0.05 in}
 
-            \textbf{\Large ANALYSIS OF DRIVEN PILES}
-            \vspace*{0.1 in}
+            \textbf{\LARGE ANALYSIS OF DRIVEN PILES}
+            \vspace*{0.2 in}
             
             \noindent\rule{8cm}{0.4pt}
-            \vspace*{0.2 in}
+            \vspace*{0.3 in}
             
             \textbf{\Large DISSERTATION}
             \vspace*{0.3 in}
             
-            \textbf{\normalsize Submitted in Partial Fulfillment of}
+            \textbf{\large Submitted in Partial Fulfillment of}
             \vspace*{0.15 in}
             
-            \textbf{\normalsize the Requirements for}
+            \textbf{\large the Requirements for}
             \vspace*{0.15 in}
             
-            \textbf{\normalsize the Degree of}
-            \vspace*{0.2 in}
+            \textbf{\large the Degree of}
+            \vspace*{0.3 in}
             
             \textbf{\Large DOCTOR OF PHILOSOPHY (CIVIL ENGINEERING)}
             \vspace*{0.3 in}
             
-            \textbf{\normalsize at the}
+            \textbf{\large at the}
             \vspace*{0.3 in}
             
             \textbf{\LARGE NEW YORK UNIVERSITY}
@@ -184,13 +194,13 @@ latex_elements = {
             \textbf{\LARGE TANDON SCHOOL OF ENGINEERING}
             \vspace*{0.3 in}
             
-            \textbf{\normalsize by}
+            \textbf{\large by}
+            \vspace*{0.4 in}
+            
+            \textbf{\LARGE Nikolaos Machairas}
             \vspace*{0.3 in}
             
-            \textbf{\Large Nikolaos Machairas}
-            \vspace*{0.3 in}
-            
-            \textbf{\normalsize January 2020}
+            \textbf{\Large January 2020}
         
         \end{titlepage}
         
@@ -198,19 +208,323 @@ latex_elements = {
         \pagenumbering{roman}
         
         \newpage
-            \chapter*{Committee signature page}
+        \chapter*{ }
+        \vspace*{-2.0 in}
+        \begin{center}
+            
+            \textbf{\Large MODERN DATA MANAGEMENT AND}
+            \vspace*{0.05 in}
+
+            \textbf{\Large ANALYSIS OF DRIVEN PILES}
+            \vspace*{0.05 in}
+            
+            \noindent\rule{8cm}{0.4pt}
+            \vspace*{0.1 in}
+            
+            \textbf{\Large DISSERTATION}
+            \vspace*{0.2 in}
+            
+            \textbf{\normalsize Submitted in Partial Fulfillment of}
+            \vspace*{0.05 in}
+            
+            \textbf{\normalsize the Requirements for}
+            \vspace*{0.05 in}
+            
+            \textbf{\normalsize the Degree of}
+            \vspace*{0.15 in}
+            
+            \textbf{\Large DOCTOR OF PHILOSOPHY (CIVIL ENGINEERING)}
+            \vspace*{0.15 in}
+            
+            \textbf{\normalsize at the}
+            \vspace*{0.2 in}
+            
+            \textbf{\LARGE NEW YORK UNIVERSITY}
+            
+            \textbf{\LARGE TANDON SCHOOL OF ENGINEERING}
+            \vspace*{0.2 in}
+            
+            \textbf{\normalsize by}
+            \vspace*{0.15 in}
+            
+            \textbf{\Large Nikolaos Machairas}
+            \vspace*{0.075 in}
+            
+            \textbf{\normalsize January 2020}
+            
+            \vspace*{0.2 in}
+        
+        \end{center}
+        \begin{adjustwidth}{3.5 in}{}
+            \begin{singlespacing}
+            {\small
+            Approved:
+            
+            \vspace*{0.2 in}
+            
+            \noindent\rule{2.5 in}{0.4pt} \\
+            Department Chair
+            
+            \vspace*{0.075 in}
+            
+            \noindent\rule{2.5 in}{0.4pt} \\
+            Date
+            }
+            \end{singlespacing}
+        \end{adjustwidth}
+        
+        
+        University ID:\hspace{10pt}N18574205 \\
+        Net ID:\hspace{43pt}nm1213
+        
+        
+        \newpage
+            \chapter*{ }
+            \vspace*{-2.5 in}
+            Approved by the Guidance Committee:
+            
+            \vspace*{0.05 in}
+            
+            \underline{Major:} \hspace{0.5 in} Civil (Geotechnical) Engineering
+            
+            \vspace*{0.05 in}
+            
+            \begin{adjustwidth}{2.75 in}{}
+            \begin{singlespacing}
+            {\small
+            \noindent\rule{3.25 in}{0.4pt} \\
+            \textbf{Magued Iskander, PhD, PE, F.ASCE} \\
+            Professor \& Chair, Civil \& Urban Engineering, NYU
+            
+            \vspace*{0.075 in}
+            
+            \noindent\rule{2 in}{0.4pt} \\
+            Date
+            
+            \vspace*{0.2 in}
+            
+            \noindent\rule{3.25 in}{0.4pt} \\
+            \textbf{Mohsen Hossein, PhD, PE} \\
+            Industry Professor, Civil \& Urban Engineering, NYU
+            
+            \vspace*{0.075 in}
+            
+            \noindent\rule{2 in}{0.4pt} \\
+            Date
+            
+            \vspace*{0.2 in}
+            
+            \noindent\rule{3.25 in}{0.4pt} \\
+            \textbf{Torsten Suel, PhD} \\
+            Professor, Computer Science \& Engineering, NYU
+            
+            \vspace*{0.075 in}
+            
+            \noindent\rule{2 in}{0.4pt} \\
+            Date
+            
+            \vspace*{0.2 in}
+            
+            \noindent\rule{3.25 in}{0.4pt} \\
+            \textbf{Debra Laefer, PhD} \\
+            Full Professor, Civil \& Urban Engineering, NYU
+            
+            \vspace*{0.075 in}
+            
+            \noindent\rule{2 in}{0.4pt} \\
+            Date
+            
+            \vspace*{0.2 in}
+            
+            \noindent\rule{3.25 in}{0.4pt} \\
+            \textbf{Muhannad Suleiman, PhD} \\
+            Associate Professor, Civil \& Environmental Engineering, Lehigh University
+            
+            \vspace*{0.075 in}
+            
+            \noindent\rule{2 in}{0.4pt} \\
+            Date
+            
+            \vspace*{0.2 in}
+            
+            \noindent\rule{3.25 in}{0.4pt} \\
+            \textbf{Antonio Marinucci, PhD, PE, MBA} \\
+            Research Professor, Civil \& Urban Engineering, NYU
+            
+            \vspace*{0.075 in}
+            
+            \noindent\rule{2 in}{0.4pt} \\
+            Date
+            
+            }
+            \end{singlespacing}
+            \end{adjustwidth}
+            
         
         \newpage
             \chapter*{Vita}
+            \vspace*{0.3 in}
+            {\normalsize
+            Nikolaos "Nick" Machairas was born in Athens, Greece on August 30, 
+            1984 to Panagiotis and Maria Machairas. He graduated from the Pierce 
+            College High School Athens in 2002. Nick studied Geology at the 
+            National and Kapodestrian University of Athens while working as a 
+            superintendent on residential construction projects under the
+            supervision of his father, Panagiotis. Nick immigrated to the 
+            United States in 2008, after completing his mandatory military 
+            service in the Hellenic Army. Between 2008 and 2011, Nick earned a
+            Bachelors degree in Civil Engineering from NYU School of Engineering 
+            with honors and a Masters degree in Civil Engineering from Columbia 
+            University. From 2011 to 2013 he returned back to Greece to work 
+            in the family construction business. Since 2013, Nick has been 
+            living in Brooklyn, New York, working at NYU while earning his 
+            doctoral degree in Civil (Geotechnical) Engineering under the 
+            mentorship of Dr. Magued Iskander. Since 2017, he has been a 
+            part-time lecturer at Columbia University teaching Relational and 
+            NoSQL Databases and Applied Analytics.
+            
+            On August 4, 2019 Nick married Inga Jukneviciute.
+            }
         
         \newpage
             \chapter*{Acknowledgements}
+            \vspace*{0.3 in}
+            {\normalsize
+            First and foremost, I would like to thank my advisor and mentor, 
+            Professor Magued Iskander. Our friendship is older than this study 
+            dating back to 2008 when I first moved to the United States. Inga 
+            and I are truly grateful for his support. I would also like to 
+            thank Professors Maloof, Ulerio and Hossein. Their ethos as well as 
+            their support for and dedication to all students is a big part of 
+            what makes this school so special. Moreover, I would like to 
+            acknowledge my fellow research teammates at NYU. Thank you for 
+            putting up with my (often foolish) ideas and for pushing me to do 
+            better. Finally, I would like to express my gratitude to the 
+            distinguished members of my guidance committee. Thank you for your 
+            time and for lending your expertise.
+            }
         
         \newpage
-            \chapter*{Dedication Page}
+            \chapter*{ }
+            \vspace*{1.5 in}
+            \begin{center}
+            \textit
+            {\large
+            To Inga, whom I dearly love, and my family. \\            
+            Nothing would be possible without your love and support.
+            }
+            \end{center}
         
         \newpage
-            \chapter*{Abstract}
+            \chapter*{ }
+            \vspace*{-1.5 in}
+            \begin{center}
+            
+            \textbf{\large ABSTRACT}
+            
+            \noindent\rule{2 in}{0.5pt}
+            \vspace*{0.1 in}
+            
+            \textbf{\large MODERN DATA MANAGEMENT AND}
+            \vspace*{0.05 in}
+
+            \textbf{\large ANALYSIS OF DRIVEN PILES}
+            \vspace*{0.05 in}
+
+            \textbf{\large by}
+            \vspace*{0.05 in}
+
+            \textbf{\large Nikolaos Machairas}
+            \vspace*{0.05 in}
+
+            \textbf{\large Advisor: Prof. Magued Iskander, PhD, PE, F.ASCE}
+            \vspace*{0.2 in}
+
+            \textbf{Submitted in Partial Fulfillment of the Requirements for}
+
+            \textbf{the Degree of Doctor of Philosophy (Civil Engineering)}
+            \vspace*{0.15 in}
+
+            \textbf{January 2020}
+            \vspace*{0.3 in}
+            
+            \end{center}
+            
+            For the past 30+ years, engineers and researchers have been 
+            independently collecting pile load tests and relevant subsurface 
+            data while organizing this information into structurally dissimilar 
+            repositories. Despite their competent efforts, the overall result was 
+            highly fragmented with very little benefit to the greater geotechnical 
+            community. Meanwhile, scientists aided by state-of-the-art data 
+            analytics have been transforming their respective industries, 
+            producing remarkable predictions and insights. The unstructured and 
+            decentralized current scheme of this valuable pile load test data 
+            has provided few benefits, instead it has mostly been a hindrance to 
+            the geotechnical community at large.
+        
+            Use of load test databases for comparison between calculated and 
+            interpreted capacities can provide insights on 
+            suitability of use of current design methods under varying pile and 
+            soil conditions. Past studies have generally demonstrated that all 
+            methods in current use for calculating the ultimate capacity of 
+            single piles have large margins of error.
+            
+            As part of this doctoral dissertation, a modern system, called 
+            \textit{NYU Pile Capacity}\footnote{\url{http://pilecapacity.com}} 
+            was developed that allows for the collaborative data storage, cleaning 
+            and analysis of deep foundations. \textit{NYU Pile Capacity} 
+            has a relational database backend and a friendly HTML interface 
+            for user interactions. In direct contrast to the status of existing 
+            load test databases, \textit{NYU Pile Capacity} requires no 
+            software installations and is served over the Internet as a web
+            application. Users can log in and immediately start running 
+            custom aggregate analyses on the 3,000+ records that were imported 
+            from existing datasets or add new records\footnote{adding new records 
+            requires elevated user access privileges}. Users can easily share 
+            their results and collaborate.
+            
+            \textit{NYU Pile Capacity} was built using Python Flask. Choosing 
+            a Python-based framework was instrumental in designing a platform 
+            that can batch-process multiple load test records for practically 
+            countless combinations of soil conditions and pile types. 
+            Furthermore, \textit{NYU Pile Capacity} can be easily extended to 
+            run additional analyses with minimal updates to its core 
+            codebase. \textit{NYU Pile Capacity} was designed to serve as the 
+            golden standard for geotechnical and pile load test data storage and 
+            analysis.
+            
+            Most of the methods in current use for pile design are based on 
+            empirical formulas that required gross overgeneralization to develop. 
+            The empirical/semi-empirical design guidelines were derived from as 
+            few as 41 load test records. This doctoral dissertation compiled a 
+            dataset of more than 3,000 load test records and evaluated popular 
+            methods for capacity calculation and capacity interpretation 
+            against this massive dataset. The results of the author's analyses 
+            reveal that contrary to common practice by engineers and against 
+            federal and state guidelines, the recommended \textit{Nordlund} and 
+            \textit{Tomlinson} methods are not producing optimal designs.  
+            Instead, the \textit{API} and \textit{Lambda} methods proved far  
+            superior. Also, a comprehensive evaluation of interpreted capacity 
+            methods validated the dominance of the original \textit{Davisson} 
+            method while not finding any significant benefits to the subsequent 
+            federally proposed modifications to this method.
+            
+            Finally, a major finding of this dissertation is that given a large 
+            enough training sample, pile capacity can be reliably estimated 
+            by Machine Learning analyses. 
+            In projects that involve a very large number of 
+            pile foundations, usually not all piles are individually designed 
+            and checked. That would be a tall order given the existing design 
+            software, manually repeating the process hundreds of times would be 
+            extremely time consuming. However, working off of a reliable 
+            approximation of subsurface conditions for the entire site based on 
+            the results of site investigation, every pile on site can be 
+            designed via batch processing and an iterative optimization process. 
+            A combination of cost optimization and clustering analysis, because 
+            while we can optimally size each pile, it would be impossible to construct. 
+            The clustering analysis will group pile sizes in the most 
+            cost-efficient way from a material and constructability perspective.
+
         
         \tableofcontents
         \cleardoublepage
