@@ -5,6 +5,10 @@
 NYU Pile Capacity: An Interactive Web Application and Unifying Pile Load Test Database
 ######################################################################################
 
+.. note::
+
+   This chapter will be updated by 12/6/2019 with additional details on the features and background processes of *NYU Pile Capacity*.
+
 
 .. figure:: figures/plt_warehouse_schematic.png
    :name: plt_warehouse_schematic
