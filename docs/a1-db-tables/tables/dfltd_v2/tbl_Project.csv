@@ -18,7 +18,7 @@ txt_GeologicProvinceCode,nvarchar(25),YES,,
 txt_GeologicUnit,nvarchar(255),YES,,
 txt_GeneralSoilDescription,nvarchar(50),YES,,``borings.predom_soil``
 txt_ProjectID,nvarchar(100),YES,,``projects.number``
-txt_Title,nvarchar(100),YES,,
+txt_Title,nvarchar(100),YES,,``projects.title``
 mem_Remarks,nvarchar(-1),YES,,``projects.description``
 txt_Owner,nvarchar(255),YES,,*(empty)*
 txt_DataSourceCompanyAgency,nvarchar(255),YES,,
@@ -31,6 +31,6 @@ txt_GeotechnicalConsultant,nvarchar(50),YES,,
 txt_GeneralContractor,nvarchar(50),YES,,``projects.contractor``
 txt_Publication,nvarchar(-1),YES,,``projects.source_ref``
 txt_CreatedBy,nvarchar(20),YES,,*(unusable)*
-dte_AddDate,datetime2,YES,,
+dte_AddDate,datetime2,YES,,``projects.date_added``
 txt_ModifiedBy,nvarchar(20),YES,,*(unusable)*
-dte_ModifiedDate,datetime2,YES,,
+dte_ModifiedDate,datetime2,YES,,``projects.date_modified``

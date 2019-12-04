@@ -1,41 +1,41 @@
-Column,Type,Null,Units,NYU GPLTD-W Field
+Original Attribute,Type,Null,Units,New Attribute
 lng_KeyProject (PK),int,NO,,
 lng_KeyDeepFoundation (PK),int,NO,,
-txt_PileDesignation,nvarchar(255),YES,,
-txt_PileType,nvarchar(255),YES,,
+txt_PileDesignation,nvarchar(255),YES,,``piles.remarks``
+txt_PileType,nvarchar(255),YES,,``piles.type`` & ``piles.shape``
 txt_ConstructionMethodCode,nvarchar(255),YES,,
-txt_StructureNumber,nvarchar(255),YES,,
-txt_PierGroupNumber,nvarchar(255),YES,,
-txt_SacrificialOrProductionPile,nvarchar(255),YES,,
-lng_NumberOfSections,int,YES,,
-txt_GeometryCode,nvarchar(255),YES,,
+txt_StructureNumber,nvarchar(255),YES,,``piles.remarks``
+txt_PierGroupNumber,nvarchar(255),YES,,``piles.remarks``
+txt_SacrificialOrProductionPile,nvarchar(255),YES,,*(LDOEP only)*
+lng_NumberOfSections,int,YES,,*(all values = 1; a few = 2)*
+txt_GeometryCode,nvarchar(255),YES,,``piles.tapered``
 txt_TipTreatmentCode,nvarchar(255),YES,,
 dbl_GroundElevation,float,YES,,
-dbl_DepthToWater,float,YES,,
-txt_SoilTypeGen,nvarchar(50),YES,,
-txt_SoilTypeSide,nvarchar(50),YES,,
-txt_SoilTypeTip,nvarchar(50),YES,,
+dbl_DepthToWater,float,YES,,*(LDOEP only)*
+txt_SoilTypeGen,nvarchar(50),YES,,*(LDOEP only)*
+txt_SoilTypeSide,nvarchar(50),YES,,*(LDOEP only)*
+txt_SoilTypeTip,nvarchar(50),YES,,*(LDOEP only)*
 dbl_TopElevation,float,YES,,
 dbl_TipElevation,float,YES,,
-dbl_TotalLength,float,YES,,
-dbl_EmbeddedLength,float,YES,,
-dbl_PermanentCasedLength,float,YES,,
-dbl_PermanentCasingBottomElevation,float,YES,,
-dbl_DistanceToReactionPile1,float,YES,,
-dbl_DistanceToReactionPile2,float,YES,,
-dbl_DistanceToReactionPile3,float,YES,,
-dbl_DistanceToReactionPile4,float,YES,,
-dbl_BatterAngle,float,YES,,
-dte_InstallStartDate,datetime2,YES,,
-dte_InstallEndDate,datetime2,YES,,
-txt_InstallationSubcontractor,nvarchar(255),YES,,
-dbl_Easting,float,YES,,
-dbl_Northing,float,YES,,
-dbl_Station,float,YES,,
-dbl_Offset,float,YES,,
-dbl_Latitude,float,YES,,
-dbl_Longitude,float,YES,,
-txt_Remarks,nvarchar(-1),YES,,
+dbl_TotalLength,float,YES,mm,``piles.length``
+dbl_EmbeddedLength,float,YES,mm,``piles.emb_length``
+dbl_PermanentCasedLength,float,YES,,*(empty)*
+dbl_PermanentCasingBottomElevation,float,YES,,*(empty)*
+dbl_DistanceToReactionPile1,float,YES,,*(mostly empty)*
+dbl_DistanceToReactionPile2,float,YES,,*(mostly empty)*
+dbl_DistanceToReactionPile3,float,YES,,*(mostly empty)*
+dbl_DistanceToReactionPile4,float,YES,,*(mostly empty)*
+dbl_BatterAngle,float,YES,,*(mostly empty; all other values zero)*
+dte_InstallStartDate,datetime2,YES,,*(empty)*
+dte_InstallEndDate,datetime2,YES,,*(empty)*
+txt_InstallationSubcontractor,nvarchar(255),YES,,*(empty)*
+dbl_Easting,float,YES,,*(mostly empty)*
+dbl_Northing,float,YES,,*(mostly empty)*
+dbl_Station,float,YES,,*(empty)*
+dbl_Offset,float,YES,,*(mostly empty)*
+dbl_Latitude,float,YES,,*(mostly empty)*
+dbl_Longitude,float,YES,,*(mostly empty)*
+txt_Remarks,nvarchar(-1),YES,,*(mostly empty)*
 txt_CreatedBy,nvarchar(16),YES,,
 dte_AddDate,datetime2,YES,,
 txt_ModifiedBy,nvarchar(18),YES,,
