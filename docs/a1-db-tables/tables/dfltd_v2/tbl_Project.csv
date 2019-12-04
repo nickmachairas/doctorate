@@ -2,16 +2,16 @@ Original Attribute,Type,Null,Units,New Attribute
 lng_KeyProject (PK),int,NO,,``projects.source_id``
 txt_SourceDb,nvarchar(15),YES,,``projects.source_db``
 txt_ProjectName,nvarchar(255),YES,,``projects.site_name``
-txt_Address,nvarchar(255),YES,,
-txt_City,nvarchar(255),YES,,
-txt_County,nvarchar(55),YES,,
-txt_StateCode,nvarchar(2),YES,,
-txt_CountryCode,nvarchar(5),YES,,
+txt_Address,nvarchar(255),YES,,``locations.address``
+txt_City,nvarchar(255),YES,,``locations.city``
+txt_County,nvarchar(55),YES,,``locations.county``
+txt_StateCode,nvarchar(2),YES,,``locations.state``
+txt_CountryCode,nvarchar(5),YES,,``locations.country``
 txt_USCSPredominant,nvarchar(25),YES,,
 txt_ASTMPredominant,nvarchar(25),YES,,*(empty)*
 txt_ASTMLegacy,nvarchar(80),YES,,
-dbl_Latitude,float,YES,,
-dbl_Longitude,float,YES,,
+dbl_Latitude,float,YES,,``locations.latitude``
+dbl_Longitude,float,YES,,``locations.longitude``
 txt_VerticalDatumCode,nvarchar(25),YES,,*(mostly empty)*
 txt_HorizontalDatumCode,nvarchar(25),YES,,*(empty)*
 txt_GeologicProvinceCode,nvarchar(25),YES,,
