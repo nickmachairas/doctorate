@@ -89,11 +89,11 @@ Part of the original FORTRAN code of the *Olson APC Database* was made available
 
 .. literalinclude:: listings/olson_extract.py
    :language: python
-   :caption: Program to Extract Data from *Olson APC Database*
+   :caption: Program that Extracted Data from the *Olson APC Database*
    :name: olson_extract_py
 
 
-The output of data extraction algorithm is a Python dictionary which was then used to port all data to the relational database presented in the next section.
+The output of the data extraction algorithm is a Python dictionary which was then used to port all data to the relational database presented in the next section.
 
 
 The *Olson APC Database* consisted of a large data file (:numref:`OlsonRawSample`) containing project data. A few load test interpretations were stored, i.e. Davisson capacity (``QMDT``), peak load (``QMP``), capacity at 0.5-inch pile head settlement (``QCT``, aka *CalTrans Capacity*), etc. However, load test data points were not stored in the data file. Instead, original load test curves in .pdf format from the source projects were used (see :numref:`olson_ltn013_qs` for LTN 13). Dr. Olson provided figures for 487 records of the total 939. It was crucial to include the load test data points in the *NYU Pile Load Test Data Warehouse*, therefore, all figures were digitized using the tool :ref:`WebPlotDigitizer <WebPlotDigitizer>`.

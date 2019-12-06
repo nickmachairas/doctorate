@@ -58,6 +58,8 @@ An integral part of the dissertation is a web application named *Pile Capacity*,
 
 .. TODO: make sure that the text below is up-to-date with the chapter numbers
 
+*(chapter numbering will be updated in the last version)*
+
 Chapter 4 offers a comprehensive overview of the most popular methods for calculating the nominal resistance of driven piles. Chapter 5 presents a comparison and evaluation of nominal resistance methods for standard diameter piles while chapter 6 presents a comparison and evaluation of nominal resistance methods for large diameter piles. Chapter 7 offers a comprehensive overview of multiple methods for interpreting the capacity of driven piles from the results of static load tests. Chapter 8 presents a comparison and evaluation of interpreted capacity methods and provides recommendations based on the results of the study. In Chapter 9, a Machine Learning method for calculating nominal resistance is developed and tested with the results presented.
 
 The :ref:`Appendix <appendix1>` includes valuable details on the source databases that were combined as part of this study as well as ETL and attribute mapping. A reader familiar with the original data sources is advised to refer to this section if identifying an original attribute in *Pile Capacity* is difficult.
