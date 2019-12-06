@@ -82,9 +82,15 @@ def setup(app):
 
 # -- LaTeX customizations
 
-latex_appendices = ['a1-db-tables/_db_appendix']
+latex_appendices = [
+    'a1-edafos/edafos',
+    'a2-piles-notations/notations',
+    'a3-db-tables/_db_appendix']
 
-texinfo_appendices = ['a1-db-tables/_db_appendix']
+texinfo_appendices = [
+    'a1-edafos/edafos',
+    'a2-piles-notations/notations',
+    'a3-db-tables/_db_appendix']
 
 latex_elements = {
     'pointsize': '12pt',
@@ -158,7 +164,7 @@ latex_elements = {
             \vspace*{3.75 in}
             
             For Guidance Committee Review\\
-            v.0.6 - 11/30/2019
+            v.0.6.2 - 12/05/2019
             
             \newpage
             
@@ -280,10 +286,10 @@ latex_elements = {
         
         \newpage
             \chapter*{ }
-            \vspace*{-2.5 in}
+            \vspace*{-2 in}
             Approved by the Guidance Committee:
             
-            \vspace*{0.05 in}
+            \vspace*{0.1 in}
             
             \underline{Major:} \hspace{0.5 in} Civil (Geotechnical) Engineering
             
@@ -345,16 +351,16 @@ latex_elements = {
             \noindent\rule{2 in}{0.4pt} \\
             Date
             
-            \vspace*{0.2 in}
+            %\vspace*{0.2 in}
             
-            \noindent\rule{3.25 in}{0.4pt} \\
-            \textbf{Antonio Marinucci, PhD, PE, MBA} \\
-            Research Professor, Civil \& Urban Engineering, NYU
+            %\noindent\rule{3.25 in}{0.4pt} \\
+            %\textbf{Antonio Marinucci, PhD, PE, MBA} \\
+            %Research Professor, Civil \& Urban Engineering, NYU
             
-            \vspace*{0.075 in}
+            %\vspace*{0.075 in}
             
-            \noindent\rule{2 in}{0.4pt} \\
-            Date
+            %\noindent\rule{2 in}{0.4pt} \\
+            %Date
             
             }
             \end{singlespacing}
