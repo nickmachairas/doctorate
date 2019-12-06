@@ -1,16 +1,16 @@
-Column,Type,Null,Units,NYU GPLTD-W Field
+Original Attribute,Type,Null,Units,New Attribute
 lng_KeyProject (PK),int,NO,,
 lng_KeyDeepFoundation (PK),int,NO,,
-dbl_Diameter,float,YES,,
-dbl_CrossSectionArea,float,YES,,
-dbl_MomentInertia,float,YES,,
-dbl_ConcreteStrength,float,YES,,
-dbl_ConcreteModulus,float,YES,,
-dbl_WeightPerUnitLength,float,YES,,
-txt_ReinforcementCode,nvarchar(25),YES,,
-dbl_ReinforcementTotalXArea,float,YES,,
-dbl_ReinforcementYieldStrength,float,YES,,
-dbl_ReinforcementModulus,float,YES,,
+dbl_Diameter,float,YES,mm,``piles.diameter``
+dbl_CrossSectionArea,float,YES,,*(empty)*
+dbl_MomentInertia,float,YES,,*(empty)*
+dbl_ConcreteStrength,float,YES,,*(empty)*
+dbl_ConcreteModulus,float,YES,,*(empty)*
+dbl_WeightPerUnitLength,float,YES,,*(empty)*
+txt_ReinforcementCode,nvarchar(25),YES,,*(empty)*
+dbl_ReinforcementTotalXArea,float,YES,,*(empty)*
+dbl_ReinforcementYieldStrength,float,YES,,*(empty)*
+dbl_ReinforcementModulus,float,YES,,*(empty)*
 txt_CreatedBy,nvarchar(16),YES,,
 dte_AddDate,datetime2,YES,,
 txt_ModifiedBy,nvarchar(18),YES,,

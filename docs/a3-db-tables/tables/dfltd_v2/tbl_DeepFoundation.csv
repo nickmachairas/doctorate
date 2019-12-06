@@ -1,9 +1,9 @@
 Original Attribute,Type,Null,Units,New Attribute
 lng_KeyProject (PK),int,NO,,
 lng_KeyDeepFoundation (PK),int,NO,,
-txt_PileDesignation,nvarchar(255),YES,,``piles.remarks``
+txt_PileDesignation,nvarchar(255),YES,,``piles.name``
 txt_PileType,nvarchar(255),YES,,``piles.type`` & ``piles.shape``
-txt_ConstructionMethodCode,nvarchar(255),YES,,
+txt_ConstructionMethodCode,nvarchar(255),YES,,``piles.vibro`` & ``piles.jetted``
 txt_StructureNumber,nvarchar(255),YES,,``piles.remarks``
 txt_PierGroupNumber,nvarchar(255),YES,,``piles.remarks``
 txt_SacrificialOrProductionPile,nvarchar(255),YES,,*(LDOEP only)*
@@ -15,8 +15,8 @@ dbl_DepthToWater,float,YES,,*(LDOEP only)*
 txt_SoilTypeGen,nvarchar(50),YES,,*(LDOEP only)*
 txt_SoilTypeSide,nvarchar(50),YES,,*(LDOEP only)*
 txt_SoilTypeTip,nvarchar(50),YES,,*(LDOEP only)*
-dbl_TopElevation,float,YES,,
-dbl_TipElevation,float,YES,,
+dbl_TopElevation,float,YES,mm,``piles.head_elevation``
+dbl_TipElevation,float,YES,mm,``piles.toe_elevation``
 dbl_TotalLength,float,YES,mm,``piles.length``
 dbl_EmbeddedLength,float,YES,mm,``piles.emb_length``
 dbl_PermanentCasedLength,float,YES,,*(empty)*
