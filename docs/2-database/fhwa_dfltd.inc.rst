@@ -83,3 +83,4 @@ The database sign convention is positive for compressive loads and upward displa
 
 The key takeaway is that the list of projects will conform to the desired query criteria; however, the projects may contain additional explorations, deep foundations, and load tests that were not included in the query criteria.
 
+.. TODO: talk about problems with use, requires MS Access 32-bit, erroneous values

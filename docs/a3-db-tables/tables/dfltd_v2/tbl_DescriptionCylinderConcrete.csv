@@ -1,14 +1,14 @@
-Column,Type,Null,Units,NYU GPLTD-W Field
+Original Attribute,Type,Null,Units,New Attribute
 lng_KeyProject (PK),int,NO,,
 lng_KeyDeepFoundation (PK),int,NO,,
-dbl_OuterDiameter,float,YES,,
-dbl_InnerDiameter,float,YES,,
-dbl_WallThickness,float,YES,,
-dbl_CrossSectionArea,float,YES,,
-dbl_MomentInertia,float,YES,,
-dbl_WeightPerUnitLength,float,YES,,
-dbl_CompositeModulus,float,YES,,
-dbl_ConcreteStrength,float,YES,,
+dbl_OuterDiameter,float,YES,mm,``piles.diameter``
+dbl_InnerDiameter,float,YES,mm,*(skipped; rely on thickness)*
+dbl_WallThickness,float,YES,mm,``piles.wall_thickness``
+dbl_CrossSectionArea,float,YES,??,*(skipped; erroneous data)*
+dbl_MomentInertia,float,YES,,*(empty or erroneous)*
+dbl_WeightPerUnitLength,float,YES,kg/m,``piles.weight`` *(multiply by length)*
+dbl_CompositeModulus,float,YES,Pa,``piles.modulus``
+dbl_ConcreteStrength,float,YES,Pa,
 dbl_PrestressPressure,float,YES,,
 dbl_PostTensionStress,float,YES,,
 txt_PrestressYN,nvarchar(1),YES,,

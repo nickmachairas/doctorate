@@ -461,6 +461,9 @@ Deep Foundation Tables
    Appendix: DFLTD v.2 *tbl_DescriptionCylinderConcrete* Table Relationships
 
 
+.. note:: Properties for pile types "CC", "RC", "SC"
+
+
 .. csv-table:: Appendix: FHWA DFLTD v.2 *tbl_DescriptionCylinderConcrete* Table Attributes
    :file: tables/dfltd_v2/tbl_DescriptionCylinderConcrete.csv
    :header-rows: 1
@@ -484,6 +487,7 @@ Deep Foundation Tables
 
    Appendix: DFLTD v.2 *tbl_DescriptionDrilledShaft* Table Relationships
 
+.. note:: Properties for pile types "MI", "BC", "AC", "FC", "SP"
 
 .. csv-table:: Appendix: FHWA DFLTD v.2 *tbl_DescriptionDrilledShaft* Table Attributes
    :file: tables/dfltd_v2/tbl_DescriptionDrilledShaft.csv
