@@ -1,13 +1,13 @@
-Column,Type,Null,Units,NYU GPLTD-W Field
+Original Attribute,Type,Null,Units,New Attribute
 lng_KeyProject (PK),int,NO,,
 lng_KeyDeepFoundation (PK),int,NO,,
 lng_KeyLoadTest (PK),int,NO,,
-dte_TestDate,datetime2,YES,,
-dbl_SetupDays,float,YES,,
-txt_LoadTestSubcontractor,nvarchar(255),YES,,
-txt_LoadTestCode,nvarchar(255),YES,,
-txt_LoadTypeCode,nvarchar(255),YES,,
-txt_LoadDirectionCode,nvarchar(225),YES,,
+dte_TestDate,datetime2,YES,date,``load_tests.date_tested``
+dbl_SetupDays,float,YES,days,``load_tests.setup_time``
+txt_LoadTestSubcontractor,nvarchar(255),YES,,``load_tests.tested_by``
+txt_LoadTestCode,nvarchar(255),YES,,``load_tests.direction``
+txt_LoadTypeCode,nvarchar(255),YES,,``load_tests.direction``
+txt_LoadDirectionCode,nvarchar(225),YES,,*(empty)*
 txt_ASTMProcedureCode,nvarchar(255),YES,,
 txt_MaxLoadCriteriaCode,nvarchar(255),YES,,
 txt_FailCriteriaYN,nvarchar(255),YES,,
@@ -22,10 +22,10 @@ dbl_StaticTotalLoadApplied,float,YES,,
 dbl_StaticTotalDisplacement,float,YES,,
 dbl_StaticSideForce,float,YES,,
 dbl_StaticBaseForce,float,YES,,
-dbl_StaticSideForceWithResidual,float,YES,,
-dbl_StaticBaseForceWithResidual,float,YES,,
-dbl_StaticBaseDisplacement,float,YES,,
-txt_StatnamicTestIDLegacy,nvarchar(255),YES,,
+dbl_StaticSideForceWithResidual,float,YES,,*(empty)*
+dbl_StaticBaseForceWithResidual,float,YES,,*(empty)*
+dbl_StaticBaseDisplacement,float,YES,,*(empty)*
+txt_StatnamicTestIDLegacy,nvarchar(255),YES,,*(empty)*
 dbl_StatnamicDevice,float,YES,,
 txt_StatnamicCatchSystem,nvarchar(5),YES,,
 dbl_StatnamicTotTime,float,YES,,
@@ -62,8 +62,8 @@ dbl_OCellMaxTopLoad,float,YES,,
 dbl_OCellMaxTopDisplacement,float,YES,,
 dbl_OCellMaxTipLoad,float,YES,,
 dbl_OCellMaxTipDisplacement,float,YES,,
-txt_StaticLegacy,nvarchar(1),YES,,
-txt_LoadTestRemarks,nvarchar(255),YES,,
+txt_StaticLegacy,nvarchar(1),YES,,*(empty)*
+txt_LoadTestRemarks,nvarchar(255),YES,,*(empty)*
 txt_CreatedBy,nvarchar(16),YES,,
 dte_AddDate,datetime2,YES,,
 txt_ModifiedBy,nvarchar(18),YES,,

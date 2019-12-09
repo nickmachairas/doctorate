@@ -561,6 +561,9 @@ Deep Foundation Tables
    Appendix: DFLTD v.2 *tbl_DescriptionPolyconcrete* Table Relationships
 
 
+.. note:: Properties for pile types "OC", "SC"
+
+
 .. csv-table:: Appendix: FHWA DFLTD v.2 *tbl_DescriptionPolyconcrete* Table Attributes
    :file: tables/dfltd_v2/tbl_DescriptionPolyconcrete.csv
    :header-rows: 1

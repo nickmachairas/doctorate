@@ -1,13 +1,13 @@
-Column,Type,Null,Units,NYU GPLTD-W Field
+Original Attribute,Type,Null,Units,New Attribute
 lng_KeyProject (PK),int,NO,,
 lng_KeyDeepFoundation (PK),int,NO,,
-dbl_Diameter,float,YES,,
-dbl_Gauge,float,YES,,
-txt_ConcreteFilledYN,nvarchar(1),YES,,
+dbl_Diameter,float,YES,mm,``piles.diameter``
+dbl_Gauge,float,YES,,*(empty)*
+txt_ConcreteFilledYN,nvarchar(1),YES,,``piles.remarks``
 dbl_SurfaceArea,float,YES,,
-dbl_CrossSectionArea,float,YES,,
+dbl_CrossSectionArea,float,YES,mm2,``piles.cross_area``
 dbl_MomentInertia,float,YES,,
-dbl_Modulus,float,YES,,
+dbl_Modulus,float,YES,Pa,``piles.modulus``
 txt_CreatedBy,nvarchar(16),YES,,
 dte_AddDate,datetime2,YES,,
 txt_ModifiedBy,nvarchar(18),YES,,

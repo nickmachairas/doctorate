@@ -1,11 +1,11 @@
-Column,Type,Null,Units,NYU GPLTD-W Field
+Original Attribute,Type,Null,Units,New Attribute
 lng_KeyProject (PK),int,NO,,
 lng_KeyDeepFoundation (PK),int,NO,,
-dbl_TopDiameter,float,YES,,
-dbl_TipDiameter,float,YES,,
-dbl_Gauge,float,YES,,
-dbl_TaperAngle,float,YES,,
-dbl_Modulus,float,YES,,
+dbl_TopDiameter,float,YES,mm,``piles.diameter``
+dbl_TipDiameter,float,YES,mm,*(inconsistent; toe > head)*
+dbl_Gauge,float,YES,mm,``piles.wall_thickness``
+dbl_TaperAngle,float,YES,,*(empty)*
+dbl_Modulus,float,YES,,*(empty)*
 txt_ModifiedBy,nvarchar(18),YES,,
 dte_AddDate,datetime2,YES,,
 dte_ModifiedDate,datetime2,YES,,

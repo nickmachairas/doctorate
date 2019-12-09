@@ -1,24 +1,24 @@
-Column,Type,Null,Units,NYU GPLTD-W Field
+Original Attribute,Type,Null,Units,New Attribute
 lng_KeyProject (PK),int,NO,,
 lng_KeyDeepFoundation (PK),int,NO,,
-dbl_WallThickness,float,YES,,
-dbl_OuterDiameter,float,YES,,
+dbl_WallThickness,float,YES,mm,``piles.wall_thickness``
+dbl_OuterDiameter,float,YES,mm,``piles.diameter``
 dbl_InnerDiameter,float,YES,,
-dbl_CrossSectionArea,float,YES,,
-dbl_EndArea,float,YES,,
+dbl_CrossSectionArea,float,YES,mm2,``piles.cross_area``
+dbl_EndArea,float,YES,,*(empty)*
 dbl_MomentInertia,float,YES,,
-dbl_WeightPerUnitLength,float,YES,,
-dbl_SteelModulus,float,YES,,
+dbl_WeightPerUnitLength,float,YES,kg/m,``piles.weight``
+dbl_SteelModulus,float,YES,Pa,``piles.modulus``
 dbl_SteelYieldStrength,float,YES,,
-txt_ConcreteFilledYN,nvarchar(8),YES,,
-dbl_ConcreteDepth,float,YES,,
-dbl_ConcreteStrength,float,YES,,
-dbl_ConcreteModulus,float,YES,,
-dbl_ReinforcementTotalXArea,float,YES,,
-dbl_ReinforcementPctXArea,float,YES,,
-dbl_ReinforcementYieldStrength,float,YES,,
+txt_ConcreteFilledYN,nvarchar(8),YES,,``piles.remarks``
+dbl_ConcreteDepth,float,YES,,*(mostly empty)*
+dbl_ConcreteStrength,float,YES,,*(mostly empty)*
+dbl_ConcreteModulus,float,YES,,*(mostly empty)*
+dbl_ReinforcementTotalXArea,float,YES,,*(mostly empty)*
+dbl_ReinforcementPctXArea,float,YES,,*(empty)*
+dbl_ReinforcementYieldStrength,float,YES,,*(empty)*
 dbl_ReinforcementModulus,float,YES,,
-dbl_CompositeModulus,float,YES,,
+dbl_CompositeModulus,float,YES,Pa,``piles.modulus``
 txt_ArtificialPlugYN,nvarchar(8),YES,,
 txt_ArtificialPlugNote,nvarchar(255),YES,,
 txt_CreatedBy,nvarchar(16),YES,,

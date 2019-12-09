@@ -1,17 +1,17 @@
-Column,Type,Null,Units,NYU GPLTD-W Field
+Original Attribute,Type,Null,Units,New Attribute
 lng_KeyProject (PK),int,NO,,
 lng_KeyDeepFoundation (PK),int,NO,,
 dbl_CoreDiameter,float,YES,,
 lng_NumberOfSides,int,YES,,
-dbl_SideLength,float,YES,,
-dbl_EquivalentDiameter,float,YES,,
-dbl_Perimeter,float,YES,,
-dbl_CrossSectionArea,float,YES,,
+dbl_SideLength,float,YES,mm,``piles.diameter`` for 'SC'
+dbl_EquivalentDiameter,float,YES,mm,``piles.diameter`` for 'OC'
+dbl_Perimeter,float,YES,mm,``piles.circumference``
+dbl_CrossSectionArea,float,YES,mm2,``piles.cross_area``
 dbl_MomentInertia,float,YES,,
-dbl_WeightPerUnitLength,float,YES,,
-dbl_ConcreteModulus,float,YES,,
-dbl_ConcreteStrength,float,YES,,
-dbl_PrestressPressure,float,YES,,
+dbl_WeightPerUnitLength,float,YES,kg/m,``piles.weight``
+dbl_ConcreteModulus,float,YES,Pa,``piles.modulus``
+dbl_ConcreteStrength,float,YES,,*(empty)*
+dbl_PrestressPressure,float,YES,,*(empty)*
 txt_PrestressLegacy,nvarchar(1),YES,,
 txt_ReinforceLegacy,nvarchar(18),YES,,
 txt_CreatedBy,nvarchar(16),YES,,
