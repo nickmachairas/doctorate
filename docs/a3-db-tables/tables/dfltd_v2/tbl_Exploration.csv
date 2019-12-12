@@ -1,26 +1,26 @@
-Column,Type,Null,Units,NYU GPLTD-W Field
+Original Attribute,Type,Null,Units,New Attribute
 lng_KeyProject (PK),int,NO,,
-txt_KeyExplorationName (PK),nvarchar(25),NO,,
+txt_KeyExplorationName (PK),nvarchar(25),NO,,``borings.name``
 txt_KeyExplorationType (PK),nvarchar(12),NO,,
 txt_ExplorationSubType,nvarchar(255),YES,,
-dte_ExplorationDate,datetime2,YES,,
-txt_ExplorationHammerTypeCode,nvarchar(10),YES,,
-dbl_HammerEfficiency,float,YES,%,
-dbl_ConeDiameter,float,YES,mm,
+dte_ExplorationDate,datetime2,YES,,*(LDOEP only)*
+txt_ExplorationHammerTypeCode,nvarchar(10),YES,,*(LDOEP only and mostly unknown)*
+dbl_HammerEfficiency,float,YES,%,*(mostly empty)*
+dbl_ConeDiameter,float,YES,mm,*(mostly empty)*
 dbl_ConeAngle,float,YES,deg,
-dbl_ConeBaseArea,float,YES,mm\ :sup:`2`,
-dbl_RodDiameter,float,YES,mm,
+dbl_ConeBaseArea,float,YES,mm\ :sup:`2`,*(empty)*
+dbl_RodDiameter,float,YES,mm,*(empty)*
 txt_ConeType,nvarchar(255),YES,,
-dbl_CPTRatioa,float,YES,n/a,
-dbl_CPTRatiob,float,YES,n/a,
-txt_PMTInstallMethodCode,nvarchar(255),YES,,
-txt_PMTDeviceTypeCode,nvarchar(5),YES,,
-mem_Remarks,nvarchar(255),YES,,
-dbl_DepthToWaterStatic,float,YES,mm,
-dbl_MeasuringDepthWaterStatic,float,YES,mm,
-dbl_DepthToWaterArtesian,float,YES,mm,
-dbl_ArtesianMeasuringDepth,float,YES,mm,
-txt_FreshOrSaltWater,nvarchar(25),YES,,
+dbl_CPTRatioa,float,YES,n/a,*(empty)*
+dbl_CPTRatiob,float,YES,n/a,*(empty)*
+txt_PMTInstallMethodCode,nvarchar(255),YES,,*(empty)*
+txt_PMTDeviceTypeCode,nvarchar(5),YES,,*(empty)*
+mem_Remarks,nvarchar(255),YES,,``borings.remarks``
+dbl_DepthToWaterStatic,float,YES,mm,``borings.ewt``
+dbl_MeasuringDepthWaterStatic,float,YES,mm,*(empty)*
+dbl_DepthToWaterArtesian,float,YES,mm,*(empty)*
+dbl_ArtesianMeasuringDepth,float,YES,mm,*(empty)*
+txt_FreshOrSaltWater,nvarchar(25),YES,,*(LDOEP only)*
 dbl_GroundElevation,float,YES,mm,
 dbl_Easting,float,YES,mm,
 dbl_Northing,float,YES,mm,
@@ -28,7 +28,7 @@ dbl_Latitude,float,YES,deg,
 dbl_Longitude,float,YES,deg,
 dbl_Station,float,YES,mm,
 dbl_Offset,float,YES,mm,
-txt_USCSCodePredominant,nvarchar(255),YES,,
+txt_USCSCodePredominant,nvarchar(255),YES,,``borings.predom_soil``
 txt_ASTMCodePredominant,nvarchar(255),YES,,
 txt_CreatedBy,nvarchar(16),YES,,
 dte_AddDate,datetime2,YES,,

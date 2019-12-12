@@ -8,8 +8,8 @@ txt_LoadTestSubcontractor,nvarchar(255),YES,,``load_tests.tested_by``
 txt_LoadTestCode,nvarchar(255),YES,,``load_tests.direction``
 txt_LoadTypeCode,nvarchar(255),YES,,``load_tests.direction``
 txt_LoadDirectionCode,nvarchar(225),YES,,*(empty)*
-txt_ASTMProcedureCode,nvarchar(255),YES,,
-txt_MaxLoadCriteriaCode,nvarchar(255),YES,,
+txt_ASTMProcedureCode,nvarchar(255),YES,,``load_tests.static_type``
+txt_MaxLoadCriteriaCode,nvarchar(255),YES,,*(LDOEP only)*
 txt_FailCriteriaYN,nvarchar(255),YES,,
 txt_CyclicTestYN,nvarchar(255),YES,,
 txt_LoadXferDataYN,nvarchar(255),YES,,
@@ -28,9 +28,9 @@ dbl_StaticBaseDisplacement,float,YES,,*(empty)*
 txt_StatnamicTestIDLegacy,nvarchar(255),YES,,*(empty)*
 dbl_StatnamicDevice,float,YES,,
 txt_StatnamicCatchSystem,nvarchar(5),YES,,
-dbl_StatnamicTotTime,float,YES,,
-dbl_StatnamicPreLoad,float,YES,,
-dbl_StatnamicPreDisplacement,float,YES,,
+dbl_StatnamicTotTime,float,YES,,*(empty)*
+dbl_StatnamicPreLoad,float,YES,,*(empty)*
+dbl_StatnamicPreDisplacement,float,YES,,*(empty)*
 dbl_StatnamicMaxLoad,float,YES,,
 dbl_StatnamicMaxDisplacement,float,YES,,
 dbl_StatnamicMaxLoadMiddendorp,float,YES,,
@@ -39,29 +39,29 @@ dbl_StatnamicMaxLoadSUP,float,YES,,
 dbl_StatnamicMaxDisplacementSUP,float,YES,,
 dbl_StatnamicMaxLoadMUP,float,YES,,
 dbl_StatnamicMaxDisplacementMUP,float,YES,,
-dbl_MaxUnitBaseResistance,float,YES,,
-dbl_OCell1RatedCapacity,float,YES,,
-dbl_OCell1Depth,float,YES,,
-dbl_OCell1MaxUniDirectionalForce,float,YES,,
-dbl_OCell1MaxUpDisplacement,float,YES,,
-dbl_OCell1MaxDownDisplacement,float,YES,,
-txt_OCell1Remarks,nvarchar(255),YES,,
-dbl_OCell2RatedCapacity,float,YES,,
-dbl_OCell2Depth,float,YES,,
-dbl_OCell2MaxUniDirectionalForce,float,YES,,
-dbl_OCell2MaxUpDisplacement,float,YES,,
-dbl_OCell2MaxDownDisplacement,float,YES,,
-txt_OCell2Remarks,nvarchar(255),YES,,
-dbl_OCell3RatedCapacity,float,YES,,
-dbl_OCell3Depth,float,YES,,
-dbl_OCell3MaxUniDirectionalForce,float,YES,,
-dbl_OCell3MaxUpDisplacement,float,YES,,
-dbl_OCell3MaxDownDisplacement,float,YES,,
-txt_OCell3Remarks,nvarchar(255),YES,,
-dbl_OCellMaxTopLoad,float,YES,,
-dbl_OCellMaxTopDisplacement,float,YES,,
-dbl_OCellMaxTipLoad,float,YES,,
-dbl_OCellMaxTipDisplacement,float,YES,,
+dbl_MaxUnitBaseResistance,float,YES,,*(empty)*
+dbl_OCell1RatedCapacity,float,YES,,*(empty)*
+dbl_OCell1Depth,float,YES,,*(empty)*
+dbl_OCell1MaxUniDirectionalForce,float,YES,,*(empty)*
+dbl_OCell1MaxUpDisplacement,float,YES,,*(empty)*
+dbl_OCell1MaxDownDisplacement,float,YES,,*(empty)*
+txt_OCell1Remarks,nvarchar(255),YES,,*(empty)*
+dbl_OCell2RatedCapacity,float,YES,,*(empty)*
+dbl_OCell2Depth,float,YES,,*(empty)*
+dbl_OCell2MaxUniDirectionalForce,float,YES,,*(empty)*
+dbl_OCell2MaxUpDisplacement,float,YES,,*(empty)*
+dbl_OCell2MaxDownDisplacement,float,YES,,*(empty)*
+txt_OCell2Remarks,nvarchar(255),YES,,*(empty)*
+dbl_OCell3RatedCapacity,float,YES,,*(empty)*
+dbl_OCell3Depth,float,YES,,*(empty)*
+dbl_OCell3MaxUniDirectionalForce,float,YES,,*(empty)*
+dbl_OCell3MaxUpDisplacement,float,YES,,*(empty)*
+dbl_OCell3MaxDownDisplacement,float,YES,,*(empty)*
+txt_OCell3Remarks,nvarchar(255),YES,,*(empty)*
+dbl_OCellMaxTopLoad,float,YES,,*(almost empty)*
+dbl_OCellMaxTopDisplacement,float,YES,,*(almost empty)*
+dbl_OCellMaxTipLoad,float,YES,,*(almost empty)*
+dbl_OCellMaxTipDisplacement,float,YES,,*(almost empty)*
 txt_StaticLegacy,nvarchar(1),YES,,*(empty)*
 txt_LoadTestRemarks,nvarchar(255),YES,,*(empty)*
 txt_CreatedBy,nvarchar(16),YES,,

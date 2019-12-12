@@ -1,19 +1,19 @@
-Column,Type,Null,Units,NYU GPLTD-W Field
+Original Attribute,Type,Null,Units,New Attribute
 lng_KeyProject (PK),int,NO,,
 lng_KeyDeepFoundation (PK),int,NO,,
 lng_KeyLoadTest (PK),int,NO,,
 lng_KeyLoadStep (PK),int,NO,,
-dte_ReadTime,datetime2,YES,,
-dbl_ElapsedTime,float,YES,,
-dbl_TotalAppliedLoadGeneric,float,YES,,
-dbl_TotalAppliedLoadCell,float,YES,,
-dbl_TotalAppliedLoadJack,float,YES,,
-dbl_TotalAppliedLoadStrainGage,float,YES,,
-dbl_DisplGeneric,float,YES,,
-dbl_DisplPileHeadSurvey,float,YES,,
-dbl_DisplDialGage,float,YES,,
-dbl_DisplWireLine,float,YES,,
-dbl_DisplLiquidLevelGage,float,YES,,
+dte_ReadTime,datetime2,YES,,*(empty)*
+dbl_ElapsedTime,float,YES,,*(empty)*
+dbl_TotalAppliedLoadGeneric,float,YES,N,``static_tests.load`` and ``static_tests.load_type``
+dbl_TotalAppliedLoadCell,float,YES,N,``static_tests.load`` and ``static_tests.load_type``
+dbl_TotalAppliedLoadJack,float,YES,N,``static_tests.load`` and ``static_tests.load_type``
+dbl_TotalAppliedLoadStrainGage,float,YES,N,``static_tests.load`` and ``static_tests.load_type``
+dbl_DisplGeneric,float,YES,mm,``static_tests.displacement`` and ``static_tests.displ_type``
+dbl_DisplPileHeadSurvey,float,YES,mm,``static_tests.displacement`` and ``static_tests.displ_type``
+dbl_DisplDialGage,float,YES,mm,``static_tests.displacement`` and ``static_tests.displ_type``
+dbl_DisplWireLine,float,YES,,*(empty)*
+dbl_DisplLiquidLevelGage,float,YES,mm,``static_tests.displacement`` and ``static_tests.displ_type``
 txt_CreatedBy,nvarchar(20),YES,,
 dte_AddDate,datetime2,YES,,
 txt_ModifiedBy,nvarchar(20),YES,,
