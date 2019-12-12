@@ -14,12 +14,8 @@
 
 
 
-Data Tables
-===========
-
-
 Project Table
--------------
+=============
 
 **Name:**
   ``tbl_Project``
@@ -40,7 +36,7 @@ Project Table
 
 
 Exploration Tables
-------------------
+==================
 
 **Name:**
   ``tbl_Exploration``
@@ -347,7 +343,7 @@ Exploration Tables
 
 
 Deep Foundation Tables
-----------------------
+======================
 
 
 **Name:**
@@ -648,7 +644,7 @@ Deep Foundation Tables
 
 
 Deep Foundation Installation Tables
------------------------------------
+===================================
 
 
 **Name:**
@@ -938,7 +934,7 @@ Deep Foundation Installation Tables
 
 
 Load Test Tables
-----------------
+================
 
 
 **Name:**
@@ -1206,7 +1202,7 @@ Load Test Tables
 
 
 Attachments Table
------------------
+=================
 
 **Name:**
   ``tbl_Attachments``
@@ -1221,9 +1217,3 @@ Attachments Table
    :widths: 15, 7, 3, 4, 15
    :align: center
 
-
-
-
-
-Lookup Tables
-=============

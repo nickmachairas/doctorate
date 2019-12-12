@@ -41,7 +41,7 @@ Consider the soil profile in :numref:`soilstresses_caseA`. A 16-ft sand layer wi
    :width: 300 px
    :name: soilstresses_caseA
 
-   Case A: Single layer, stresses above and below water table.
+   Appendix: Case A: Single layer, stresses above and below water table
 
 
 The first takeaway comes with the introduction of the term :math:`z_w`, the vertical distance below the water table.
@@ -172,7 +172,7 @@ And a stress distribution plot can be conveniently drawn as shown in :numref:`so
    :width: 400 px
    :name: soilstresses_caseA_auto
 
-   Stress distribution for Case A.
+   Appendix: Stress distribution for Case A
 
 
 
@@ -188,7 +188,7 @@ Consider the soil profile in :numref:`soilstresses_caseB`. A 5-ft sand layer wit
    :width: 300 px
    :name: soilstresses_caseB
 
-   Case B: Two layers, stresses above and below water table.
+   Appendix: Case B: Two layers, stresses above and below water table
 
 
 
@@ -322,7 +322,7 @@ And a stress distribution plot can be conveniently drawn as shown in :numref:`so
    :width: 400 px
    :name: soilstresses_caseB_auto
 
-   Stress distribution for Case B.
+   Appendix: Stress distribution for Case B
 
 
 
@@ -339,7 +339,7 @@ Consider the soil profile in :numref:`soilstresses_caseC`. A 4.5-ft sand layer w
    :align: center
    :width: 300 px
 
-   Case C: Two layers, under water.
+   Appendix: Case C: Two layers, under water
 
 
 
@@ -469,7 +469,7 @@ And a stress distribution plot can be conveniently drawn as shown in :numref:`so
    :width: 400 px
    :name: soilstresses_caseC_auto
 
-   Stress distribution for Case C.
+   Appendix: Stress distribution for Case C
 
 
 
@@ -731,7 +731,7 @@ Correlations for cohesionless soils depended on the soil type. :eq:`olson_tuw_sa
 .. rubric:: Olson Soil Classification to USCS
 
 
-.. table:: Olson Soil Classification to Unified Soil Classification System (USCS)
+.. table:: Appendix: Olson Soil Classification to Unified Soil Classification System (USCS)
    :widths: 10 15 15 10 11 39
    :name: Olson-USCS-table
 
@@ -800,7 +800,7 @@ For cohesive soils, common properties, including relationships between consisten
 
 
 
-.. table:: Common Properties of Cohesionless Soils (after :ref:`Hunt, 1984 <Hunt1984>`)
+.. table:: Appendix: Common Properties of Cohesionless Soils (after :ref:`Hunt, 1984 <Hunt1984>`)
    :widths: 20 15 8 6 14 13 14
    :name: Hunt-cohesionless-table
 
@@ -847,7 +847,7 @@ For cohesive soils, common properties, including relationships between consisten
 
 
 
-.. table:: Common Properties of Cohesive Soils (after :ref:`Hunt, 1984 <Hunt1984>`)
+.. table:: Appendix: Common Properties of Cohesive Soils (after :ref:`Hunt, 1984 <Hunt1984>`)
    :widths: 18 10 30 17 25
    :name: Hunt-cohesive-table
 
@@ -872,7 +872,7 @@ For cohesive soils, common properties, including relationships between consisten
 
 
 
-.. table:: Typical Properties of Formations of Cohesive Materials (after :ref:`Hunt, 1984 <Hunt1984>`)
+.. table:: Appendix: Typical Properties of Formations of Cohesive Materials (after :ref:`Hunt, 1984 <Hunt1984>`)
    :name: Hunt-cohesive-ext-table
 
    +-----------------------+------+-----------------------+------------------------+--------------+-------+-------+------------------+-------------------+--------------------+-----------------------------+
@@ -1025,7 +1025,7 @@ The process of delineating the soil profile into layers is easier said than done
    :width: 450 px
    :name: spt_delineation_figure
 
-   Delineating the soil profile into layers using the field SPT N Values for
+   Appendix: Delineating the soil profile into layers using the field SPT N Values for
    "North Abutment S-1" (after :ref:`Hannigan et al., 2006a <Hannigan2006a>`).
 
 
@@ -1040,7 +1040,7 @@ There is no standard process for layer delineation. In the left-hand side of :nu
 It is common practice that after layers have been delineated within a soil profile, the geotechnical properties for each layer are derived by averaging the available data for each layer. :numref:`spt_delineation_example_table` offers an example of this process for "North Abutment S-1".
 
 
-.. table:: Field and average N values (North Abutment S-1)
+.. table:: Appendix: Field and average N values (North Abutment S-1)
    :widths: auto
    :align: center
    :name: spt_delineation_example_table
@@ -1109,13 +1109,13 @@ Soil Classification
    :width: 550 px
    :name: uscs-fig
 
-   Unified Soil Classification System, USCS (adopted from the California
+   Appendix: Unified Soil Classification System, USCS (adopted from the California
    Department of Transportation, Caltrans).
 
 
 
 
-.. table:: Unified Soil Classification System (USCS)
+.. table:: Appendix: Unified Soil Classification System (USCS)
    :name: uscs-table
 
    +-------------------+-------------+-----------------------------------------------+-------------------+
@@ -1260,7 +1260,7 @@ Consider the example in :numref:`ex_capacity_sand`.
    :width: 400px
    :name: ex_capacity_sand
 
-   Example: Closed-ended steel pipe pile in sand.
+   Appendix: Example: Closed-ended steel pipe pile in sand.
 
 
 The calculated capacity, :math:`R_n`, (aka *nominal resistance*) is the sum of the frictional (aka *shaft*) resistance, :math:`R_s`, and the end-bearing (aka *toe*) resistance, :math:`R_p`, of the pile. Hence,

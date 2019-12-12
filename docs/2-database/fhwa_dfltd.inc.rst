@@ -18,7 +18,7 @@ Load test types in the new database include axial static, rapid (Statnamic), and
    :width: 250 px
    :name: fhwa_pile_type_distribution
 
-   Distribution of Pile Types in the *FHWA DFLTD v.2* Database
+   Distribution of Pile Types in the *FHWA DFLTD v.2*
 
 
 
@@ -31,7 +31,7 @@ Data included in the database was obtained from a large number of sources. These
    :width: 350 px
    :name: fhwa_pile_length_distribution
 
-   Distribution of Pile Lengths in the *FHWA DFLTD v.2* Database
+   Distribution of Pile Lengths in the *FHWA DFLTD v.2*
 
 
 .. TODO: rephrase this paragraph
@@ -50,8 +50,7 @@ Native digital data for the static and Statnamic load tests was generally not av
 Data Format
 -----------
 
-DFLTD v.2 was developed in Microsoft Access 2013. The graphics utility *Advanced Software Engineering’s Chartdirector* was employed to design the forms, queries, and auxiliary tables required for
-data inquiry, viewing, and export. This utility allows users to access data, but not to make any changes.
+DFLTD v.2 was developed in Microsoft Access 2013. The graphics utility *Advanced Software Engineering’s Chartdirector* was employed to design the forms, queries, and auxiliary tables required for data inquiry, viewing, and export. This utility allows users to access data, but not to make any changes.
 
 .. TODO: rephrase this paragraph
 
@@ -64,19 +63,20 @@ The database sign convention is positive for compressive loads and upward displa
    :alt: DFLTD_v2_general_diagram.jpg
    :name: DFLTD_v2_general_diagram
 
-   DFLTD v.2 Database Organization (after :ref:`Petek et al., 2016 <Petek2016>`)
+   *FHWA DFLTD v.2* Database Organization (after :ref:`Petek et al., 2016 <Petek2016>`)
 
 
 :numref:`DFLTD_v2_general_diagram` shows the general structure of DFLTD v.2. The full ER diagram is presented in :numref:`DFLTD_v2_ER_Diagram`.
 
 
 
-.. figure:: figures/DFLTD_v2_ER_Diagram.png
+.. figure:: figures/DFLTD_v2_ER_Diagram_rot.png
+   :width: 475 px
    :align: center
-   :alt: DFLTD_v2_ER_Diagram.png
+   :alt: DFLTD_v2_ER_Diagram_rot.png
    :name: DFLTD_v2_ER_Diagram
 
-   DFLTD v.2 Entity Relationship Diagram (exported from MS Access)
+   *FHWA DFLTD v.2* Entity Relationship Diagram (exported from MS Access)
 
 
 .. TODO: rephrase this paragraph

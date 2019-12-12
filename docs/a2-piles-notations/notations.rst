@@ -19,10 +19,10 @@ Schematic shown in :numref:`hpile_schematic`. Section details for english H-Pile
    :width: 450 px
    :name: hpile_schematic
 
-   H-Pile Schematic
+   Appendix: H-Pile Schematic
 
 
-.. table:: Section details for English H-Piles
+.. table:: Appendix: Section details for English H-Piles
    :widths: auto
    :align: center
    :name: hpile_sections_table
@@ -68,7 +68,7 @@ Schematic shown in :numref:`pipe_pile_schematic`.
    :width: 450 px
    :name: pipe_pile_schematic
 
-   Pipe Pile Schematic
+   Appendix: Pipe Pile Schematic
 
 
 
@@ -81,7 +81,7 @@ Schematic shown in :numref:`concrete_pile_schematic`.
    :width: 450 px
    :name: concrete_pile_schematic
 
-   Driven Concrete Pile Schematic
+   Appendix: Driven Concrete Pile Schematic
 
 
 .. math::
@@ -99,7 +99,7 @@ Schematic shown in :numref:`timber_pile_schematic`.
    :width: 450 px
    :name: timber_pile_schematic
 
-   Timber Pile Schematic
+   Appendix: Timber Pile Schematic
 
 
 Cast-in-place Concrete Piles
@@ -111,7 +111,7 @@ Schematic shown in :numref:`cipc_pile_schematic`.
    :width: 450 px
    :name: cipc_pile_schematic
 
-   Cast-in-place Concrete Pile Schematic
+   Appendix: Cast-in-place Concrete Pile Schematic
 
 
 
@@ -130,7 +130,7 @@ Various notation styles are encountered across literature. This document uses sy
    :width: 350 px
    :name: notations_figure
 
-   Typical profile view with embedded pile and associated symbols
+   Appendix: Typical profile view with embedded pile and associated symbols
 
 
 ----

@@ -1,14 +1,14 @@
-Column,Type,Null,Units,NYU GPLTD-W Field
-lng_KeyProject (PK),int,NO,,
-txt_KeyPathAndFile (PK),nvarchar(255),NO,,
-txt_FileName,nvarchar(255),YES,,
-txt_FileDescription,nvarchar(255),YES,,
-txt_Category,nvarchar(255),YES,,
-txt_KeyExplorationName,nvarchar(25),YES,,
-txt_KeyExplorationType,nvarchar(25),YES,,
-lng_KeyDeepFoundation,int,YES,,
-lng_KeyLoadTest,int,YES,,
-txt_CreatedBy,nvarchar(255),YES,,
-dte_AddDate,datetime2,YES,,
-txt_ModifiedBy,nvarchar(255),YES,,
-dte_ModifiedDate,datetime2,YES,,
+Original Attributes,Type,Null,Units,New Attributes
+lng_KeyProject (PK),int,NO,,*(empty)*
+txt_KeyPathAndFile (PK),nvarchar(255),NO,,*(empty)*
+txt_FileName,nvarchar(255),YES,,*(empty)*
+txt_FileDescription,nvarchar(255),YES,,*(empty)*
+txt_Category,nvarchar(255),YES,,*(empty)*
+txt_KeyExplorationName,nvarchar(25),YES,,*(empty)*
+txt_KeyExplorationType,nvarchar(25),YES,,*(empty)*
+lng_KeyDeepFoundation,int,YES,,*(empty)*
+lng_KeyLoadTest,int,YES,,*(empty)*
+txt_CreatedBy,nvarchar(255),YES,,*(empty)*
+dte_AddDate,datetime2,YES,,*(empty)*
+txt_ModifiedBy,nvarchar(255),YES,,*(empty)*
+dte_ModifiedDate,datetime2,YES,,*(empty)*

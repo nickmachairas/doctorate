@@ -27,7 +27,7 @@ The *Olson APC Database* contained 939 distinct load test records of primarily d
    :width: 250 px
    :name: olson_pile_type_distribution
 
-   Distribution of Pile Types in the *Olson APC Database*
+   Distribution of Pile Types in the *Olson APC* Database
 
 
 The average diameter was 16.3 inches with a range from 4.5 to 60 inches. :numref:`olson_pile_diameter_distribution` presents a histogram of pile diameters in the *Olson APC Database*. In terms of pile length, the average value was 72 feet with a range from 8.8 to 370 feet. :numref:`olson_pile_length_distribution` presents a histogram of pile lengths.
@@ -37,7 +37,7 @@ The average diameter was 16.3 inches with a range from 4.5 to 60 inches. :numref
    :width: 350 px
    :name: olson_pile_diameter_distribution
 
-   Distribution of Pile Diameters in the *Olson APC Database*
+   Distribution of Pile Diameters in the *Olson APC* Database
 
 
 
@@ -45,7 +45,7 @@ The average diameter was 16.3 inches with a range from 4.5 to 60 inches. :numref
    :width: 350 px
    :name: olson_pile_length_distribution
 
-   Distribution of Pile Lengths in the *Olson APC Database*
+   Distribution of Pile Lengths in the *Olson APC* Database
 
 
 The majority of the piles were constructed in clayey and silty soils, as can be seen in :numref:`olson_soil_type_distribution`.
@@ -55,7 +55,7 @@ The majority of the piles were constructed in clayey and silty soils, as can be 
    :width: 250 px
    :name: olson_soil_type_distribution
 
-   Distribution of Soil Types in the *Olson APC Database*
+   Distribution of Soil Types in the *Olson APC* Database
 
 
 
@@ -80,7 +80,7 @@ Focusing on LTN 11, :numref:`OlsonDecode` expands the lines and adds variable na
    :lines: 45-76
    :emphasize-lines: 2, 6, 9, 12, 18, 21, 31
    :linenos:
-   :caption: Decoding raw data in the *Olson APC Database*
+   :caption: Decoding raw data in the *Olson APC* Database
    :name: OlsonDecode
 
 
@@ -89,7 +89,7 @@ Part of the original FORTRAN code of the *Olson APC Database* was made available
 
 .. literalinclude:: listings/olson_extract.py
    :language: python
-   :caption: Program that Extracted Data from the *Olson APC Database*
+   :caption: Program that Extracted Data from the *Olson APC* Database
    :name: olson_extract_py
 
 
@@ -103,7 +103,7 @@ The *Olson APC Database* consisted of a large data file (:numref:`OlsonRawSample
    :scale: 30%
    :name: olson_ltn013_qs
 
-   Load/Settlement plot for *Olson APC Database* LTN 13
+   Load/Settlement plot for *Olson APC* Database LTN 13
 
 
 Digitizing the load test curves allowed the author to algorithmically process the load test data points and produce new plots and additional capacity interpretations as shown in :numref:`olson_ltn013_qs_new`.
@@ -113,7 +113,7 @@ Digitizing the load test curves allowed the author to algorithmically process th
    :scale: 58%
    :name: olson_ltn013_qs_new
 
-   Load/Settlement plot with capacity interpretations for *Olson APC Database* LTN 13
+   Load/Settlement plot with capacity interpretations for *Olson APC* Database LTN 13
 
 
 
