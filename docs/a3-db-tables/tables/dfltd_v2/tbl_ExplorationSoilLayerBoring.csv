@@ -9,13 +9,13 @@ txt_SecondarySoilDescriptionCode,nvarchar(5),YES,,
 txt_PlasticityDescriptionCode,nvarchar(5),YES,,*(mostly empty)*
 txt_LayerDescription,nvarchar(255),YES,,``layers.description``
 txt_GeologicUnit,nvarchar(255),YES,,*(mostly empty)*
-dbl_BlowCountInterpreted,float,YES,,``layers.nval``
+dbl_BlowCountInterpreted,float,YES,,``layers.nval`` *(LDOEP only)*
 dbl_BlowIncrement,float,YES,,
-dbl_CohesionInterpreted,float,YES,,``layers.ssuu``
-dbl_FrictionAngleInterpreted,float,YES,,``layers.friction_angle``
+dbl_CohesionInterpreted,float,YES,Pa,``layers.ssuu``
+dbl_FrictionAngleInterpreted,float,YES,deg,``layers.friction_angle``
 dbl_CptqcInterpreted,float,YES,,*(empty)*
 dbl_CptfsInterpreted,float,YES,,*(empty)*
-dbl_UnitWeightInterpreted,float,YES,,
+dbl_UnitWeightInterpreted,float,YES,kg/m3,``layers.tuw`` *(LDOEP only)*
 dbl_ShearVelocityInterpreted,float,YES,,*(mostly empty)*
 dbl_YoungsModulusInterpreted,float,YES,,*(mostly empty)*
 dbl_ShearModulusInterpreted,float,YES,,*(empty)*
