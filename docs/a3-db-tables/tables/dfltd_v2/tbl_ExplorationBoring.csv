@@ -1,16 +1,16 @@
-Column,Type,Null,Units,NYU GPLTD-W Field
+Original Attribute,Type,Null,Units,New Attribute
 lng_KeyProject (PK),int,NO,,
 txt_KeyExplorationName (PK),nvarchar(25),NO,,
 dbl_KeyDepth (PK),float,NO,mm,
 txt_SamplerTypeCode,nvarchar(12),YES,,
-dbl_FieldBlowCount,float,YES,n/a,
+dbl_FieldBlowCount,float,YES,bl/ft,``layers.nval`` *(averaged)*
 dbl_BlowIncrement,float,YES,mm,
 dbl_BlowEquivalent,int,YES,n/a,
-dbl_RQD,float,YES,%,
+dbl_RQD,float,YES,%,*(mostly empty)*
 txt_USCSCodeLegacy,nvarchar(6),YES,,
 txt_ASTMCodeLegacy,nvarchar(20),YES,,
-txt_GeologicUnitCodeLegacy,nvarchar(20),YES,,
-dbl_SptPhiLegacy,float,YES,deg,
+txt_GeologicUnitCodeLegacy,nvarchar(20),YES,,*(empty)*
+dbl_SptPhiLegacy,float,YES,deg,*(mostly empty)*
 dbl_SptCohesLegacy,float,YES,Pa,
 txt_CreatedBy,nvarchar(16),YES,,
 dte_AddDate,datetime2,YES,,

@@ -1,43 +1,43 @@
-Column,Type,Null,Units,NYU GPLTD-W Field
+Original Attribute,Type,Null,Units,New Attribute
 lng_KeyProject (PK),int,NO,,
 txt_KeyExplorationName (PK),nvarchar(25),NO,,
 dbl_KeyDepth (PK),float,NO,mm,
 txt_USCSCode,nvarchar(18),YES,,
 txt_ASTMCode,nvarchar(18),YES,,
-dbl_MoistureContent,float,YES,%,
-dbl_TotalUnitWeight,float,YES,kg/m\ :sup:`3`,
-dbl_DryDensity,float,YES,kg/m\ :sup:`3`,
-dbl_RelativeDensity,float,YES,%,
-dbl_UnitWeightMax,float,YES,kg/m\ :sup:`3`,
-dbl_UnitWeightMin,float,YES,kg/m\ :sup:`3`,
-dbl_LiquidLimit,float,YES,%,
+dbl_MoistureContent,float,YES,%,``layers.water_content`` *(averaged)*
+dbl_TotalUnitWeight,float,YES,kg/m\ :sup:`3`,``layers.tuw`` *(averaged)*
+dbl_DryDensity,float,YES,kg/m\ :sup:`3`,*(mostly empty)*
+dbl_RelativeDensity,float,YES,%,*(empty)*
+dbl_UnitWeightMax,float,YES,kg/m\ :sup:`3`,*(mostly empty)*
+dbl_UnitWeightMin,float,YES,kg/m\ :sup:`3`,*(mostly empty)*
+dbl_LiquidLimit,float,YES,%,``layers.liquid_limit`` *(averaged)*
 dbl_PlasticLimit,float,YES,%,
-dbl_PlasticityIndex,float,YES,%,
-dbl_D10,float,YES,mm,
-dbl_D30,float,YES,mm,
-dbl_D60,float,YES,mm,
-dbl_PercentGravel,float,YES,%,
-dbl_PercentSand,float,YES,%,
+dbl_PlasticityIndex,float,YES,%,``layers.plasticity`` *(averaged)*
+dbl_D10,float,YES,mm,*(mostly empty)*
+dbl_D30,float,YES,mm,*(mostly empty)*
+dbl_D60,float,YES,mm,*(mostly empty)*
+dbl_PercentGravel,float,YES,%,*(mostly empty)*
+dbl_PercentSand,float,YES,%,*(mostly empty)*
 dbl_PercentFines,float,YES,%,
 dbl_percentClayFraction,float,YES,%,
-dbl_Permeability,float,YES,m/s,
-dbl_Saturation,float,YES,%,
-dbl_CompressionIndex,float,YES,n/a,
-dbl_ReCompressionIndex,float,YES,n/a,
-dbl_VoidRatio,float,YES,n/a,
-dbl_CoefficientOfConsolidation,float,YES,??,
-dbl_CoeffficientOfCompression,float,YES,??,
-dbl_T90,float,YES,min,
-dbl_PreconsolidationPressure,float,YES,Pa,
+dbl_Permeability,float,YES,m/s,*(empty)*
+dbl_Saturation,float,YES,%,*(empty)*
+dbl_CompressionIndex,float,YES,n/a,*(mostly empty)*
+dbl_ReCompressionIndex,float,YES,n/a,*(mostly empty)*
+dbl_VoidRatio,float,YES,n/a,*(empty)*
+dbl_CoefficientOfConsolidation,float,YES,??,*(empty)*
+dbl_CoeffficientOfCompression,float,YES,??,*(empty)*
+dbl_T90,float,YES,min,*(empty)*
+dbl_PreconsolidationPressure,float,YES,Pa,*(empty)*
 dbl_OCR,float,YES,n/a,
 txt_ShearTestCode,nvarchar(6),YES,,
-dbl_Cohesion,float,YES,Pa,
-dbl_Phi,float,YES,deg,
-dbl_EffectCohesion,float,YES,Pa,
-dbl_EffectPhi,float,YES,deg,
+dbl_Cohesion,float,YES,Pa,``layers.ssuu`` *(averaged)*
+dbl_Phi,float,YES,deg,*(mostly empty)*
+dbl_EffectCohesion,float,YES,Pa,*(mostly empty)*
+dbl_EffectPhi,float,YES,deg,*(mostly empty)*
 dbl_ShearStrLegacy,float,YES,Pa,
 dbl_ModulusLegacy,float,YES,Pa,
-txt_TypeModLegacy,nvarchar(20),YES,,
+txt_TypeModLegacy,nvarchar(20),YES,,*(mostly empty)*
 txt_CreatedBy,nvarchar(16),YES,,
 dte_AddDate,datetime2,YES,,
 txt_ModifiedBy,nvarchar(18),YES,,
