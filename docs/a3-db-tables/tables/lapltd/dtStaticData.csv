@@ -1,0 +1,8 @@
+Original Attribute,Description,Units,New Attribute
+ID,,,
+lt_Time,Elapsed time,minutes,
+lt_Load,Applied Load,tons,``static_tests.load``
+lt_Deflection,Pile top deflection,inches,``static_tests.displacement``
+_OldID,,,*(empty)*
+Notes,Loading increment notes,,
+lt_Event,Test Event,,

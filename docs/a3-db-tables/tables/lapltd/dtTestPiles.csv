@@ -1,0 +1,42 @@
+Original Attribute,Description,Units,New Attribute
+ID,,,
+Pile_Name,Test pile name,,``piles.name``
+Latitude,Latitude,decimal degrees,``locations.latitude``
+Longitude,Longitude,decimal degrees,``locations.longitude``
+Station,Station,feet,
+Sta_offset,Station Offset,,
+Near_Boring,Name of the nearest soil boring,,``borings.name``
+Near_CPT,Name of the nearest CPT sounding,,``borings.name``
+Date_Driven,Date initial pile driving completed,,``piles.date_driven``
+Length,Total pile length,feet,``piles.length``
+Elev_Reference,"Reference Elevation: Measured, Estimated, or Unknown?",,
+Elev_GS,Ground surface elevation,feet,``borings.elevation``
+Elev_Casing,Elevation of bottom of casing,feet,
+Elev_Cutoff,Pile cutoff elevation,feet,
+Elev_Splice,Pile splice elevation,feet,*(empty)*
+Elev_TipEOD,Pile tip elevation at end-of-drive,feet,
+Elev_TipDesign,Design pile tip elevation,feet,
+Notes,Test pile notes,,``piles.remarks``
+LRFD,Pile designed according to LRFD?,boolean,
+Load_Factored,Factored load used in LRFD design,tons,
+Resist_Factor,Resistance factor used in LRFD design,,
+Load_Design,Design load used in ASD design,tons,``piles.design_load``
+Load_Target,Ultimate pile resistance needed to verify design,tons,
+Setup_Factor,Pile setup factor,,
+Designer,EOR for pile design,,
+_OldID,,,
+Instrumented,Was the pile instrumented?,boolean,
+Elev_Scour,Scour Elevation,feet,
+Modulus,Elastic modulus of pile,ksi,``piles.modulus``
+_OldID2,,,
+Project_ID,Project name,,
+Hammer,Type of hammer used to drive pile,,
+Pile_Type,Type/Size of pile,,
+TP_Category,Type of test pile,,
+Soil_Type,Type of soil pile is tipped into,,``borings.predom_soil``
+Steel_Yield_Strength,"Steel Pile Yield Strength, Fy",ksi,*(empty)*
+Concrete_Strength,"Concrete Pile Yield Strength, Fy",ksi,*(empty)*
+Pile_Splice,Is the pile spliced?,boolean,
+Stroke_EOID,Stroke [ft] closest available data to EOID,feet,
+Blowcount_EOID,Blow Count - closest available data to EOID,bl/ft,
+StokeBlCnt_Notes,Notes for Stroke and Blow Count Values,,

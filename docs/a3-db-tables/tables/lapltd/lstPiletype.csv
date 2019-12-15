@@ -1,0 +1,26 @@
+Original Attribute,Description,Units,New Attribute
+ID,,,
+Name,Name of pile type,,
+Diam_Pile,Diameter of pile,inches,``piles.diameter``
+Diam_Void,Diameter of void,inches,used for ``piles.wall_thickness``
+Pile_Shape,Shape of pile,,``piles.shape``
+Pile_Type,Type of pile,,``piles.type``
+Voided,Voided Pile,boolean,
+_OldID,,,
+_OldID2,,,
+Perimeter,Pile perimeter,inches,``piles.circumference``
+Area_Gross,"Gross area of pile, not including void",in2,``piles.cross_area``
+Area_Void,Area of circular void,in2,
+Area_Section,Area of pile cross-section,in2,
+Area_End,Area considered in end bearing,in2,
+Pile_Material,Pile Material,,
+Pile_Emod,Pile Elastic Modulus,ksi,
+Pile_SW,Pile Specific Weight,pcf,
+Source,,,
+HP d,HP d,inches,
+HP tw,HP tw,inches,
+HP bf,HP bf,inches,
+HP tf,HP tf,inches,
+HP Box Perimeter,HP Box Perimeter,inches,``piles.square_circ``
+HP Box Area,HP Box Area,in2,
+Calc Perimeter,,,

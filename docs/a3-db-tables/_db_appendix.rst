@@ -101,6 +101,7 @@ Iowa PILOT Database Tables and Attributes
    :widths: 20, 30, 20, 30
    :name: IowaAttrTable1
 
+|
 
 .. csv-table:: Appendix: Iowa PILOT Database *Average Soil Profile* Table Attributes
    :file: tables/iowa_attributes2.csv
@@ -108,6 +109,7 @@ Iowa PILOT Database Tables and Attributes
    :widths: 20, 30, 20, 30
    :name: IowaAttrTable2
 
+|
 
 .. csv-table:: Appendix: Iowa PILOT Database *Borehole/SPT Information* Table Attributes
    :file: tables/iowa_attributes3.csv
@@ -115,6 +117,7 @@ Iowa PILOT Database Tables and Attributes
    :widths: 20, 30, 20, 30
    :name: IowaAttrTable3
 
+|
 
 .. csv-table:: Appendix: Iowa PILOT Database *Static Load Test Results* Table Attributes
    :file: tables/iowa_attributes4.csv
@@ -129,3 +132,47 @@ FHWA DFLTD v.2 Tables and Attributes
 ************************************
 
 .. include:: fhwa_dfltd_appx.inc.rst
+
+
+
+****************************
+LAPLTD Tables and Attributes
+****************************
+
+.. csv-table:: Appendix: LTRC LAPLTD *dtProjects* Table Attributes
+   :file: tables/lapltd/dtProjects.csv
+   :header-rows: 1
+   :widths: 20, 40, 10, 30
+   :name: lapltd_dtProjects
+
+|
+
+.. csv-table:: Appendix: LTRC LAPLTD *dtStaticData* Table Attributes
+   :file: tables/lapltd/dtStaticData.csv
+   :header-rows: 1
+   :widths: 20, 40, 10, 30
+   :name: lapltd_dtStaticData
+
+|
+
+.. csv-table:: Appendix: LTRC LAPLTD *dtTestEvents* Table Attributes
+   :file: tables/lapltd/dtTestEvents.csv
+   :header-rows: 1
+   :widths: 20, 40, 10, 30
+   :name: lapltd_dtTestEvents
+
+|
+
+.. csv-table:: Appendix: LTRC LAPLTD *dtTestPiles* Table Attributes
+   :file: tables/lapltd/dtTestPiles.csv
+   :header-rows: 1
+   :widths: 20, 40, 10, 30
+   :name: lapltd_dtTestPiles
+
+|
+
+.. csv-table:: Appendix: LTRC LAPLTD *lstPileType* Table Attributes
+   :file: tables/lapltd/lstPileType.csv
+   :header-rows: 1
+   :widths: 20, 40, 10, 30
+   :name: lapltd_lstPileType

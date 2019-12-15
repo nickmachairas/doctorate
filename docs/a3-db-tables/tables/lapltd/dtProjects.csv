@@ -1,0 +1,20 @@
+Original Attribute,Description,Units,New Attribute
+ID,,,
+Project_Num_H,H Number,,``projects.number``
+Project_Num_old,Project number (old),,``projects.number``
+Project_Name,Project Name,,``projects.title``
+Route,Route foundation supports,,``projects.site_name``
+_OldID,,,
+Totals_TP,Test Pile Records,,
+Path_Network,Location of file folder on T:\\ drive,,
+_OldID2,,,
+Contractor,Contractor performing foundation work,,``projects.contractor``
+Parish_1,Primary parish in which the project is located,,``locations.county``
+Parish_2,Secondary parish in which the project is located,,
+Date_Latest,Drive date of latest test pile,,
+Totals_MP,Monitor Pile Records,,
+Totals_IP,Indicator Pile Records,,
+Totals_Other,Other Pile Type Records,,
+Totals_TS,Test Shaft Records,,
+Source,Source,,``projects.source_ref``
+Notes,,,*(empty)*

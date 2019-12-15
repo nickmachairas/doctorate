@@ -69,6 +69,13 @@ FHWA DFLTD v.2
 
 
 
+LTRC LAPLTD
+===========
+
+.. include:: lapltd.inc.rst
+
+
+
 *******************************************
 Design and Development of NYU Pile Capacity
 *******************************************

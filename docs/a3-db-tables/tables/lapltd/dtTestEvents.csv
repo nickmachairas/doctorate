@@ -1,0 +1,74 @@
+Original Attribute,Description,Units,New Attribute
+ID,,,
+Date_Tested,Date of test event,,
+Time_Elapsed,Elapsed time since EOD,hours,
+Capacity_Ult,Ultimate capacity derived from test event,tons,``interp_capacities.load``
+Capacity_End,End bearing capacity derived from test event,tons,
+Capacity_Skin,Skin Friction capacity derived from test event,tons,
+Stroke,Observed stroke,feet,
+Blow_Count,Observed blow count at time of event,bl/ft,
+Jc,Damping constant associated with PDA capacity associated with Rx method,,
+JRs,Damping constant associated with PDA capacity associated with Rs method,,
+MQ,Match quality from CAPWAP analysis,,
+Failure,Did static load test fail the pile?,boolean,
+Ult_Cap_Method,"Butler-Hoy, Davisson (piles up to 24""), Modified Davisson (piles larger than 24"")",,``interp_capacities.type``
+Notes,Field testing notes,,``load_tests.remarks``
+_OldID,,,
+EMX,Hammer Enargy,kip-ft,
+_OldID2,,,
+Pile_Name,Name of the test pile,,
+Event_Type,Type of test event used,,
+Loc_Boring_Log,Location of File: Boring Log,,*(empty)*
+Loc_Pile_Install _Records,Location of File: Pile Installation Records,,*(empty)*
+Loc_Load_Test _Records,Location of File: Load Testing Records,,*(empty)*
+SP_Weight,Striker Plate Weight,kips,
+SP_Diameter,Striker Plate Diameter,inches,
+SP_Thickness,Striker Plate Thickness,inches,
+HC1_Material,Hammer Cushion 1 Material,,
+HC1_Layers,Hammer Cushion 1 Layers,,
+HC1_Thickness,Hammer Cushion 1 Thickness,inches,
+HC2_Material,Hammer Cushion 2 Material,,
+HC2_Layers,Hammer Cushion 2 Layers,,
+HC2_Thickness,Hammer Cushion 2 Thickness,inches,
+HC_Modulus_OR,Hammer Cushion Modulus of Elasticity OVERRIDE,ksi,*(empty)*
+HC_CoR_OR,Hammer Cushion Coefficient of Restitution OVERRIDE,,*(empty)*
+M1_M2_Ratio,M1/M2 Thickness Ratio,,
+Helmet_Dimension,Helmet (Pile Cap) Dimension,,*(empty)*
+Helmet_Weight,Helmet (Pile Cap) Weight,kips,
+Helmet_Ins_Weight,Helmet (Pile Cap) Inserts Weight,kips,*(empty)*
+PC_Material,Pile Cushion Material,,
+PC_Thickness,Pile Cushion Thickness,inches,
+PC_Area,Pile Cushion Area,sq.in.,
+Pile_Cushion,Pile Cushion,,
+PC_Modulus_OR,Pile Cushion Modulus OVERRIDE,ksi,*(empty)*
+PC_CoR_OR,Pile Cushion Coefficient of Restitution OVERRIDE,,*(empty)*
+Hammer_Cushion,Hammer Cushion,,
+Quake_AvgSkin,Avg. Skin Quake,inches,
+Quake_AvgToe,Avg. Toe Quake,inches,
+Damping_AvgSkin,Avg. Skin Smith Damping,s/ft,
+Damping_AvgToe,Avg. Toe Smith Damping,s/ft,
+Percentage_Shaft _Resistance,Shaft Resistance Percentage,%,*(empty)*
+Dist_Shape_Number,Distribution Shape Number,,*(empty)*
+Resistance _Distribution_Opt,Resistance Distribution Option,,*(empty)*
+Ult_Capacity_1,Ultimate Capacity 1,kips,*(empty)*
+Ult_Capacity_2,Ultimate Capacity 2,kips,*(empty)*
+Ult_Capacity_3,Ultimate Capacity 3,kips,*(empty)*
+Ult_Capacity_4,Ultimate Capacity 4,kips,*(empty)*
+Ult_Capacity_5,Ultimate Capacity 5,kips,*(empty)*
+Ult_Capacity_6,Ultimate Capacity 6,kips,*(empty)*
+Ult_Capacity_7,Ultimate Capacity 7,kips,*(empty)*
+Ult_Capacity_8,Ultimate Capacity 8,kips,*(empty)*
+Ult_Capacity_9,Ultimate Capacity 9,kips,*(empty)*
+Ult_Capacity_10,Ultimate Capacity 10,kips,*(empty)*
+Hammer,,,
+WEAP_Hammer _Option,Diesel Hammer Operation Option,,*(empty)*
+WEAP_Pressure_FS,Diesel Hammer Pressure Fuel Setting,,*(empty)*
+Override_Pressure _FS,Override Diesel Hammer Pressure for Fuel Setting,,*(empty)*
+Override_Efficiency,Override Hammer Efficiency,,*(empty)*
+Override_Stroke,Hammer Equivalent Maximum Stroke,feet,*(empty)*
+Override_Frequency,Frequency for VIB hammer,Hz,*(empty)*
+Elev_TipEOD,Pile tip elevation at end-of-drive,feet,
+Quake_Shaft,Soil Parameter: Shaft Quake,inches,*(empty)*
+Quake_Toe,Soil Parameter: Toe Quake,inches,*(empty)*
+Damping_Shaft,Soil Parameter: Damping Shaft,s/ft,*(empty)*
+Damping_Toe,Soil Parameter: Toe Damping,s/ft,*(empty)*
