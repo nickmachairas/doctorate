@@ -377,10 +377,10 @@ latex_elements = {
             College High School Athens in 2002. Nick studied Geology at the 
             National and Kapodestrian University of Athens while working as a 
             superintendent on residential construction projects under the
-            supervision of his father, Panagiotis. Nick immigrated to the 
-            United States in 2008, after completing his mandatory military 
-            service in the Hellenic Army. Between 2008 and 2011, Nick earned a
-            Bachelors degree in Civil Engineering from NYU School of Engineering 
+            supervision of his father, Panagiotis. In 2008, after completing his
+            mandatory military service in the Hellenic Army, Nick immigrated to
+            the United States. Between 2008 and 2011, Nick earned a Bachelors
+            degree in Civil Engineering from NYU School of Engineering 
             with honors and a Masters degree in Civil Engineering from Columbia 
             University. From 2011 to 2013 he returned back to Greece to work 
             in the family construction business. Since 2013, Nick has been 

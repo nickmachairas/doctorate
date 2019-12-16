@@ -6,9 +6,9 @@ Background
 
 Dr. Roy E. Olson (UT Austin), began development on a pile load test database in 1980, as part of a research project with the American Petroleum Institute (API). API was interested in determining how well their recommended practice design method of the time (API RP-2A, 1980) would compare with actual pile load tests. Significant contributions were made by Norm Dennis who did his Ph.D. dissertation on this project (:ref:`Dennis, 1982 <Dennis1982>`) with the final report submitted to API that year.
 
-Work on the then "API Database" continued between 1984 and 1993 with support from small grants from API, Exxon and Aramco but primarily due to Dr. Olson's personal involvement and contributions. There were several questions, namely, on how well different methods of strength measurement compared with each other, predictions of pile settlement under axial load, capacities of steel pipe piles in sand and clay, use of the T-Z method to try to predict pile movements under cyclic axial loading. Answering these questions led to M.S. theses written by the students working on them (:ref:`Aschenbrenner, 1984 <Aschenbrenner1984>`; :ref:`Alyahyai, 1987 <Alyahyai1987>`; :ref:`Al-Shafei, 1987 <Al-Shafei1987>`; :ref:`Van Go, 1990 <Go1990>`; :ref:`Chiu, 1993 <Chiu1993>`).
+Work on the then "API Database" continued between 1984 and 1993 with support from small grants from API, Exxon and Aramco but primarily due to Dr. Olson's personal involvement and contributions. There were several questions, including, (1) how well different methods of soil strength measurement compared with each other in affecting capacity, (2) predictions of pile settlement under axial load, (3) capacities of steel pipe piles in sand and clay, (4) use of the T-Z method to try to predict pile movements under cyclic axial loading. Answering these questions led to M.S. theses written by the students working on them (:ref:`Aschenbrenner, 1984 <Aschenbrenner1984>`; :ref:`Alyahyai, 1987 <Alyahyai1987>`; :ref:`Al-Shafei, 1987 <Al-Shafei1987>`; :ref:`Van Go, 1990 <Go1990>`; :ref:`Chiu, 1993 <Chiu1993>`).
 
-In 1998, Dr. Olson started working on a major research project from the California Department of Transportation (CalTrans). The goal was to develop a new, separate database for CalTrans. It is not clear if the APC database eventually included data from CalTrans.
+In 1998, Dr. Olson started working on a major research project from the California Department of Transportation (CalTrans). The goal was to develop a new, separate database for CalTrans. The purpose of the CalTrans projects was to conduct soil borings next to existing load tested piles and use this better data to predict pile capacities. It is not clear if the APC database eventually included data from CalTrans.
 
 The original project with API was meant to focus on open-ended steel pipe piles frequently used for offshore structures. However, Dr. Olson expanded the scope to include all pile types and capacity ranges. Information on piles, subsurface conditions and load tests was collected from the literature, DOTs and the Army Corps of Engineers. However, collection was never straightforward. Several governmental agencies, consulting firms and oil companies did not cooperate.
 
@@ -96,7 +96,7 @@ Part of the original FORTRAN code of the *Olson APC Database* was made available
 The output of the data extraction algorithm is a Python dictionary which was then used to port all data to the relational database presented in the next section.
 
 
-The *Olson APC Database* consisted of a large data file (:numref:`OlsonRawSample`) containing project data. A few load test interpretations were stored, i.e. Davisson capacity (``QMDT``), peak load (``QMP``), capacity at 0.5-inch pile head settlement (``QCT``, aka *CalTrans Capacity*), etc. However, load test data points were not stored in the data file. Instead, original load test curves in .pdf format from the source projects were used (see :numref:`olson_ltn013_qs` for LTN 13). Dr. Olson provided figures for 487 records of the total 939. It was crucial to include the load test data points in the *NYU Pile Load Test Data Warehouse*, therefore, all figures were digitized using the tool :ref:`WebPlotDigitizer <WebPlotDigitizer>`.
+The *Olson APC Database* consisted of a large data file (:numref:`OlsonRawSample`) containing project data. A few load test interpretations were stored, i.e. Davisson capacity (``QMDT``), peak load (``QMP``), capacity at 0.5-inch pile head settlement (``QCT``, aka. *CalTrans Capacity*), etc. However, load test data points were not stored in the data file. Instead, original load test curves in .pdf format from the source projects were used (see :numref:`olson_ltn013_qs` for LTN 13). Dr. Olson provided figures for 487 records out of the total 939. It was crucial to include the load test data points in the *NYU Pile Load Test Data Warehouse*, therefore, all figures were digitized using the tool :ref:`WebPlotDigitizer <WebPlotDigitizer>`.
 
 
 .. figure:: figures/olson_ltn013_qs.jpg
@@ -106,14 +106,11 @@ The *Olson APC Database* consisted of a large data file (:numref:`OlsonRawSample
    Load/Settlement plot for *Olson APC* Database LTN 13
 
 
-Digitizing the load test curves allowed the author to algorithmically process the load test data points and produce new plots and additional capacity interpretations as shown in :numref:`olson_ltn013_qs_new`.
+..
+    Digitizing the load test curves allowed the author to algorithmically process the load test data points and produce new plots and additional capacity interpretations as shown in :numref:`olson_ltn013_qs_new`.
+    .. figure:: figures/olson_ltn013_qs_new.png
+       :scale: 58%
+       :name: olson_ltn013_qs_new
 
-
-.. figure:: figures/olson_ltn013_qs_new.png
-   :scale: 58%
-   :name: olson_ltn013_qs_new
-
-   Load/Settlement plot with capacity interpretations for *Olson APC* Database LTN 13
-
-
+       Load/Settlement plot with capacity interpretations for *Olson APC* Database LTN 13
 

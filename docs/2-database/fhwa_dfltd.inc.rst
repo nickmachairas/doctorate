@@ -62,7 +62,8 @@ DFLTD v.2 was developed in Microsoft Access 2013. The graphics utility *Advanced
 
 .. TODO: rephrase this paragraph
 
-The database sign convention is positive for compressive loads and upward displacement. Tension loads and downward displacement are negative. The sign convention is used for the LDOEP study data. The majority of the previous DFLTD data follow this sign convention with a few exceptions.
+..
+    The database sign convention is positive for compressive loads and upward displacement. Tension loads and downward displacement are negative. The sign convention is used for the LDOEP study data. The majority of the previous DFLTD data follow this sign convention with a few exceptions.
 
 
 .. figure:: figures/DFLTD_v2_general_diagram.jpg
