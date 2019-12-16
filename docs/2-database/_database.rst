@@ -81,14 +81,23 @@ Design and Development of NYU Pile Capacity
 *******************************************
 
 
-A quick observation from the previous section, `Original Data Sources`_, is that all databases were distributed as standalone datasets or software applications that were intended to be be installed on a local computer. Any changes would only be saved locally making it very difficult to share data or collaborate. Also, *Iowa PILOT* and *LTRC LAPLTD* were the only databases with input forms that allowed for entry of new records. Lastly, and perhaps more importantly, with all existing pile load test databases there has been no consideration on useful data export or data *connectors* that would allow for a wide range of analyses on the entire dataset rather than a case-by-case basis. A major goal of *NYU Pile Capacity* was to address these shortcomings.
+A quick observation from the previous section, `Original Data Sources`_, is that all databases were distributed as standalone datasets or software applications that were intended to be be installed on a local computer. Any changes would only be saved locally making it very difficult to share data or collaborate. Also, *Iowa PILOT* and *LTRC LAPLTD* were the only databases with input forms that allowed for entry of new records. Lastly, and perhaps more importantly, with all existing pile load test databases there has been no consideration on useful data export or data *connectors* that would allow for a wide range of analyses on the entire dataset rather than a case-by-case basis. A major goal of *NYU Pile Capacity* was to address all of these shortcomings and offer features that align with the modern requirements for data analytics. At the same time *NYU Pile Capacity* was designed to be extensible in order to accommodate virtually unlimited data as well as additional methods of analysis.
+
+
+.. figure:: figures/nyupc_7511records.png
+   :name: nyupc_7511records
+
+   Presenting the first two records out of 7,511 in *NYU Pile Capacity*
+
+
+At launch, *NYU Pile Capacity* stored geotechnical, pile and load test data for 7,511 records and can be accessed at `<http://pilecapacity.com>`_. *NYU Pile Capacity* is a web application built on Python and Flask with a relational database (Postgres).
+
 
 
 Unifying Database Schema
 ========================
 
-Database design is an iterative process. It involves multiple cycles of development and with each cycle the design keeps getting refined to better fit the project needs. The main objective was to combine all four previously described databases in one relational database, transferring all information necessary for capacity calculations. Out of the four source databases, the *Olson APC* database was the most concise and to-the-point collection of relevant data and it served as the basis of the design of *NYU Pile Capacity*'s schema that was then expanded to accommodate data from the other three sources.
-
+Database design is an iterative process. It involves multiple cycles of development and with each cycle the design is usually refined to better fit the project needs. The main objective for *NYU Pile Capacity* was to combine all four previously described databases in one relational database, transferring all information necessary for capacity and other engineering calculations. Out of the four source databases, the *Olson APC* database was the most concise and to-the-point collection of relevant data and it served as the basis for the design of *NYU Pile Capacity*'s schema that was then expanded to accommodate data from the other three sources. The Extract, Transform and Load (ETL) process for each data source was presented in the previous section and all attribute mappings are included in the Appendix.
 
 
 
@@ -99,8 +108,7 @@ Database design is an iterative process. It involves multiple cycles of developm
 
 
 
-:numref:`OlsonVarsTable` (appendix) summarizes the variables available in the *Olson APC* Database raw data files. The reduction of these variables to a relational schema is presented in :numref:`olson_db_schema`. It is important to note that in this iteration, normalization rules are not strictly enforced. For instance, attributes ``ssuu``, ``ssfv``, ``ssms``, ``ssqt`` are all storing information on shear strength obtained from different tests and it could be argued that they are violating the "non-repeating attribute" rule of the 1st Normal Form (1NF). However, in the context of geotechnical engineering, it is unlikely that a value for shear stregth obtained from a new lab test will needs to be stored. It is also unlikely that multiple values of shear strength from the same lab test will need to be stored for a single layer. As such, it is far more practical to keep these four attributes in the ``layers`` relation than move them in separate relations in order to be strictly compliant with the normalization process.
-
+:numref:`OlsonVarsTable` (appendix) summarizes the variables available in the *Olson APC* Database raw data files. The reduction of these variables to a relational schema is presented in :numref:`olson_db_schema`. This resulted in 10 tables and 75 attributes. It is important to note that in this first iteration, normalization rules are not strictly enforced, although the goal was to make the schema adhere to 3rd Normal Form (3NF). For instance, attributes ``ssuu``, ``ssfv``, ``ssms``, ``ssqt`` are all storing information on shear strength obtained from different tests and it could be argued that they are violating the "non-repeating attribute" rule of the 1st Normal Form (1NF). However, in the context of geotechnical engineering, it is unlikely that a value for shear stregth obtained from a new lab test will need to be stored. It is also unlikely that multiple values of shear strength from the same lab test will need to be stored for a single layer. As such, it is far more practical to keep these four attributes in the ``layers`` relation than move them in separate relations in order to be strictly compliant with the normalization process.
 
 
 .. figure:: figures/olson_iowa_erd_rot.png
@@ -108,6 +116,11 @@ Database design is an iterative process. It involves multiple cycles of developm
    :name: olson_iowa_erd_rot
 
    Intermediate E-R Diagram of *NYU Pile Capacity* after defining the database attributes from the *Olson APC* Database raw files and mapping the *Iowa PILOT* database attributes
+
+
+With the *Olson APC* ETL process complete, the next data source to be processed was *Iowa PILOT*. Every attribute from *Iowa PILOT* was mapped and the database for *NYU Pile Capacity* was expanded as shown in :numref:`olson_iowa_erd_rot`. The resulting database included 17 tables and 156 attributes.
+
+The next data source that was processed was *FHWA DFLTD v.2*. This was also the most complex ETL process as evident in :numref:`fhwa_py`. It was important to maintain the simple and straightforward structure of the *NYU Pile Capacity* database. The reason for that was to allow for the unified database to be queried directly from users with SQL code and to enable efficient interactions with interactive reporting solutions such as `Tableau <https://www.tableau.com/>`_ and `Metabase <https://www.metabase.com/>`_. As such, while the E-R diagrams for *NYU Pile Capacity* show one-to-many relationships for all tables, in reality most relationships are intended to be one-to-one. This was enforced on the application and not the database level. Write/alter actions were implemented only via the online user interface. Any direct query operations were and will be read-only with dedicated user accounts. For instance, a project may only have one associated boring record, one pile record and one load test record. However, multiple capacity values can be entered for a pile and a boring record may have multiple soil layers.
 
 
 
@@ -118,9 +131,17 @@ Database design is an iterative process. It involves multiple cycles of developm
 
 
 
+The final E-R diagram for *NYU Pile Capacity*, after porting *FHWA DFLTD v.2* and *LTRC LAPLTD* is presented in :numref:`nyu_db_full_rot`. It included 19 tables and 158 attributes. Of particular importance were tables ``calc_capacities`` and ``interp_capacities`` with their corresponding reference tabled (noted with the prefix ``ref_``). The objective in this case was to allow for multiple calculated and interpreted capacity values to be stored along with their type and origin. For example, an calculated capacity based on the API method may have been imported from the original data source but another value based on the same method can be stored if it is the result of hand or programmatic calculations.
 
-Workflow for Data Handling and Analysis
-=======================================
+
+
+
+Operational Workflow
+====================
+
+Drawing from the experience of using past load test databases, along with the inherent difficulties of scientific research, it was important that *NYU Pile Capacity* offers users the flexibility to interact with the load test records, collaborate with peers and share results. All projects (table ``projects``, :numref:`nyu_db_logic`) in the database have an owner (table ``users``, :numref:`nyu_db_logic`). That person can either be the one who imported the record in the database or the one who *cloned* an existing record, essentially making it their own. All users can view all records but owners can edit their own records only. The database keeps track of which records have been cloned with the ``clones`` relationship set, a self-referential, many-to-many table.
+
+*NYU Pile Capacity* allows for analyses (table ``analyses``, :numref:`nyu_db_logic`) on one or more stored projects (aggregate analyses). A user has the option to add one or more projects to an analysis. This is being handled by the ``projects_analyzed`` relationship set which defines a many-to-many relationship between ``projects`` and ``analyses``. As shown in the partial E-R diagram of :numref:`nyu_db_logic`, a user can have multiple projects and multiple analyses, however a project or analysis may only have one user. This partial E-R diagram supplements the final E-R diagram presented in :numref:`nyu_db_full_rot`, note that the ``projects`` table is the same in both figures.
 
 
 
@@ -130,6 +151,18 @@ Workflow for Data Handling and Analysis
    *NYU Pile Capacity*: Partial E-R Diagram of Logical Workflow
 
 
+Users may have one of three defined roles, or user-access levels: guest, standard or administrator. Once a new user signs up on *NYU Pile Capacity*, she is automatically assigned the *guest* role. This means that can browse through all records stored in the database and can also create and run new analyses. A guest user cannot import new records in the database. This is possible with the *standard* role. Still, standard users can only edit their own records. A guest user can have their user-access level changed by contacting the admins. Finally, a user with the *administrator* role can edit any record in the database, even ones that have been added by other users. While the database schema was designed to support all these interactions, the rules are enforced at the application level by limiting features to users based on their assigned role.
 
 
 
+Interface
+=========
+
+
+
+
+
+
+*******************************************
+A Case for the Experiential Design of Piles
+*******************************************
