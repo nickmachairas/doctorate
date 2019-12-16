@@ -60,6 +60,10 @@ Bachus, R., Cadden, A., and Machairas, N. (2018). "DIGGS Does Pipelines." *Pipel
 
 Bachus, R., Machairas, N., and Cadden, A. (2019). "DIGGS Does Deep Foundations." *Proceedings of the 44th Annual Conference on Deep Foundations*, Deep Foundation Institute, Chicago IL, October 15-18 2019, 814–827.
 
+.. _Bayer2012:
+
+Bayer, M. (2012). “SQLAlchemy.” *The Architecture of Open Source Applications Volume II: Structure, Scale, and a Few More Fearless Hacks*, A. Brown and G. Wilson, eds., aosabook.org. `<https://www.sqlalchemy.org/>`_
+
 .. _Bowles1977:
 
 Bowles, J. E. (1977). *Foundation Analysis and Design*. McGraw-Hill.
