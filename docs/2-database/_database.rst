@@ -155,14 +155,28 @@ Users may have one of three defined roles, or user-access levels: guest, standar
 
 
 
-Interface
-=========
+.. literalinclude:: listings/sample_schema.sql
+   :language: sql
+   :caption: Postgres DDL for the *projects* and *clones* Tables
+   :name: sample_schema_sql
+
+
+One of the great advantages of storing data in relational databases is making use of the Structured Query Language (SQL) to slice, dice and query for data in infinite ways. SQL is also used to define the tables in the database, this part of SQL being referred to as a *Data Definition Language* (DDL). :numref:`sample_schema_sql` shows a sample of the DDL defining the *projects* and *clones* tables of *NYU Pile Capacity*. The remaining tables are defined in a very similar way.
+
+
+.. literalinclude:: listings/sample_schema.py
+   :language: python
+   :caption: Python SQLAlchemy Model for the *projects* and *clones* Tables
+   :name: sample_schema_python
 
 
 
 
 
+..
+    Interface
+    =========
 
-*******************************************
-A Case for the Experiential Design of Piles
-*******************************************
+    *******************************************
+    A Case for the Experiential Design of Piles
+    *******************************************
