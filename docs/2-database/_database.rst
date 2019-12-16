@@ -172,7 +172,7 @@ One of the great advantages of storing data in relational databases is making us
    :name: sample_schema_python
 
 
-SQL is great for direct database interactions. For example, users can pull data with SQL and analyze the data locally on their computers. And with more data added in the database, updating the analysis can be as simple as running the same code again. This functionality exists in *NYU Pile Capacity*, however, ETL and front-end interaction relied on an alternative method using *SQLAlchemy* (:ref:`Bayer, 2012 <Bayer2012>`, `https://www.sqlalchemy.org/`_). SQLAlchemy is a Python SQL toolkit and an Object Relational Mapper (ORM).
+SQL is great for direct database interactions. For example, users can pull data with SQL and analyze the data locally on their computers. And with more data added in the database, updating the analysis can be as simple as running the same code again. This functionality exists in *NYU Pile Capacity*, however, ETL and front-end interaction relied on an alternative method using *SQLAlchemy* (:ref:`Bayer, 2012 <Bayer2012>`, `<https://www.sqlalchemy.org/>`_). SQLAlchemy is a Python SQL toolkit and an Object Relational Mapper (ORM).
 
 
 

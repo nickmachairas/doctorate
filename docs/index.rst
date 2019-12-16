@@ -142,11 +142,11 @@ Modern Data Management and Analysis of Driven Piles
 
    1-intro/_intro.rst
    2-database/_database.rst
-   3-nominal-desc/_nominal_capacity.rst
-   4-nominal-small/fhwa_paper.rst
-   5-nominal-ldoep/ldoep_calc_paper.rst
-   6-interpreted-desc/interpreted_desc.rst
-   7-interpreted-eval/interpreted_eval.rst
+   3-interpreted-desc/interpreted_desc.rst
+   4-interpreted-eval/interpreted_eval.rst
+   5-nominal-desc/_nominal_capacity.rst
+   6-nominal-small/fhwa_paper.rst
+   7-nominal-ldoep/ldoep_calc_paper.rst
    9-ifcee-analytics/ifcee_paper.rst
    10-conclusion/conclusion.rst
    references.rst
