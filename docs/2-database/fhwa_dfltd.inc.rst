@@ -38,6 +38,14 @@ Data included in the database was obtained from a large number of sources. These
 
 The database uses the broad soil type classifications of cohesive, non-cohesive, intermediate geomaterial, rock, and variable. The soil type is classified as uniform condition if at least 70 percent of the soil along the pile side or base consists of the specified material type. Variable sites consist of a combination of soil types where combined layers for each soil type are less than 70 percent of the total.
 
+
+.. figure:: figures/fhwa_soil_type_distribution.png
+   :width: 250 px
+   :name: fhwa_soil_type_distribution
+
+   Distribution of Soil Types in the *FHWA DFLTD v.2*
+
+
 .. TODO: rephrase this paragraph
 
 Native digital data for the various in situ tests was generally not available during data collection of the LDOEP study. The plots of SPT blow count are based on the numerical values shown in the Exploration Details tab. The LDOEP study CPT data was primarily digitized from plots in publications. There may be slight variation between the original publication and the digitized CPT Test values included in the database. The source of the DFLTD data is unknown.
@@ -47,8 +55,8 @@ Native digital data for the various in situ tests was generally not available du
 Native digital data for the static and Statnamic load tests was generally not available during data collection of the LDOEP study. The load displacement, load transfer, and force distribution data was digitized from plots in the available publications. There may be some slight variation between the original publication and the digitized values included in the database.
 
 
-Data Format
------------
+Data Format and ETL
+-------------------
 
 DFLTD v.2 was developed in Microsoft Access 2013. The graphics utility *Advanced Software Engineering’s Chartdirector* was employed to design the forms, queries, and auxiliary tables required for data inquiry, viewing, and export. This utility allows users to access data, but not to make any changes.
 
@@ -76,7 +84,7 @@ The database sign convention is positive for compressive loads and upward displa
    :alt: DFLTD_v2_ER_Diagram_rot.png
    :name: DFLTD_v2_ER_Diagram
 
-   *FHWA DFLTD v.2* Entity Relationship Diagram (exported from MS Access)
+   E-R Diagram of *FHWA DFLTD v.2* (exported from MS Access)
 
 
 .. TODO: rephrase this paragraph
@@ -84,3 +92,21 @@ The database sign convention is positive for compressive loads and upward displa
 The key takeaway is that the list of projects will conform to the desired query criteria; however, the projects may contain additional explorations, deep foundations, and load tests that were not included in the query criteria.
 
 .. TODO: talk about problems with use, requires MS Access 32-bit, erroneous values, 130 piles without information on even diameter
+
+
+*FHWA DFLTD v.2* was the largest database with over 900 projects and north of 1,500 pile load tests. It had, however, the poorest data quality. As an example, there were over 130 piles lacking basic information on diameter and/or length. Moreover, the database was developed for the 32-bit version of MS Access and would only work with 32-bit versions of MS Access which can be an issue for modern computers.
+
+Data was organized in 46 tables (:numref:`DFLTD_v2_ER_Diagram`) with an additional 52 lookup tables. It appeared that proper database design was followed but was at times questionably cumbersome to query for data when, for example, size and shape information for piles was stored on different tables based on the type of the pile. The database contained a lot more data than the graphical user interface presented. Storing data in S.I. units was also questionable when it was clear that the original values were in English units. Unit conversion errors were discovered on multiple occasions. On a nutshell, it is evident that *FHWA DFLTD v.2* was hastily compiled and no consideration was given on data quality and validation against basic engineering calculations.
+
+The ETL process for *FHWA DFLTD v.2* was the most complex out of all source databases used in this dissertation. Data on soil explorations was stored on multiple tables and there was little to no information on the location of soil borings with regard to pile locations. Projects had multiple records for soil explorations and also had multiple piles. Practically this meant that any (or none) of the borings corresponded to any (or none) one of the piles. By design, every record in *NYU Pile Capacity* must be unique. As such, when porting the *FHWA DFLTD v.2* records into the *NYU Pile Capacity* database, all records were made unique, expanding the soil exploration and pile records by taking every possible combination of soil and pile data. As a result, the 1,500 load test records were expanded to 5,075 unique combinations of soil and pile instances.
+
+In terms of soil explorations, *FHWA DFLTD v.2* stored delineated soil profiles with few geotechnical properties in one table and the result of site and lab investigations in other tables. Using values per depth as a reference, data from all tables were combined by averaging the spt and lab data along the depth of a given soil layer. This helped in filling in a few gaps for engineering calculations but it was still not enough for the vast majority of the derived 5,075 records. The code for the ETL process is presented in :numref:`fhwa_py`.
+
+
+
+.. literalinclude:: listings/fhwa.py
+   :language: python
+   :caption: Program that Extracted Data from *FHWA DFLTD v.2*
+   :name: fhwa_py
+
+

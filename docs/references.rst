@@ -362,6 +362,10 @@ Tomlinson, M.J. (1980). *Foundation Design and Construction, Fourth Edition*. Pi
 
 Tomlinson, M. J. (1994). *Pile Design and Construction Practice, Fourth Edition*. E & FN Spon, London.
 
+.. _Tumay1998:
+
+Tumay, M.T., and Titi, H.H., (1998). *Including all deep foundation load test data and soil and site investigations for the FHWA database*. Federal Highway Administration Grant Agreement No. DTFH61-96-X-00002.
+
 .. _USACE1991:
 
 U.S. Army Corps of Engineers (1991). *Design of Pile Foundations*. Engineer Manual 1110-2-2906. Washington, DC.

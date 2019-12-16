@@ -164,7 +164,7 @@ latex_elements = {
             \vspace*{3.75 in}
             
             For Guidance Committee Review\\
-            Current: v.0.6.5 - 12/12/2019\\
+            Current: v.0.6.7 - 12/15/2019\\
             Next revision: by 12/16/2019
             
             \newpage

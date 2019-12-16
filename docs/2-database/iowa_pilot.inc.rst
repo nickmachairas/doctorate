@@ -55,8 +55,8 @@ In contrast to the *Olson APC Database*, the distribution of soil types that the
 
 
 
-Data Format
------------
+Data Format and ETL
+-------------------
 
 PILOT was designed in and distributed as a Microsoft Access database. It was designed to perform efficient filtering, sorting, and querying procedures on the amassed dataset. The developers of PILOT did a great job in delivering a user-friendly environment, however, the inherit limitations of Microsoft Access are hard to overcome.
 

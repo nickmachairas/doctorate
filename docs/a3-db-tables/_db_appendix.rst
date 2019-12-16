@@ -134,6 +134,7 @@ FHWA DFLTD v.2 Tables and Attributes
 .. include:: fhwa_dfltd_appx.inc.rst
 
 
+.. _lapltd_attributes:
 
 ****************************
 LAPLTD Tables and Attributes

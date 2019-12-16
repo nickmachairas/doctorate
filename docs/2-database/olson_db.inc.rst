@@ -60,8 +60,8 @@ The majority of the piles were constructed in clayey and silty soils, as can be 
 
 
 
-Data Format
------------
+Data Format and ETL
+-------------------
 
 The *Olson APC Database* is referred to as a "database" but it was in neither hierarchical nor relational format and it could not be queried in a standard way. Instead, all information was contained within a single text file and a collection of pdf files with load test curves. :numref:`OlsonRawSample` presents the details of two records from the database, LTN 11 and LTN 13. Data for every record is organized in blocks with each block starting with the words "LTN Blank". Starting from there, it was possible to break down each line and decode the values within.
 
