@@ -172,15 +172,57 @@ One of the great advantages of storing data in relational databases is making us
    :name: sample_schema_python
 
 
-SQL is great for direct database interactions. For example, users can pull data with SQL and analyze the data locally on their computers. And with more data added in the database, updating the analysis can be as simple as running the same code again. This functionality exists in *NYU Pile Capacity*, however, ETL and front-end interaction was based on an alternative method using *SQLAlchemy* (:ref:`Bayer, 2012 <Bayer2012>`, `<https://www.sqlalchemy.org/>`_). SQLAlchemy is a Python SQL toolkit and an Object Relational Mapper (ORM). ORMs represent relational tables as Python classes and their relationships are defined with SQLAlchemy methods. This translation from strict SQL to Python has the benefit of streamlining the development process while working with a coherent codebase. In addition, relational tables can have extended features by defining methods for their corresponding classes. For example, and as can be seen in :numref: `sample_schema_python`, the ``make_qs_plot()`` method will query the database and plot the load/displacement thumbnail with a single command. This is an operation that would otherwise require several steps to complete.
+SQL is great for direct database interactions. For example, users can pull data with SQL and analyze the data locally on their computers. And with more data added in the database, updating the analysis can be as simple as running the same code again. This functionality exists in *NYU Pile Capacity*, however, ETL and front-end interaction was based on an alternative method using *SQLAlchemy* (:ref:`Bayer, 2012 <Bayer2012>`, `<https://www.sqlalchemy.org/>`_). SQLAlchemy is a Python SQL toolkit and an Object Relational Mapper (ORM). ORMs represent relational tables as Python classes and their relationships are defined with SQLAlchemy methods. This translation from strict SQL to Python has the benefit of streamlining the development process while working with a coherent codebase. In addition, relational tables can have extended features by defining methods for their corresponding classes. For example, as can be seen in :numref:`sample_schema_python`, the ``make_qs_plot()`` method can query the database and plot the load/displacement thumbnail with a single command. This is an operation that would otherwise require several steps to complete.
+
+
+
+Interface
+=========
+
+
+*NYU Pile Capacity* was designed to be user friendly and extensible. The program has two main components:
+
+    1. Python Flask
+    2. Postgres Relational Database
+
+An interaction flowchart is presented in :numref:`nyupc_flowchart`. The first component, Python Flask, supports all front-end interactions (in other terms, the website served on `<http://pilecapacity.com>`_) and all of the database connections the Postgres Database. Python Flask also allows for *edafos* to be loaded as an external module, run analyses on the data stored in the Postgres database and store the results into the database. *edafos* [#]_ is a separate Soil Mechanics Python module created by the author.
+
+.. [#] `<https://github.com/nickmachairas/edafos>`_
+
+
+.. figure:: figures/nyupc_flowchart.png
+   :scale: 120%
+   :name: nyupc_flowchart
+
+   *NYU Pile Capacity*: Component Interaction Flowchart
+
+
+Loading all records from the source databases, a process that was described in the previous section, is noted on :numref:`nyupc_flowchart` as *Turnkey ETL*. This was a one-time operation that loaded all historical data into the database. In addition to front-end interactions with the database, users can also query the database directly using SQL.
+
+
+
+.. figure:: figures/nyupc_search.png
+   :name: nyupc_search
+
+   *NYU Pile Capacity* Search Page
+
+
+
+Users can browse through and use the historical data and/or add their own via the front-end interface. The search page of *NYU Pile Capacity* is shown in :numref:`nyupc_search`. It offers options to search based on records owners, sources databases, predominant soil conditions, pile type, shape, diameter, length as well as test type. The search results are displayed as cards (:numref:`nyupc_search_results`) and the user can quickly inspect some important properties, including the shape of the load test curve. The user can click on *Details* and review all values stored for a given record or add all search results to an aggregate analysis.
+
+
+.. figure:: figures/nyupc_search_results.png
+   :name: nyupc_search_results
+
+   *NYU Pile Capacity*: Example of Search Results
+
+
+All search parameters are passed to the page url as request arguments. This can be a convenient way of sharing custom searches, simply by copying the link generated. For example, the url for a search query for records from the *Iowa PILOT* and *Olson APC* sources, in predominantly sandy soils and with piles wider than 16 inches would be, `<http://pilecapacity.com/search?source_db=Iowa+PILOT&source_db=Olson+APC&soil_type=SAND&min_d=16>`_.
 
 
 
 
 ..
-    Interface
-    =========
-
-    *******************************************
-    A Case for the Experiential Design of Piles
-    *******************************************
+    ****************************
+    Experiential Design of Piles
+    ****************************
