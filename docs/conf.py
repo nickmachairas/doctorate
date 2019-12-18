@@ -135,8 +135,8 @@ latex_elements = {
         \setlist{nosep}
         
         %% page line numbers
-        \usepackage{lineno}
-        \linenumbers
+        %\usepackage{lineno}
+        %\linenumbers
         
         %% footer
         \usepackage{fancyhdr}
@@ -164,8 +164,8 @@ latex_elements = {
             \vspace*{3.75 in}
             
             For Guidance Committee Review\\
-            Current: v.0.6.7 - 12/15/2019\\
-            Next revision: by 12/16/2019
+            Current: v.0.7.0 - 12/18/2019\\
+            Next revision: by 12/19/2019
             
             \newpage
             
@@ -209,14 +209,14 @@ latex_elements = {
             
             \textbf{\Large January 2020}
         
-        \end{titlepage}
         
         
-        \pagenumbering{roman}
+        
+        
         
         \newpage
-        \chapter*{ }
-        \vspace*{-2.0 in}
+        %\chapter*{ }
+        %\vspace*{-2.0 in}
         \begin{center}
             
             \textbf{\Large MODERN DATA MANAGEMENT AND}
@@ -280,10 +280,18 @@ latex_elements = {
             \end{singlespacing}
         \end{adjustwidth}
         
+        \begin{adjustwidth}{0.1 in}{}
+            University ID:\hspace{10pt}N18574205 \\
+            Net ID:\hspace{43pt}nm1213
+        \end{adjustwidth}        
+
         
-        University ID:\hspace{10pt}N18574205 \\
-        Net ID:\hspace{43pt}nm1213
         
+        \end{titlepage}
+        
+        
+        
+        \pagenumbering{roman}
         
         \newpage
             \chapter*{ }
@@ -303,62 +311,62 @@ latex_elements = {
             \textbf{Magued Iskander, PhD, PE, F.ASCE} \\
             Professor \& Chair, Civil \& Urban Engineering, NYU
             
-            \vspace*{0.075 in}
+            \vspace*{0.1 in}
             
             \noindent\rule{2 in}{0.4pt} \\
             Date
             
-            \vspace*{0.2 in}
+            \vspace*{0.25 in}
             
             \noindent\rule{3.25 in}{0.4pt} \\
             \textbf{Mohsen Hossein, PhD, PE} \\
             Industry Professor, Civil \& Urban Engineering, NYU
             
-            \vspace*{0.075 in}
+            \vspace*{0.1 in}
             
             \noindent\rule{2 in}{0.4pt} \\
             Date
             
-            \vspace*{0.2 in}
+            \vspace*{0.25 in}
             
             \noindent\rule{3.25 in}{0.4pt} \\
             \textbf{Torsten Suel, PhD} \\
             Professor, Computer Science \& Engineering, NYU
             
-            \vspace*{0.075 in}
+            \vspace*{0.1 in}
             
             \noindent\rule{2 in}{0.4pt} \\
             Date
             
-            \vspace*{0.2 in}
+            \vspace*{0.25 in}
             
             \noindent\rule{3.25 in}{0.4pt} \\
             \textbf{Debra Laefer, PhD} \\
-            Full Professor, Civil \& Urban Engineering, NYU
+            Professor, Civil \& Urban Engineering, NYU
             
-            \vspace*{0.075 in}
+            \vspace*{0.1 in}
             
             \noindent\rule{2 in}{0.4pt} \\
             Date
             
-            \vspace*{0.2 in}
+            \vspace*{0.25 in}
             
             \noindent\rule{3.25 in}{0.4pt} \\
             \textbf{Muhannad Suleiman, PhD} \\
             Associate Professor, Civil \& Environmental Engineering, Lehigh University
             
-            \vspace*{0.075 in}
+            \vspace*{0.1 in}
             
             \noindent\rule{2 in}{0.4pt} \\
             Date
             
-            %\vspace*{0.2 in}
+            %\vspace*{0.25 in}
             
             %\noindent\rule{3.25 in}{0.4pt} \\
             %\textbf{Antonio Marinucci, PhD, PE, MBA} \\
             %Research Professor, Civil \& Urban Engineering, NYU
             
-            %\vspace*{0.075 in}
+            %\vspace*{0.1 in}
             
             %\noindent\rule{2 in}{0.4pt} \\
             %Date
