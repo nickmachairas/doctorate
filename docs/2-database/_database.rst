@@ -208,7 +208,7 @@ Loading all records from the source databases, a process that was described in t
 
 
 
-Users can browse through and use the historical data and/or add their own via the front-end interface. The search page of *NYU Pile Capacity* is shown in :numref:`nyupc_search`. It offers options to search based on records owners, sources databases, predominant soil conditions, pile type, shape, diameter, length as well as test type. The search results are displayed as cards (:numref:`nyupc_search_results`) and the user can quickly inspect some important properties, including the shape of the load test curve. The user can click on *Details* and review all values stored for a given record or add all search results to an aggregate analysis.
+Users can browse through and use the historical data and/or add their own via the front-end interface. The search page of *NYU Pile Capacity* is shown in :numref:`nyupc_search`. It offers options to search based on records owners, sources databases, predominant soil conditions, pile type, shape, diameter, length as well as test type. The search results are displayed as cards (:numref:`nyupc_search_results`) and the user can quickly inspect some important properties, including the shape of the load test curve. The user can click on *Details* and review all values stored for a given record (:numref:`nyupc_record_1` and :numref:`nyupc_record_2`) or add all search results to an aggregate analysis.
 
 
 .. figure:: figures/nyupc_search_results.png
@@ -218,6 +218,28 @@ Users can browse through and use the historical data and/or add their own via th
 
 
 All search parameters are passed to the page url as request arguments. This can be a convenient way of sharing custom searches, simply by copying the link generated. For example, the url for a search query for records from the *Iowa PILOT* and *Olson APC* sources, in predominantly sandy soils and with piles wider than 16 inches would be, `<http://pilecapacity.com/search?source_db=Iowa+PILOT&source_db=Olson+APC&soil_type=SAND&min_d=16>`_.
+
+
+.. figure:: figures/nyupc_record_1.png
+   :name: nyupc_record_1
+
+   *NYU Pile Capacity*: Example Record Page (1/2)
+
+
+.. figure:: figures/nyupc_record_2.png
+   :name: nyupc_record_2
+
+   *NYU Pile Capacity*: Example Record Page (2/2)
+
+
+The option to create new analyses and records is available to users (access level *Standard* or higher) on the profile page. An example of a profile page is presented in :numref:`nyupc_profile`. The profile page lists the analyses created by that user as well as other users analyses.
+
+
+.. figure:: figures/nyupc_profile.png
+   :name: nyupc_profile
+
+   *NYU Pile Capacity*: Profile Page
+
 
 
 
