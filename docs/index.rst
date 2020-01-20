@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Modern Data Management and Analysis of Driven Piles
-===================================================
+Assessment of Pile Design Methods Using Advanced Data Analytics
+===============================================================
 
 .. only:: html
 

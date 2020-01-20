@@ -161,18 +161,18 @@ latex_elements = {
         \begin{titlepage}
         \centering
             
-            \vspace*{3.75 in}
+            %% \vspace*{3.75 in}
             
-            For Guidance Committee Review\\
-            Current: v.0.7.0 - 12/18/2019\\
-            Next revision: by 12/19/2019
+            %% For Guidance Committee Review\\
+            %% Current: v.0.7.0 - 12/18/2019\\
+            %% Next revision: by 12/19/2019
             
-            \newpage
+            %% \newpage
             
-            \textbf{\LARGE MODERN DATA MANAGEMENT AND}
+            \textbf{\LARGE ASSESSMENT OF PILE DESIGN METHODS}
             \vspace*{0.05 in}
 
-            \textbf{\LARGE ANALYSIS OF DRIVEN PILES}
+            \textbf{\LARGE USING ADVANCED DATA ANALYTICS}
             \vspace*{0.2 in}
             
             \noindent\rule{8cm}{0.4pt}
@@ -219,10 +219,10 @@ latex_elements = {
         %\vspace*{-2.0 in}
         \begin{center}
             
-            \textbf{\Large MODERN DATA MANAGEMENT AND}
+            \textbf{\Large ASSESSMENT OF PILE DESIGN METHODS}
             \vspace*{0.05 in}
 
-            \textbf{\Large ANALYSIS OF DRIVEN PILES}
+            \textbf{\Large USING ADVANCED DATA ANALYTICS}
             \vspace*{0.05 in}
             
             \noindent\rule{8cm}{0.4pt}
@@ -411,8 +411,8 @@ latex_elements = {
             and I are truly grateful for his support. I would also like to 
             thank Professors Maloof, Ulerio and Hossein. Their ethos as well as 
             their support for and dedication to all students is a big part of 
-            what makes this school so special. Moreover, I would like to 
-            acknowledge my fellow research teammates at NYU. Thank you for 
+            what makes the Engineering school so special. Moreover, I would like
+            to acknowledge my fellow research teammates at NYU. Thank you for 
             putting up with my (often foolish) ideas and for pushing me to do 
             better. Finally, I would like to express my gratitude to the 
             distinguished members of my guidance committee. Thank you for your 
