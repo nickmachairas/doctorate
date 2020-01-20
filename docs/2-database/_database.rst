@@ -5,18 +5,8 @@
 NYU Pile Capacity: An Interactive Web Application and Unifying Pile Load Test Database
 ######################################################################################
 
-.. note::
 
-   This chapter will be updated by 12/16/2019 with additional details on the features and background processes of *NYU Pile Capacity* that was recently developed.
-
-
-.. figure:: figures/plt_warehouse_schematic.png
-   :name: plt_warehouse_schematic
-
-   Schematic of a Comprehensive Pile Load Test Data Warehouse [#]_
-
-
-.. [#] Icons by Microsoft Azure Cloud and Enterprise. Diagram inspired by edX DAT216x *Delivering a Relational Data Warehouse*
+.. TODO: add a preamble, walk the reader through what's included. about one page
 
 
 *******
