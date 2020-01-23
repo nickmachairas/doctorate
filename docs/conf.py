@@ -319,7 +319,7 @@ latex_elements = {
             \vspace*{0.25 in}
             
             \noindent\rule{3.25 in}{0.4pt} \\
-            \textbf{Mohsen Hossein, PhD, PE} \\
+            \textbf{Mohsen Hossein, PhD} \\
             Industry Professor, Civil \& Urban Engineering, NYU
             
             \vspace*{0.1 in}
