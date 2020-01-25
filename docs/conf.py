@@ -83,12 +83,12 @@ def setup(app):
 # -- LaTeX customizations
 
 latex_appendices = [
-    'a1-edafos/edafos',
+    'a1-soil-approx/soil-approx',
     'a2-piles-notations/notations',
     'a3-db-tables/_db_appendix']
 
 texinfo_appendices = [
-    'a1-edafos/edafos',
+    'a1-soil-approx/soil-approx',
     'a2-piles-notations/notations',
     'a3-db-tables/_db_appendix']
 

@@ -102,11 +102,13 @@ Chapter 3 offers a comprehensive overview of multiple methods for interpreting t
 
 Chapter 5 offers a comprehensive overview of the most popular methods for calculating the nominal resistance of driven piles. Chapter 6 presents a comparison and evaluation of nominal resistance methods for standard diameter piles while chapter 7 presents a comparison and evaluation of nominal resistance methods for large diameter piles.
 
-Chapter 8 presents a discussion on case-by-case design of driven piles. This is an insight that was the result of the analytical procedures developed as part of this study and allowed for aggregate calculations on groups of load test records.
+.. Chapter 8 presents a discussion on case-by-case design of driven piles. This is an insight that was the result of the analytical procedures developed as part of this study and allowed for aggregate calculations on groups of load test records.
 
-In Chapter 9, a Machine Learning method for calculating nominal resistance is developed and tested with the results presented.
+In Chapter 8, a Machine Learning method for calculating nominal resistance is developed and tested with the results presented.
 
-Chapter 10 provides concluding remarks, recommendations for future research and the author's experiences with DIGGS (Data Interchange for Geotechnical and Geoenvironmental Specialists) and how this tool can be used for deep foundations.
+Chapter 9 provides concluding remarks, recommendations for future research and the author's experiences with DIGGS (Data Interchange for Geotechnical and Geoenvironmental Specialists) and how this tool can be used for deep foundations.
+
+Appendices A and B are useful references for the soil approximations that were employed in this study as well as important schematics and notations.
 
 Appendix C includes valuable details on the source databases that were combined as part of this study as well as Extract Transform and Load (ETL) procedures and attribute mapping. A reader familiar with the original data sources is advised to refer to this section if identifying an original attribute in *Pile Capacity* becomes troublesome.
 
