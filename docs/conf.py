@@ -535,7 +535,10 @@ latex_elements = {
             or checked via batch processing and an iterative optimization process. 
             A proof-of-concept of this alternative design process was presented 
             where a \textit{Support Vector Machine} algorithm outperformed the 
-            Federal design method for driven piles.
+            Federal design method for driven piles. Perhaps more remarkably, the 
+            predictive model outperformed the FHWA pile design method by relying 
+            only on seven readily available features as compared to a laborious 
+            and error-prone design methodology.
             
             Finally, this dissertation presented the argument for the 
             \textit{case-based design} of driven pile foundations. Most of the 
