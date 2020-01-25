@@ -8,9 +8,7 @@ A number of criteria have been introduced throughout the years to determine the 
 
 For LDOEPs, AASHTO's Modified Davisson criterion is one the most popular (:ref:`AASHTO 2014 <AASHTO2014>`). However, the performance of Modified Davisson method has not been evaluated against the performance of other criteria.
 
-.. TODO: revise the paragraph below
-
-Interpretation criteria can be classified into various categories involving different schemas. One test is presented in this paper as an example in an effort to capture the general behavior of the load-settlement curves and interpretation criteria employed in this study. The chosen example is 260 ft. long, open-ended steel pipe pile with an embedment depth of 218.5 ft. and an outer diameter of 59 inches, installed in the Tokyo Port Bay Bridge project.
+Interpretation criteria can be classified into various categories involving different schemas. One test is presented as an example in an effort to capture the general behavior of the load-settlement curves and interpretation criteria employed in this study. The chosen example is 260 ft. long, open-ended steel pipe pile with an embedment depth of 218.5 ft. and an outer diameter of 59 inches, installed in the Tokyo Port Bay Bridge project.
 
 
 ***********************

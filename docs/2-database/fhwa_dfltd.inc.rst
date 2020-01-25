@@ -11,7 +11,7 @@ FHWA rekindled the effort to gather and distribute load test information on pile
 Database Statistics
 -------------------
 
-Load test types in the new database include axial static, rapid (Statnamic), and dynamic load tests. Foundation types include open- and closed-end steel pipe piles, concrete cylinder piles, steel H-piles, pre-stressed concrete piles, drilled shafts, augercast piles, micropiles, timber piles, and others. Deep foundation load test data from the existing FHWA Deep Foundations Load Test Database (DFLTD, Version 1.0) was transferred to DFLTD v.2.
+Load test types in the new database include axial static, rapid (Statnamic), and dynamic load tests. Pile types include open and closed-end steel pipe piles, concrete cylinder piles, steel H-piles, pre-stressed concrete piles, drilled shafts, augercast piles, micropiles, timber piles, and others. As per the corresponding manual, pile load test data from the existing FHWA Deep Foundation Load Test Database (DFLTD, Version 1.0) was transferred to DFLTD v.2.
 
 
 .. figure:: figures/fhwa_pile_type_distribution.png
@@ -22,9 +22,7 @@ Load test types in the new database include axial static, rapid (Statnamic), and
 
 
 
-.. TODO: rephrase this paragraph
-
-Data included in the database was obtained from a large number of sources. These sources primarily included conference proceedings, journal articles, and engineering reports. Native digital data for the various in situ and load tests was generally not available for these sources. Therefore, the LDOEP data including subsurface explorations, dynamic testing, and load test data (force, displacement, force distribution, and load transfer) is digitized from these publications. There may be some slight variation between the original publication and the digitized values included in the database.
+The records included in DFLTD v.2 were obtained from a large number of sources which included conference proceedings, journal articles, and engineering reports. The original data for these load tests was generally not available. Therefore, the LDOEP data including subsurface explorations, dynamic testing, and load test data (force, displacement, force distribution, and load transfer) was digitized from these publications.
 
 
 .. figure:: figures/fhwa_pile_length_distribution.png
@@ -34,9 +32,8 @@ Data included in the database was obtained from a large number of sources. These
    Distribution of Pile Lengths in the *FHWA DFLTD v.2*
 
 
-.. TODO: rephrase this paragraph
 
-The database uses the broad soil type classifications of cohesive, non-cohesive, intermediate geomaterial, rock, and variable. The soil type is classified as uniform condition if at least 70 percent of the soil along the pile side or base consists of the specified material type. Variable sites consist of a combination of soil types where combined layers for each soil type are less than 70 percent of the total.
+DFLTD v.2 used the following broad soil type classifications: cohesive, non-cohesive, intermediate geomaterial, rock, and variable (mixed). Soil types were classified as uniform if at least 70% of the soil along the pile side or base consisted of the specified material type.
 
 
 .. figure:: figures/fhwa_soil_type_distribution.png
@@ -46,24 +43,11 @@ The database uses the broad soil type classifications of cohesive, non-cohesive,
    Distribution of Soil Types in the *FHWA DFLTD v.2*
 
 
-.. TODO: rephrase this paragraph
-
-Native digital data for the various in situ tests was generally not available during data collection of the LDOEP study. The plots of SPT blow count are based on the numerical values shown in the Exploration Details tab. The LDOEP study CPT data was primarily digitized from plots in publications. There may be slight variation between the original publication and the digitized CPT Test values included in the database. The source of the DFLTD data is unknown.
-
-.. TODO: rephrase this paragraph
-
-Native digital data for the static and Statnamic load tests was generally not available during data collection of the LDOEP study. The load displacement, load transfer, and force distribution data was digitized from plots in the available publications. There may be some slight variation between the original publication and the digitized values included in the database.
-
 
 Data Format and ETL
 -------------------
 
-DFLTD v.2 was developed in Microsoft Access 2013. The graphics utility *Advanced Software Engineering’s Chartdirector* was employed to design the forms, queries, and auxiliary tables required for data inquiry, viewing, and export. This utility allows users to access data, but not to make any changes.
-
-.. TODO: rephrase this paragraph
-
-..
-    The database sign convention is positive for compressive loads and upward displacement. Tension loads and downward displacement are negative. The sign convention is used for the LDOEP study data. The majority of the previous DFLTD data follow this sign convention with a few exceptions.
+DFLTD v.2 was developed in Microsoft Access 2013. The graphics utility *Advanced Software Engineering’s Chartdirector* was employed to design the forms, queries, and auxiliary tables required for data inquiry, viewing, and export. This utility allowed users to access data, but not to make any changes.
 
 
 .. figure:: figures/DFLTD_v2_general_diagram.jpg
@@ -88,12 +72,6 @@ DFLTD v.2 was developed in Microsoft Access 2013. The graphics utility *Advanced
    E-R Diagram of *FHWA DFLTD v.2* (exported from MS Access)
 
 
-.. TODO: rephrase this paragraph
-
-The key takeaway is that the list of projects will conform to the desired query criteria; however, the projects may contain additional explorations, deep foundations, and load tests that were not included in the query criteria.
-
-.. TODO: talk about problems with use, requires MS Access 32-bit, erroneous values, 130 piles without information on even diameter
-
 
 *FHWA DFLTD v.2* was the largest database with over 900 projects and north of 1,500 pile load tests. It had, however, the poorest data quality. As an example, there were over 130 piles lacking basic information on diameter and/or length. Moreover, the database was developed for the 32-bit version of MS Access and would only work with 32-bit versions of MS Access which can be an issue for modern computers.
 
@@ -109,5 +87,4 @@ In terms of soil explorations, *FHWA DFLTD v.2* stored delineated soil profiles 
    :language: python
    :caption: Program that Extracted Data from *FHWA DFLTD v.2*
    :name: fhwa_py
-
 

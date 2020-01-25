@@ -125,7 +125,6 @@ Various notation styles are encountered across literature. This document uses sy
 
 
 
-.. TODO: update figure with soil properties and pile x-areas
 .. figure:: figures/notations.png
    :width: 350 px
    :name: notations_figure
@@ -135,7 +134,6 @@ Various notation styles are encountered across literature. This document uses sy
 
 ----
 
-.. TODO: sort alphabetically (or by pile/soil?)
 
 .. |gwt| replace:: :math:`h_w`
 .. |layer_height| replace:: :math:`h_i`

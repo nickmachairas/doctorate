@@ -74,17 +74,13 @@ The format of the PILOT database is relational but not normalized and with no ap
 
 
 
-While the quality of the data in the PILOT database is not questioned, noticeably absent is data on soil unit weight which hinders reliable effective stress and capacity calculations. Moreover, ground water table is recorded as an elevation without additional data on the elevation of the ground level in order to infer ground water table depth. Luckily, there is information on pile toe elevation for most records and combined with pile embedded depth, it is possible to infer water table depth for some records. Lastly, data for Cone Penetration Tests (CPT) and Borehole Shear Tests (BST) are referenced via relative linkt to local files but are not included.
+While the quality of the data in the PILOT database is not questioned, noticeably absent were data on soil unit weight which hindered reliable effective stress and capacity calculations. Moreover, ground water table was recorded as an elevation without additional data on the elevation of the ground level in order to infer ground water table depth. Luckily, there was information on pile toe elevation for most records and combined with pile embedded depth, it was possible to infer water table depth for some records. Lastly, data for Cone Penetration Tests (CPT) and Borehole Shear Tests (BST) were referenced via relative links to local files but were not included.
 
+All data from the PILOT database was ported to the NYU database. There were two options to accomplish this task. The first was to use standard Microsoft tools that could transfer the MS Access database to a temporary database on MS SQL Server maintaining all metadata from the MS Access database. Then, the temporary database on MS SQL Server could be queried and the data transferred to *NYU Pile Capacity*.
 
-.. TODO: update this part on porting the data
-
-All data from the PILOT database was ported to the NYU database. There were two options to accomplish this task. The first was to use standard Microsoft tools that can transfer a MS Access database to a temporary database on MS SQL Server maintaining all metadata from the MS Access database. Then, the temporary database on MS SQL Server could be queried and the data transferred to *NYU Pile Capacity*.
-
-The second option was to export all tables from MS Access as .csv files and write a Python program to process these files. This was the option implemented due to the fact that it did not require temporary infrastructure and the ETL process could then be more streamlined and reproducible.
+The second option was to export all tables from MS Access as .csv files and produce a Python program to process these files. This was the option implemented due to the fact that it did not require temporary infrastructure (setting up a temporary MS SQL server) and the ETL process could then be more streamlined and reproducible.
 
 :numref:`IowaAttrTable1`, :numref:`IowaAttrTable2`, :numref:`IowaAttrTable3` and :numref:`IowaAttrTable4` in the appendix detail how the original PILOT database attributes were mapped to the *NYU Pile Capacity* attributes. And :numref:`iowa_py` presents the program that was written to extract, transform and load the data from *Iowa PILOT* to *NYU Pile Capacity* based on these mappings.
-
 
 
 .. literalinclude:: listings/iowa.py
