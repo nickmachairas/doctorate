@@ -1,6 +1,6 @@
 
-Nordlund (cohesionless soils)
-=============================
+Nordlund Method for Cohesionless Soils
+======================================
 
 The *Nordlund* method (:ref:`Nordlund, 1963 <Nordlund1963>`), is recommended by FHWA (:ref:`Hannigan et al., 2016a <Hannigan2016a>`) for accurate determination of driven pile capacity in cohesionless soils. This method is semi-empirical and heavily reliant on determination of the soil friction angle, :math:`\phi`. Nordlund (:ref:`Nordlund, 1963 <Nordlund1963>`; :ref:`Nordlund, 1979 <Nordlund1979>`) developed his method of calculating bearing capacity of piles in cohesionless soils from as few as 41 load tests from eight different test sites. Although the method was developed for piles smaller than 18 inches in diameter, it is still the most widely used method in State DOTs for the design of all driven piles, including LDOEPs (:ref:`NCHRP 2015 <NCHRP2015>`).
 

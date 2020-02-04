@@ -1,6 +1,6 @@
 
-Olson 90
-========
+Olson 90 Method
+===============
 
 The *Olson 90 method* is for cohesionless soils only. It was created from a database of 31 load tests on steel pipe piles. Olson 90 is similar to the Revised API method with two main differences. First, the coefficient of lateral earth, :math:`K`, is calculated rather than taken from :numref:`API_K_table`. In Olson 90, :math:`K` is given by :eq:`olson90-K`.
 
@@ -77,7 +77,7 @@ Olson 90 provides revised guidelines for shaft and tow resistances and they are 
    +---------------+-----------------------+----------------------+-------------------------+-------------+-------------------------+
 
 
-.. note::
+.. note:: For :numref:`Olson90_table`
 
    - Must not interpolate. In using values in :numref:`Olson90_table`, use the line corresponding to N = 4 for any layer with N less than or equal to 4, the line corresponding to 10 for N = 5 - 10, and so on.
    - Number in brackets were extrapolated, no supporting data.

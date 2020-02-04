@@ -1,6 +1,6 @@
 
-Revised Lambda
-==============
+Revised Lambda Method
+=====================
 
 The Lambda method has gone through several revisions since it was first introduced. Focht and Vijayvergiya (:ref:`1972 <Focht1972>`) proposed that side resistance be calculated using :eq:`ldoep_calc_eq12`.
 

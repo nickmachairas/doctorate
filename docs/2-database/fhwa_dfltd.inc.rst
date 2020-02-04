@@ -6,12 +6,14 @@ The original version of DFLTD includes methods of search for foundations of spec
 
 FHWA rekindled the effort to gather and distribute load test information on piles, as part of its effort to develop a method for predicting the axial capacity of large diameter open ended pipe piles. This effort resulted in the release of the Deep Foundation Load Test Database v.2 (DFLTD v.2) in February 2017 (:ref:`Petek et al., 2016 <Petek2016>`). This updated version of the DFLTD v.2 was developed as part of the Federal Highway Administration (FHWA) research project *Bearing Resistance of Large Diameter Open-End Piles (2014–2017)*, and provides a collection of deep foundation load test data.
 
+The release of DFLTD v.2 updated the query process, expanding upon the capabilities of the first version (:ref:`Kalavar and Ealy, 2000 <Kalavar2000>`). The graphical user interface within Microsoft Access allows load tests to be filtered based on a predefined set of options to view or export only those containing the desired project, foundation, and soil parameters. There is currently limited functionality to filter test records for data completion, to locate tests with all necessary parameters to carry out design calculations for the pile foundations included in the database. Furthermore, the process of extracting data, while sufficient for a case-by-case investigation, could not accommodate the need of this research endeavor to analyse cases in batch mode.
+
 
 
 Database Statistics
 -------------------
 
-Load test types in the new database include axial static, rapid (Statnamic), and dynamic load tests. Pile types include open and closed-end steel pipe piles, concrete cylinder piles, steel H-piles, pre-stressed concrete piles, drilled shafts, augercast piles, micropiles, timber piles, and others. As per the corresponding manual, pile load test data from the existing FHWA Deep Foundation Load Test Database (DFLTD, Version 1.0) was transferred to DFLTD v.2.
+Load test types in DFLTD v.2 include axial static, rapid (Statnamic), and dynamic load tests. Pile types include open and closed-end steel pipe piles, concrete cylinder piles, steel H-piles, pre-stressed concrete piles, drilled shafts, augercast piles, micropiles, timber piles, and others. As per the corresponding manual, pile load test data from the existing FHWA Deep Foundation Load Test Database (DFLTD, Version 1.0) was transferred to DFLTD v.2.
 
 
 .. figure:: figures/fhwa_pile_type_distribution.png
@@ -22,7 +24,7 @@ Load test types in the new database include axial static, rapid (Statnamic), and
 
 
 
-The records included in DFLTD v.2 were obtained from a large number of sources which included conference proceedings, journal articles, and engineering reports. The original data for these load tests was generally not available. Therefore, the LDOEP data including subsurface explorations, dynamic testing, and load test data (force, displacement, force distribution, and load transfer) was digitized from these publications.
+The records included in DFLTD v.2 were obtained from a large number of sources which included state highway departments, conference proceedings, journal articles, and engineering reports. The original data for these load tests was generally not available. Therefore, the LDOEP data including subsurface explorations, dynamic testing, and load test data (force, displacement, force distribution, and load transfer) was digitized from these publications.
 
 
 .. figure:: figures/fhwa_pile_length_distribution.png

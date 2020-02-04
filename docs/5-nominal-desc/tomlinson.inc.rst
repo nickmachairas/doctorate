@@ -1,6 +1,6 @@
 
-Tomlinson (cohesive soils)
-==========================
+Tomlinson Method for Cohesive Soils
+===================================
 
 The FHWA Report on the Design and Construction of Driven Pile Foundations (:ref:`Hannigan et al., 2016a <Hannigan2016a>`; :ref:`Hannigan et al., 2016b <Hannigan2016b>`) recommends that for pile diameters less than 18 inches, nominal resistance be calculated using the :math:`\alpha`-method (:ref:`Tomlinson, 1980 <Tomlinson1980>`) for cohesive soils. Similar to the Nordlund method, it is the most widely used method in State DOTs for the design of all driven piles in cohesive soils, including LDOEPs (:ref:`NCHRP 2015 <NCHRP2015>`).
 

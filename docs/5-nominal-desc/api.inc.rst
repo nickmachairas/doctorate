@@ -148,7 +148,7 @@ Finally, toe resistance in cohesive soils is given by :eq:`ldoep_calc_eq19`, the
 
 
 
-In order to interpret :numref:`API_d_table` and :numref:`API_q_table` algorithmically, the correlation in :numref:`API_SPT_corr_table` is employed in ``edafos``.
+In order to interpret :numref:`API_d_table` and :numref:`API_q_table` algorithmically, the correlation in :numref:`API_SPT_corr_table` was employed in batch calculations.
 
 
 

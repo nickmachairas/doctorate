@@ -1,6 +1,6 @@
 
-United States Army Corps of Engineers (USACE)
-=============================================
+United States Army Corps of Engineers (USACE) Method
+====================================================
 
 For side resistance in cohesionless soils, USACE specifies that skin friction increases linearly down to a critical depth, :math:`D_c`, and remains constant below that depth. The critical depth, :math:`D_c`, is a function of pile diameter, :math:`b`, such that :math:`D_c = 10b` for loose sands, :math:`D_c = 15b` for medium-dense sands and :math:`D_c = 20b` for dense sands. Side resistance can then be calculated according to Eq. 8.
 

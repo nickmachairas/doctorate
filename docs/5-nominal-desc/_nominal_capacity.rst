@@ -4,6 +4,17 @@ Presentation of Nominal Resistance Methods
 ##########################################
 
 
+
+Several pile capacity methods were used to compare calculated and predicted pile capacities. A brief overview of these methods is presented in this chapter. In order to allow for batch processing, the capacity methods were programmed in Python.
+
+
+.. figure:: figures/notations.png
+   :width: 350 px
+   :name: ch5_notations_figure
+
+   Typical profile view with embedded pile and associated symbols
+
+
 The ultimate bearing capacity, :math:`R_n` (aka nominal resistance), of driven piles is typically given by nominally adding the shaft and toe resistances (:eq:`ldoep_calc_eq1`).
 
 
@@ -71,3 +82,5 @@ where:
 .. include:: api.inc.rst
 .. include:: olson.inc.rst
 
+
+.. TODO: MGI says you need some form of a conclusion that says that the programmed methods will be ???? later in this dissertation.
