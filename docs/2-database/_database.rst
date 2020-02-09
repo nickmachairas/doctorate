@@ -234,7 +234,50 @@ The option to create new analyses and records is available to users (access leve
 
 
 
-..
-    ****************************
-    Experiential Design of Piles
-    ****************************
+*****************
+Case-Based Design
+*****************
+
+
+Running aggregate analyses was a core feature of *NYU Pile Capacity* and the flexibility of doing so on varying soil conditions and pile types opened up the possibility for a new approach to pile design, the *case-based design* of driven pile foundations.
+
+Most of the existing design methods attempted to generalize and provide recommendations for all soil conditions and all pile types. There was, however, little focus on the performance of these methods for specific soil conditions and pile types. The industry implemented the design methods as blanket solutions expecting that they would perform well for all cases. *NYU Pile Capacity* provided the flexibility to run aggregate analyses on groups of load test records with similar characteristics.
+
+
+.. figure:: figures/case_based_example1.png
+   :name: case_based_example1
+
+   Example of *case-based design* of driven piles
+
+
+
+In order to demonstrate this concept, an example load test record is shown in :numref:`case_based_example1`. The example involves a 51 ft long driven 10x42 H-Pile in mixed soil conditions. *NYU Pile Capacity* calculates capacities based on various design methods or uses the capacities as were reported from the original sources. For the case presented in :numref:`case_based_example1`, the *Meyerhof* method provided a capacity that was closer to the measured capacity from static load testing while the *API 1984* method, a popular design method, provided a capacity that was more that 70% larger than the measured capacity.
+
+The immediate observation was that for this specific case, *Meyerhof* was better than *API 1984*. However, this goes against common engineering practice and federal guidelines where it is recommended that *Mayerhof* should be used for preliminary design only. A question that had not been asked before was *"Is it possible that Meyerhof performs well under certain conditions? And on the other end, is it possible that API does not perform well for certain conditions?"*
+
+A routine was programmed within *NYU Pile Capacity* that used the same methods for aggregate analyses but instead of the groups analysed being specified by the user, the program run analyses on groups of records with similar characteristics. For the example shown in :numref:`case_based_example1`, that would be a group of load test records of steel H-Piles, around 10 inches wide driven in mixed soil conditions.
+
+
+
+.. figure:: figures/case_based_example2.png
+   :width: 400 px
+   :name: case_based_example2
+
+   10-inch steel piles in mixed soils (*case-based design* of driven piles)
+
+
+The results of the aggregate analysis (Meyerhof and API only) of 10-inch H-Piles in mixed soils are shown in :numref:`case_based_example2`. For comparison, the results of the aggregate analysis without this filtering are shown in :numref:`case_based_example3`. Note that this comparison was performed on a subset of the total load test records stored in *NYU Pile Capacity*.
+
+
+
+.. figure:: figures/case_based_example3.png
+   :width: 400 px
+   :name: case_based_example3
+
+   No case filtering (*case-based design* of driven piles)
+
+
+Focusing on the :math:`R^2` score, :numref:`case_based_example2` showed better performance for the *API* method than the *Meyerhof* method. A statement that also holds true for the analysis presented in :numref:`case_based_example3`. However, when comparing the two figures, *Meyerhof* seems to be performing a lot better for 10-inch H-Piles in mixed soils than it does for all piles, which could indicate the example record was not an outlier. At the same time, the poor performance of *API* on the example record was most likely an outlier.
+
+Expanding this comparison from two design methods to multiple design methods and from one set of conditions to multiple sets of conditions can lead to gaining insights into the cases for which design methods perform best can enable enhanced pile design workflows where instead of using a single method to calculate capacities, a combination of methods can be employed depending on the soil conditions and pile type. Hence, *case-based design* can lead to safer and cost-effective designs for driven pile foundations.
+

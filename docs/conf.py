@@ -382,7 +382,7 @@ latex_elements = {
             {\normalsize
             Nikolaos "Nick" Machairas was born in Athens, Greece on August 30, 
             1984 to Panagiotis and Maria Machairas. He graduated from the Pierce 
-            College High School Athens in 2002. Nick studied Geology at the 
+            College High School Athens in 2002. Nick studied at the 
             National and Kapodestrian University of Athens while working as a 
             superintendent on residential construction projects under the
             supervision of his father, Panagiotis. In 2008, after completing his
