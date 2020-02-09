@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Modern Data Management and Analysis of Driven Piles'
+project = 'Assessment of Pile Design Methods Using Advanced Data Analytics'
 copyright = '2019, Nikolaos Machairas'
 author = 'Nikolaos Machairas'
 
@@ -51,7 +51,7 @@ html_theme = 'alabaster'
 
 html_theme_options = {
     'logo': 'nyu_short_color.png',
-    'description': '<em>"Modern Data Management and Analysis of Driven Piles'
+    'description': '<em>"Assessment of Pile Design Methods Using Advanced Data Analytics'
                    '"</em>, PhD Dissertation'
                    ' by Nikolaos Machairas</br>',
     'show_relbar_bottom': True,
